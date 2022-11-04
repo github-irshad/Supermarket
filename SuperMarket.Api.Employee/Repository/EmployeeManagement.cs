@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using SuperMarket.Api.Employee.Data;
 using SuperMarket.Api.Employee.Interfaces;
 using SuperMarket.Api.Employee.Models;
 
@@ -9,6 +10,14 @@ namespace SuperMarket.Api.Employee.Repository
 {
   public class EmployeeManagement : IEmployeeManagement
   {
+
+    private readonly EmployeeDbContext _employeeDbContext;
+
+    public EmployeeManagement(EmployeeDbContext employeeDbContext)
+    {
+      _employeeDbContext = employeeDbContext;
+    }
+
     public void AddNewEmployee(EmployeeModel employee)
     {
       throw new NotImplementedException();
@@ -21,12 +30,12 @@ namespace SuperMarket.Api.Employee.Repository
 
     public IEnumerable<EmployeeModel> GetAllEmployees()
     {
-      throw new NotImplementedException();
+      return _employeeDbContext.Employees.ToList();
     }
 
     public EmployeeModel GetEmployeeById(int id)
     {
-      throw new NotImplementedException();
+      return _employeeDbContext.Employees.Where(x=>x.EmployeeId==id).FirstOrDefault();
     }
 
     public void UpdateEmployee(int id)
