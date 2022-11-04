@@ -1,0 +1,7 @@
+C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employee\obj\Debug\net6.0\SuperMarket.Api.Employee.csproj.AssemblyReference.cache
+C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employee\obj\Debug\net6.0\SuperMarket.Api.Employee.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employee\obj\Debug\net6.0\SuperMarket.Api.Employee.AssemblyInfoInputs.cache
+C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employee\obj\Debug\net6.0\SuperMarket.Api.Employee.AssemblyInfo.cs
+C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employee\obj\Debug\net6.0\SuperMarket.Api.Employee.csproj.CoreCompileInputs.cache
+C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employee\obj\Debug\net6.0\SuperMarket.Api.Employee.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employee\obj\Debug\net6.0\SuperMarket.Api.Employee.MvcApplicationPartsAssemblyInfo.cache
