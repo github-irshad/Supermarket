@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using SuperMarket.Api.Employee.Data;
 using SuperMarket.Api.Employee.Interfaces;
 using SuperMarket.Api.Employee.Models;

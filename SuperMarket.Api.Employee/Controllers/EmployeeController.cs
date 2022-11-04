@@ -1,14 +1,10 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using SuperMarket.Api.Employee.Interfaces;
 using SuperMarket.Api.Employee.Models;
 
 namespace SuperMarket.Api.Employee.Controllers
 {
-    [ApiController]
+  [ApiController]
     [Route("api/[controller]")]
     public class EmployeeController : ControllerBase
     {

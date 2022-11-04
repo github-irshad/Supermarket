@@ -1,13 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using SuperMarket.Api.Employee.Models;
 
 namespace SuperMarket.Api.Employee.Data
 {
-    public class EmployeeDbContext : DbContext
+  public class EmployeeDbContext : DbContext
     {
         public EmployeeDbContext(DbContextOptions options):base(options)
         {
