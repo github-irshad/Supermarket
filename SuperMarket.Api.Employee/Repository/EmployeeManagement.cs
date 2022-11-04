@@ -18,10 +18,23 @@ namespace SuperMarket.Api.Employee.Repository
       _employeeDbContext = employeeDbContext;
     }
 
-    public void AddNewEmployee(EmployeeModel employee)
+    public void AddNewEmployee(AddEmployeeModel _newEmployee)
     {
-      throw new NotImplementedException();
+        var newEmployee = new EmployeeModel()
+        {
+            FirstName = _newEmployee.FirstName,
+            LastName = _newEmployee.LastName,
+            AadharDocument = _newEmployee.AadharDocument,
+            AadharNumber = _newEmployee.AadharNumber,
+            Address = _newEmployee.Address,
+            Designation = _newEmployee.Designation,
+            isVerified = false
+        };
+      _employeeDbContext.Employees.Add(newEmployee);
+      _employeeDbContext.SaveChanges();
     }
+
+   
 
     public void DeleteEmployee(int id)
     {

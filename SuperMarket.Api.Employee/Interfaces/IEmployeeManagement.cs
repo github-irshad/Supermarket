@@ -11,7 +11,7 @@ namespace SuperMarket.Api.Employee.Interfaces
         public IEnumerable<EmployeeModel> GetAllEmployees();
         public EmployeeModel GetEmployeeById(int id);
         public void DeleteEmployee(int id);
-        public void AddNewEmployee(EmployeeModel employee);
+        public void AddNewEmployee(AddEmployeeModel employee);
         public void UpdateEmployee(int id);
     }
 }

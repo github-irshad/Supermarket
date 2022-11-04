@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using SuperMarket.Api.Employee.Interfaces;
+using SuperMarket.Api.Employee.Models;
 
 namespace SuperMarket.Api.Employee.Controllers
 {
@@ -30,6 +31,13 @@ namespace SuperMarket.Api.Employee.Controllers
         {
             var employee = employeeManagement.GetEmployeeById(id);
             return new JsonResult(employee);
+        }
+
+        [HttpPost]
+        public IActionResult AddNewEmployee(AddEmployeeModel addEmployeeModel)
+        {
+            employeeManagement.AddNewEmployee(addEmployeeModel);
+            return Ok("Added Successfully");
         }
 
     }
