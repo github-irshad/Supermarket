@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace SuperMarket.Api.Employee.Models
 {
-    public class Employee
+    public class EmployeeModel
     {
         public int EmployeeId {get; set;}
         public string FirstName {get; set;}
