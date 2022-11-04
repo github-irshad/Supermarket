@@ -8,6 +8,6 @@ namespace SuperMarket.Api.Employee.Interfaces
         public EmployeeModel GetEmployeeById(int id);
         public void DeleteEmployee(int id);
         public void AddNewEmployee(AddEmployeeModel employee);
-        public void UpdateEmployee(int id, UpdateEmployeeModel updateEmployeeModel);
+        public EmployeeModel UpdateEmployee(int id, UpdateEmployeeModel updateEmployeeModel);
     }
 }

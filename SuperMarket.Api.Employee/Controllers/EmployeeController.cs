@@ -16,21 +16,21 @@ namespace SuperMarket.Api.Employee.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetAllEmployee()
+        public ActionResult GetAllEmployee()
         {
             return new JsonResult(employeeManagement.GetAllEmployees()); 
         }
 
 
         [HttpGet("{id}")]
-        public IActionResult GetEmployeeById(int id)
+        public ActionResult GetEmployeeById(int id)
         {
             var employee = employeeManagement.GetEmployeeById(id);
             return Ok(employee);
         }
 
         [HttpPost]
-        public IActionResult AddNewEmployee(AddEmployeeModel addEmployeeModel)
+        public ActionResult AddNewEmployee(AddEmployeeModel addEmployeeModel)
         {
             employeeManagement.AddNewEmployee(addEmployeeModel);
             return Ok("Added Successfully");
@@ -38,10 +38,17 @@ namespace SuperMarket.Api.Employee.Controllers
 
         [HttpPut("{id}")]
 
-        public IActionResult UpdateEmployee(int id,UpdateEmployeeModel updateEmployeeModel)
+        public ActionResult UpdateEmployee(int id,UpdateEmployeeModel updateEmployeeModel)
         {
-            employeeManagement.UpdateEmployee(updateEmployeeModel);
+            employeeManagement.UpdateEmployee(id,updateEmployeeModel);
             return Ok("Edited Successfully");
+        }
+
+        [HttpDelete]
+        public ActionResult DeleteEmployee(int id)
+        {
+            employeeManagement.DeleteEmployee(id);
+            return Ok("Deleted Successfully");
         }
 
     }

@@ -18,6 +18,7 @@ namespace SuperMarket.Api.Employee.Repository
     {
         var newEmployee = new EmployeeModel()
         {
+            
             FirstName = _newEmployee.FirstName,
             LastName = _newEmployee.LastName,
             AadharDocument = _newEmployee.AadharDocument,
@@ -34,7 +35,8 @@ namespace SuperMarket.Api.Employee.Repository
 
     public void DeleteEmployee(int id)
     {
-      _employeeDbContext.Employees.Where(x=>x.EmployeeId==id).Remove();
+        var result = _employeeDbContext.Employees.Where(x=>x.EmployeeId==id).FirstOrDefault();
+      _employeeDbContext.Employees.Remove(result);
     }
 
     public IEnumerable<EmployeeModel> GetAllEmployees()
@@ -47,24 +49,22 @@ namespace SuperMarket.Api.Employee.Repository
       return _employeeDbContext.Employees.Where(x=>x.EmployeeId==id).FirstOrDefault();
     }
 
-    public void UpdateEmployee(int id,UpdateEmployeeModel updateEmployeeModel)
+    public EmployeeModel UpdateEmployee(int id,UpdateEmployeeModel updateEmployeeModel)
     {
-        var target = _employeeDbContext.Employees.Where(x=>x.EmployeeId==id);
-      var editedEmployee = new EmployeeModel()
-      {
-            FirstName = updateEmployeeModel.FirstName,
-            LastName = updateEmployeeModel.LastName,
-            AadharDocument = updateEmployeeModel.AadharDocument,
-            AadharNumber = updateEmployeeModel.AadharNumber,
-            Address = updateEmployeeModel.Address,
-            Designation = updateEmployeeModel.Designation,
-            isVerified = false
-      };
+        var target = _employeeDbContext.Employees.Where(x=>x.EmployeeId==id).FirstOrDefault();
 
+
+        target.FirstName = updateEmployeeModel.FirstName;
+        target.LastName = updateEmployeeModel.LastName;
+        target.AadharDocument = updateEmployeeModel.AadharDocument;
+        target.AadharNumber = updateEmployeeModel.AadharNumber;
+        target.Address = updateEmployeeModel.Address;
+        target.Designation = updateEmployeeModel.Designation;
+        
       
 
-        _employeeDbContext.Employees.Add(editedEmployee);
         _employeeDbContext.SaveChanges();
+        return target;
 
     }
   }
