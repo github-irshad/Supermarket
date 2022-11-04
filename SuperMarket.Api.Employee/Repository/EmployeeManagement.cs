@@ -34,7 +34,7 @@ namespace SuperMarket.Api.Employee.Repository
 
     public void DeleteEmployee(int id)
     {
-      throw new NotImplementedException();
+      _employeeDbContext.Employees.Where(x=>x.EmployeeId==id).Remove();
     }
 
     public IEnumerable<EmployeeModel> GetAllEmployees()
@@ -47,9 +47,25 @@ namespace SuperMarket.Api.Employee.Repository
       return _employeeDbContext.Employees.Where(x=>x.EmployeeId==id).FirstOrDefault();
     }
 
-    public void UpdateEmployee(int id)
+    public void UpdateEmployee(int id,UpdateEmployeeModel updateEmployeeModel)
     {
-      throw new NotImplementedException();
+        var target = _employeeDbContext.Employees.Where(x=>x.EmployeeId==id);
+      var editedEmployee = new EmployeeModel()
+      {
+            FirstName = updateEmployeeModel.FirstName,
+            LastName = updateEmployeeModel.LastName,
+            AadharDocument = updateEmployeeModel.AadharDocument,
+            AadharNumber = updateEmployeeModel.AadharNumber,
+            Address = updateEmployeeModel.Address,
+            Designation = updateEmployeeModel.Designation,
+            isVerified = false
+      };
+
+      
+
+        _employeeDbContext.Employees.Add(editedEmployee);
+        _employeeDbContext.SaveChanges();
+
     }
   }
 }

@@ -26,7 +26,7 @@ namespace SuperMarket.Api.Employee.Controllers
         public IActionResult GetEmployeeById(int id)
         {
             var employee = employeeManagement.GetEmployeeById(id);
-            return new JsonResult(employee);
+            return Ok(employee);
         }
 
         [HttpPost]
@@ -34,6 +34,14 @@ namespace SuperMarket.Api.Employee.Controllers
         {
             employeeManagement.AddNewEmployee(addEmployeeModel);
             return Ok("Added Successfully");
+        }
+
+        [HttpPut("{id}")]
+
+        public IActionResult UpdateEmployee(int id,UpdateEmployeeModel updateEmployeeModel)
+        {
+            employeeManagement.UpdateEmployee(updateEmployeeModel);
+            return Ok("Edited Successfully");
         }
 
     }
