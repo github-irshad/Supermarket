@@ -51,5 +51,13 @@ namespace SuperMarket.Api.Employee.Controllers
             return Ok("Deleted Successfully");
         }
 
+
+        [HttpPost]
+        public IActionResult UploadDocument(IFormFile files)
+        {
+            employeeManagement.AddDocuments(files);
+            return Ok("Uploaded successfully");
+        }
+
     }
 }

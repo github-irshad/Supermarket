@@ -9,5 +9,7 @@ namespace SuperMarket.Api.Employee.Interfaces
         public void DeleteEmployee(int id);
         public void AddNewEmployee(AddEmployeeModel employee);
         public EmployeeModel UpdateEmployee(int id, UpdateEmployeeModel updateEmployeeModel);
+
+        public void AddDocuments(IFormFile files);
     }
 }

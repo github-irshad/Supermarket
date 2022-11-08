@@ -14,6 +14,22 @@ namespace SuperMarket.Api.Employee.Repository
       _employeeDbContext = employeeDbContext;
     }
 
+    public void AddDocuments(IFormFile files)
+    {
+      var path = Path.Combine(Directory.GetCurrentDirectory(),"Documents");
+
+            if (!Directory.Exists(path)){
+                Directory.CreateDirectory(path);
+
+            }
+
+            var filePath = Path.Combine(path,files.FileName);
+
+            using(var filestream = new FileStream (filePath,FileMode.Create)){
+                files.CopyTo(filestream);
+            }
+    }
+
     public void AddNewEmployee(AddEmployeeModel _newEmployee)
     {
         var newEmployee = new EmployeeModel()
@@ -35,7 +51,7 @@ namespace SuperMarket.Api.Employee.Repository
 
     public void DeleteEmployee(int id)
     {
-        var result = _employeeDbContext.Employees.Where(x=>x.EmployeeId==id).FirstOrDefault();
+        var result = _employeeDbContext.Employees.Where(x=>x.EmployeeModelId==id).FirstOrDefault();
       _employeeDbContext.Employees.Remove(result);
     }
 
@@ -46,12 +62,12 @@ namespace SuperMarket.Api.Employee.Repository
 
     public EmployeeModel GetEmployeeById(int id)
     {
-      return _employeeDbContext.Employees.Where(x=>x.EmployeeId==id).FirstOrDefault();
+      return _employeeDbContext.Employees.Where(x=>x.EmployeeModelId==id).FirstOrDefault();
     }
 
     public EmployeeModel UpdateEmployee(int id,UpdateEmployeeModel updateEmployeeModel)
     {
-        var target = _employeeDbContext.Employees.Where(x=>x.EmployeeId==id).FirstOrDefault();
+        var target = _employeeDbContext.Employees.Where(x=>x.EmployeeModelId==id).FirstOrDefault();
 
 
         target.FirstName = updateEmployeeModel.FirstName;
