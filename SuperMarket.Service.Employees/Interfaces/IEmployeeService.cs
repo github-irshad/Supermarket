@@ -1,6 +1,6 @@
-using SuperMarket.Data.Employee.Models;
+using SuperMarket.Data.Employees.Models;
 
-namespace SuperMarket.Service.Employee.Interfaces
+namespace SuperMarket.Service.Employees.Interfaces
 {
   public interface IEmployeeService
     {

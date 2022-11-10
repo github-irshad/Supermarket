@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
-using SuperMarket.Service.Employee.Interfaces;
+using SuperMarket.Service.Employees.Interfaces;
 
-namespace SuperMarket.Service.Employee.Services
+namespace SuperMarket.Service.Employees.Services
 {
   public class DocumentService : IDocumentService
   {
