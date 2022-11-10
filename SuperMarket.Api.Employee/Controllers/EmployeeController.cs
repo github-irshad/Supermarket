@@ -23,12 +23,12 @@ namespace SuperMarket.Api.Employee.Controllers
       this.employeeService = employeeService;
     }
 
-    
+
 
     [HttpGet]
         public ActionResult GetAllEmployee()
         {
-            return new JsonResult(employeeManagement.GetAllEmployees()); 
+            return new JsonResult(employeeService.GetAllEmployees()); 
         }
 
 

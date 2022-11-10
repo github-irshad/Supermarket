@@ -1,7 +1,6 @@
 using Microsoft.EntityFrameworkCore;
-using SuperMarket.Data.Employee.Data;
-using SuperMarket.Api.Employee.Interfaces;
-using SuperMarket.Api.Employee.Repository;
+using SuperMarket.Service.Employee.Services;
+using SuperMarket.Service.Employee.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,7 +13,7 @@ builder.Services.AddSwaggerGen();
 
 
 builder.Services.AddDbContext<EmployeeDbContext>(options => options.UseNpgsql(builder.Configuration.GetConnectionString("SuperMarketDb")));
-builder.Services.AddScoped<IEmployeeManagement, EmployeeManagement>();
+builder.Services.AddScoped<IEmployeeService, EmployeeService>();
 
 var app = builder.Build();
 
