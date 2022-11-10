@@ -23,5 +23,10 @@ namespace SuperMarket.Service.Employee.Services
     {
       return employeeManagement.GetEmployeeById(id);
     }
+
+    public void UpdateEmployeeService(int id, UpdateEmployeeModel updateEmployeeModel)
+    {
+      throw new NotImplementedException();
+    }
   }
 }

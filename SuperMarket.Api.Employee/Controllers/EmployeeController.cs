@@ -42,7 +42,7 @@ namespace SuperMarket.Api.Employee.Controllers
         [HttpPost]
         public ActionResult AddNewEmployee(AddEmployeeModel addEmployeeModel)
         {
-            employeeManagement.AddNewEmployee(addEmployeeModel);
+            employeeService.AddNewEmployee(addEmployeeModel);
             return Ok("Added Successfully");
         }
 
@@ -50,14 +50,14 @@ namespace SuperMarket.Api.Employee.Controllers
 
         public ActionResult UpdateEmployee(int id,UpdateEmployeeModel updateEmployeeModel)
         {
-            employeeManagement.UpdateEmployee(id,updateEmployeeModel);
+            employeeService.UpdateEmployeeService(id,updateEmployeeModel);
             return Ok("Edited Successfully");
         }
 
         [HttpDelete]
         public ActionResult DeleteEmployee(int id)
         {
-            employeeManagement.DeleteEmployee(id);
+            employeeService.DeleteEmployee(id);
             return Ok("Deleted Successfully");
         }
 
@@ -65,7 +65,7 @@ namespace SuperMarket.Api.Employee.Controllers
         [HttpPost]
         public IActionResult UploadDocument(IFormFile files)
         {
-            employeeManagement.AddDocuments(files);
+            employeeService.AddDocuments(files);
             return Ok("Uploaded successfully");
         }
 
