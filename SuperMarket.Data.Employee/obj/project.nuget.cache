@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "116CVh0KR7qhYc/SXXFRDZZpTVgNWIf7mFzFfG6dgR8o1Bfvd0yaQsG5P0xrUUscfLSN3isfMvnpd46sB+8f3w==",
+  "dgSpecHash": "dmvnvYln46V9RvSSGRikopWuYl0JhsM/xEqlxSqaHF/gjbptBXLkK50Jd1iWjIzULCZCms7AwyvVm+WyD+mivQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\muhammed.irshad\\Desktop\\.NET\\SuperMarket\\SuperMarket.Data.Employee\\SuperMarket.Data.Employee.csproj",
   "expectedPackageFiles": [
@@ -22,6 +22,7 @@
     "C:\\Users\\muhammed.irshad\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.net.http.headers\\2.2.0\\microsoft.net.http.headers.2.2.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
+    "C:\\Users\\muhammed.irshad\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
     "C:\\Users\\muhammed.irshad\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.text.encodings.web\\4.5.0\\system.text.encodings.web.4.5.0.nupkg.sha512"
   ],

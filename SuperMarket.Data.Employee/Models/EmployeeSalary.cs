@@ -1,6 +1,8 @@
+using SuperMarket.Data.Employee.Common;
+
 namespace SuperMarket.Data.Employee.Models
 {
-  public class EmployeeSalary
+  public class EmployeeSalary : CommonProps
     {
         public int EmployeeSalaryId {get; set;}
         public int EmployeeId {get; set;}
