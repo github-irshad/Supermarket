@@ -1,8 +1,9 @@
 
 
+using Microsoft.AspNetCore.Http;
 using SuperMarket.Data.Employee.Models;
 
-namespace SuperMarket.Api.Employee.Interfaces
+namespace SuperMarket.Data.Employee.Interfaces
 {
   public interface IEmployeeManagement
     {

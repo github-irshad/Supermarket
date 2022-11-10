@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using SuperMarket.Api.Employee.Data;
+using SuperMarket.Data.Employee.Data;
 using SuperMarket.Api.Employee.Interfaces;
 using SuperMarket.Api.Employee.Repository;
 

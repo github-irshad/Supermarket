@@ -1,7 +1,8 @@
 
-using SuperMarket.Api.Employee.Interfaces;
+using SuperMarket.Data.Employee.Interfaces;
 using SuperMarket.Data.Employee.Data;
 using SuperMarket.Data.Employee.Models;
+using Microsoft.AspNetCore.Http;
 
 namespace SuperMarket.Api.Employee.Repository
 {

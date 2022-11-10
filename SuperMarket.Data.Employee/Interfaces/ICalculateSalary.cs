@@ -1,4 +1,4 @@
-namespace SuperMarket.Api.Employee.Interfaces
+namespace SuperMarket.Data.Employee.Interfaces
 {
   public interface ICalculateSalary
     {

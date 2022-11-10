@@ -1,4 +1,4 @@
-using SuperMarket.Api.Employee.Interfaces;
+using SuperMarket.Data.Employee.Interfaces;
 
 namespace SuperMarket.Api.Employee.Repository
 {

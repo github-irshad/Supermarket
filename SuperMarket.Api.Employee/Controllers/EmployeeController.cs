@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
-using SuperMarket.Api.Employee.Interfaces;
-using SuperMarket.Api.Employee.Models;
+// using SuperMarket.Api.Employee.Interfaces;
+// using SuperMarket.Api.Employee.Models;
+using SuperMarket.Service.Employee.Interfaces;
 
 namespace SuperMarket.Api.Employee.Controllers
 {
@@ -8,14 +9,23 @@ namespace SuperMarket.Api.Employee.Controllers
     [Route("api/[controller]")]
     public class EmployeeController : ControllerBase
     {
-        private readonly IEmployeeManagement employeeManagement;
+        // private readonly IEmployeeManagement employeeManagement;
 
-        public EmployeeController(IEmployeeManagement employeeManagement)
-        {
-        this.employeeManagement = employeeManagement;
-        }
+        // public EmployeeController(IEmployeeManagement employeeManagement)
+        // {
+        // this.employeeManagement = employeeManagement;
+        // }
 
-        [HttpGet]
+        private readonly IEmployeeService employeeService;
+
+    public EmployeeController(IEmployeeService employeeService)
+    {
+      this.employeeService = employeeService;
+    }
+
+    
+
+    [HttpGet]
         public ActionResult GetAllEmployee()
         {
             return new JsonResult(employeeManagement.GetAllEmployees()); 
