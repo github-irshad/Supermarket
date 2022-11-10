@@ -1,7 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using SuperMarket.Data.Employee.Interfaces;
 using SuperMarket.Data.Employee.Models;
 using SuperMarket.Service.Employee.Interfaces;
 
@@ -9,9 +6,22 @@ namespace SuperMarket.Service.Employee.Services
 {
   public class EmployeeService : IEmployeeService
   {
-    public IEnumerable<EmployeeModel> GetAllEmployees()
+
+    private readonly IEmployeeManagement employeeManagement;
+
+    public EmployeeService(IEmployeeManagement employeeManagement)
     {
-      throw new NotImplementedException();
+      this.employeeManagement = employeeManagement;
+    }
+
+    public IEnumerable<EmployeeModel> GetAllEmployeesService()
+    {
+      return employeeManagement.GetAllEmployees();
+    }
+
+    public EmployeeModel GetEmployeeByIdService(int id)
+    {
+      return employeeManagement.GetEmployeeById(id);
     }
   }
 }

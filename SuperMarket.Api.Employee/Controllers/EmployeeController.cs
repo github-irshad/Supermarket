@@ -28,14 +28,14 @@ namespace SuperMarket.Api.Employee.Controllers
     [HttpGet]
         public ActionResult GetAllEmployee()
         {
-            return new JsonResult(employeeService.GetAllEmployees()); 
+            return Ok(employeeService.GetAllEmployeesService()); 
         }
 
 
         [HttpGet("{id}")]
         public ActionResult GetEmployeeById(int id)
         {
-            var employee = employeeManagement.GetEmployeeById(id);
+            var employee = employeeService.GetEmployeeByIdService(id);
             return Ok(employee);
         }
 

@@ -4,6 +4,8 @@ namespace SuperMarket.Service.Employee.Interfaces
 {
   public interface IEmployeeService
     {
-        public IEnumerable<EmployeeModel>GetAllEmployees();
+        public IEnumerable<EmployeeModel>GetAllEmployeesService();
+
+        public EmployeeModel GetEmployeeByIdService(int id);
     }
 }
