@@ -1,4 +1,6 @@
-using SuperMarket.Api.Employee.Models;
+
+
+using SuperMarket.Data.Employee.Models;
 
 namespace SuperMarket.Api.Employee.Interfaces
 {

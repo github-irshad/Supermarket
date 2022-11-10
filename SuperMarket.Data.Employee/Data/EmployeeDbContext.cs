@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using SuperMarket.Api.Employee.Models;
 
-namespace SuperMarket.Api.Employee.Data
+namespace SuperMarket.Data.Employee.Data
 {
   public class EmployeeDbContext : DbContext
     {

@@ -1,4 +1,4 @@
-namespace SuperMarket.Api.Employee.Models
+namespace SuperMarket.Data.Employee.Models
 {
   public class User
     {

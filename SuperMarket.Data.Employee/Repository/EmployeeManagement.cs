@@ -1,6 +1,7 @@
-using SuperMarket.Api.Employee.Data;
+
 using SuperMarket.Api.Employee.Interfaces;
-using SuperMarket.Api.Employee.Models;
+using SuperMarket.Data.Employee.Data;
+using SuperMarket.Data.Employee.Models;
 
 namespace SuperMarket.Api.Employee.Repository
 {

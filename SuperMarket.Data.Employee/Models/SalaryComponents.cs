@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace SuperMarket.Api.Employee.Models
+namespace SuperMarket.Data.Employee.Models
 {
     public class SalaryComponents
     {

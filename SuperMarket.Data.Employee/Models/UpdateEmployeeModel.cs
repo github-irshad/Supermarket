@@ -1,6 +1,11 @@
-namespace SuperMarket.Api.Employee.Models
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace SuperMarket.Data.Employee.Models
 {
-  public class AddEmployeeModel
+    public class UpdateEmployeeModel
     {
         public string FirstName {get; set;}
         public string LastName {get; set;}
