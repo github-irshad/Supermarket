@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using SuperMarket.Data.Employee.Models;
 // using SuperMarket.Api.Employee.Interfaces;
 // using SuperMarket.Api.Employee.Models;
 using SuperMarket.Service.Employee.Interfaces;
@@ -17,10 +18,12 @@ namespace SuperMarket.Api.Employee.Controllers
         // }
 
         private readonly IEmployeeService employeeService;
+        private readonly IDocumentService documentService;
 
-    public EmployeeController(IEmployeeService employeeService)
+    public EmployeeController(IEmployeeService employeeService, IDocumentService documentService)
     {
       this.employeeService = employeeService;
+      this.documentService = documentService;
     }
 
 
@@ -42,7 +45,7 @@ namespace SuperMarket.Api.Employee.Controllers
         [HttpPost]
         public ActionResult AddNewEmployee(AddEmployeeModel addEmployeeModel)
         {
-            employeeService.AddNewEmployee(addEmployeeModel);
+            employeeService.AddNewEmployeeService(addEmployeeModel);
             return Ok("Added Successfully");
         }
 
@@ -57,7 +60,7 @@ namespace SuperMarket.Api.Employee.Controllers
         [HttpDelete]
         public ActionResult DeleteEmployee(int id)
         {
-            employeeService.DeleteEmployee(id);
+            employeeService.DeleteEmployeeService(id);
             return Ok("Deleted Successfully");
         }
 
@@ -65,7 +68,7 @@ namespace SuperMarket.Api.Employee.Controllers
         [HttpPost]
         public IActionResult UploadDocument(IFormFile files)
         {
-            employeeService.AddDocuments(files);
+            documentService.AddDocumentsService(files);
             return Ok("Uploaded successfully");
         }
 
