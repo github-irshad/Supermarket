@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
-using SuperMarket.Data.Employee.Models;
+
+using SuperMarket.Data.Employees.Models;
 
 namespace SuperMarket.Data.Employees.Data
 {
