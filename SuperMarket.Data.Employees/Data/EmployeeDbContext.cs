@@ -8,8 +8,15 @@ namespace SuperMarket.Data.Employees.Data
     {
         public EmployeeDbContext(DbContextOptions options):base(options)
         {
+
             
         }
+
+    // protected override void OnModelCreating(ModelBuilder modelBuilder)
+    // {
+    //   modelBuilder.Entity<EmployeeSalary>()
+    //     .HasOne<Employee>(x=>x.Employees).WithMany(p=>p.employeeSalary).HasForeignKey;
+    // }
         
         public DbSet<Employee> Employees {get; set;}
         public DbSet<User> Users {get; set;}

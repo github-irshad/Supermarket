@@ -10,22 +10,23 @@ namespace SuperMarket.Data.Employees.Models
     // [ForeignKey]
     [Column("employee_id", TypeName = EntityDataType.EntityDataType.IntType)]
     public int EmployeeId { get; set; }
-    public Employee employee {get; set;}
 
 
-    
+
 
     // [ForeignKey]
     [Column("salary_component_id", TypeName = EntityDataType.EntityDataType.IntType)]
     public int SalaryComponentId { get; set; }
 
 
-    [Column("amount", TypeName = EntityDataType.EntityDataType.IntType)]
-    public int Amount { get; set; }
+
+    [Column("amount", TypeName = EntityDataType.EntityDataType.DoubleType)]
+    public double Amount { get; set; }
 
 
-    [Column("net_salary", TypeName = EntityDataType.EntityDataType.IntType)]
-    public int NetSalary { get; set; }
+    public ICollection<Employee> Employees {get; set;}
+    public ICollection<SalaryComponents> SalaryComponents{get; set;}
+   
 
     
     
