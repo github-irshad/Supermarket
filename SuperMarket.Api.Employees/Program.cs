@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using SuperMarket.Service.Employee.Services;
-using SuperMarket.Service.Employee.Interfaces;
-using SuperMarket.Data.Employee.Data;
+using SuperMarket.Service.Employees.Services;
+using SuperMarket.Service.Employees.Interfaces;
+using SuperMarket.Data.Employees.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 

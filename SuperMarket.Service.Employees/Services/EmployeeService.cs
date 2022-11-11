@@ -14,10 +14,10 @@ namespace SuperMarket.Service.Employees.Services
       this.employeeManagement = employeeManagement;
     }
 
-    public void AddNewEmployeeService(AddEmployeeModel addEmployeeModel)
-    {
-      employeeManagement.AddNewEmployee(addEmployeeModel);
-    }
+    // public void AddNewEmployeeService(AddEmployeeModel addEmployeeModel)
+    // {
+    //   employeeManagement.AddNewEmployee(addEmployeeModel);
+    // }
 
     public IEnumerable<Employee> GetAllEmployeesService()
     {
@@ -34,10 +34,10 @@ namespace SuperMarket.Service.Employees.Services
       throw new NotImplementedException();
     }
 
-    public void UpdateEmployeeService(int id, UpdateEmployeeModel updateEmployeeModel)
-    {
-      employeeManagement.UpdateDocument(id);
-    }
+    // public void UpdateEmployeeService(int id, UpdateEmployeeModel updateEmployeeModel)
+    // {
+    //   employeeManagement.UpdateDocument(id);
+    // }
 
     
   }

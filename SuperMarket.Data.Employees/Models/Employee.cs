@@ -9,8 +9,8 @@ namespace SuperMarket.Data.Employees.Models
   {
 
 
-    [Column("employee_id", TypeName = EntityDataType.EntityDataType.BigIntType)]
-    public int EmployeeId { get; set; }
+    // [Column("employee_id", TypeName = EntityDataType.EntityDataType.BigIntType)]
+    // public int EmployeeId { get; set; }
 
 
     [Column("firstName", TypeName =EntityDataType.EntityDataType.StringType )]
@@ -21,23 +21,23 @@ namespace SuperMarket.Data.Employees.Models
     public string? LastName { get; set; }
 
 
-    [Column("Address", TypeName = EntityDataType.EntityDataType.StringType)]
+    [Column("address", TypeName = EntityDataType.EntityDataType.StringType)]
     public string? Address { get; set; }
 
 
-    [Column("Aadhar_number", TypeName =EntityDataType.EntityDataType.IntType)]
-    public int AadharNumber { get; set; }
+    [Column("aadhar_number", TypeName =EntityDataType.EntityDataType.StringType)]
+    public string? AadharNumber { get; set; }
 
 
-    [Column("Aadhar_Document", TypeName = EntityDataType.EntityDataType.StringType)]
+    [Column("aadhar_document", TypeName = EntityDataType.EntityDataType.StringType)]
     public string? AadharDocument { get; set; }
     
 
-    [Column("Verification", TypeName = EntityDataType.EntityDataType.BoolType)]
+    [Column("verification", TypeName = EntityDataType.EntityDataType.BoolType)]
     public bool isVerified { get; set; }
 
 
-    [Column("Designation", TypeName = EntityDataType.EntityDataType.StringType)]
+    [Column("designation", TypeName = EntityDataType.EntityDataType.StringType)]
     public string? Designation { get; set; }
   }
 }

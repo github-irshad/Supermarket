@@ -36,11 +36,11 @@ namespace SuperMarket.Api.Employees.Repository
     }*/
 
 
-    public void DeleteEmployee(int id)
-    {
-        var result = _employeeDbContext.Employees.Where(x=>x.EmployeeId==id).FirstOrDefault();
-      _employeeDbContext.Employees.Remove(result);
-    }
+    // public void DeleteEmployee(int id)
+    // {
+    //     var result = _employeeDbContext.Employees.Where(x=>x.EmployeeId==id).FirstOrDefault();
+    //   _employeeDbContext.Employees.Remove(result);
+    // }
 
 
     public IEnumerable<Employee> GetAllEmployees()
@@ -69,10 +69,10 @@ namespace SuperMarket.Api.Employees.Repository
     }
     */
 
-    public Employee GetEmployeeById(int id)
-    {
-      return _employeeDbContext.Employees.Where(x=>x.EmployeeId==id).FirstOrDefault();
-    }
+    // public Employee GetEmployeeById(int id)
+    // {
+    //   return _employeeDbContext.Employees.Where(x=>x.EmployeeId==id).FirstOrDefault();
+    // }
 
     //Document CRUD Operations
     public string GetDocumentById(int Id)

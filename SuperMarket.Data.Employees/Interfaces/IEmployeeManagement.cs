@@ -8,8 +8,8 @@ namespace SuperMarket.Data.Employees.Interfaces
   public interface IEmployeeManagement
     {
         public IEnumerable<Employee> GetAllEmployees();
-        public Employee GetEmployeeById(int id);
-        public void DeleteEmployee(int id);
+        // public Employee GetEmployeeById(int id);
+        // public void DeleteEmployee(int id);
         // public void AddNewEmployee(AddEmployeeModel employee);
         // public Employee UpdateEmployee(int id, UpdateEmployeeModel updateEmployeeModel);
 

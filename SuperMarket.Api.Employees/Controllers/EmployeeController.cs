@@ -1,13 +1,12 @@
 using Microsoft.AspNetCore.Mvc;
-using SuperMarket.Data.Employee.Models;
 // using SuperMarket.Api.Employee.Interfaces;
 // using SuperMarket.Api.Employee.Models;
-using SuperMarket.Service.Employee.Interfaces;
+using SuperMarket.Service.Employees.Interfaces;
 
 namespace SuperMarket.Api.Employees.Controllers
 {
   [ApiController]
-    [Route("api/[controller]")]
+    [Route("Employee")]
     public class EmployeeController : ControllerBase
     {
         // private readonly IEmployeeManagement employeeManagement;
@@ -42,20 +41,20 @@ namespace SuperMarket.Api.Employees.Controllers
             return Ok(employee);
         }
 
-        [HttpPost]
-        public ActionResult AddNewEmployee(AddEmployeeModel addEmployeeModel)
-        {
-            employeeService.AddNewEmployeeService(addEmployeeModel);
-            return Ok("Added Successfully");
-        }
+        // [HttpPost]
+        // public ActionResult AddNewEmployee(AddEmployeeModel addEmployeeModel)
+        // {
+        //     employeeService.AddNewEmployeeService(addEmployeeModel);
+        //     return Ok("Added Successfully");
+        // }
 
-        [HttpPut("{id}")]
+        // [HttpPut("{id}")]
 
-        public ActionResult UpdateEmployee(int id,UpdateEmployeeModel updateEmployeeModel)
-        {
-            employeeService.UpdateEmployeeService(id,updateEmployeeModel);
-            return Ok("Edited Successfully");
-        }
+        // public ActionResult UpdateEmployee(int id,UpdateEmployeeModel updateEmployeeModel)
+        // {
+        //     employeeService.UpdateEmployeeService(id,updateEmployeeModel);
+        //     return Ok("Edited Successfully");
+        // }
 
         [HttpDelete]
         public ActionResult DeleteEmployee(int id)
