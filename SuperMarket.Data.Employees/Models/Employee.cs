@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations.Schema;
 using SuperMarket.Data.Employees.Common;
-using SuperMarket.Data.Employees.EntityDataType;
+
 
 namespace SuperMarket.Data.Employees.Models
 {

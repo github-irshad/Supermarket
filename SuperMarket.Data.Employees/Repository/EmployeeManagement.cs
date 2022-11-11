@@ -18,7 +18,7 @@ namespace SuperMarket.Api.Employees.Repository
 
     
 
-    public void AddNewEmployee(AddEmployeeModel _newEmployee)
+    /*public void AddNewEmployee(AddEmployeeModel _newEmployee)
     {
         var newEmployee = new Employee()
         {
@@ -33,7 +33,7 @@ namespace SuperMarket.Api.Employees.Repository
         };
       _employeeDbContext.Employees.Add(newEmployee);
       _employeeDbContext.SaveChanges();
-    }
+    }*/
 
 
     public void DeleteEmployee(int id)
@@ -48,6 +48,7 @@ namespace SuperMarket.Api.Employees.Repository
       return _employeeDbContext.Employees.ToList();
     }
 
+    /*
     public Employee UpdateEmployee(int id,UpdateEmployeeModel updateEmployeeModel)
     {
         var target = _employeeDbContext.Employees.Where(x=>x.EmployeeModelId==id).FirstOrDefault();
@@ -66,6 +67,7 @@ namespace SuperMarket.Api.Employees.Repository
         return target;
 
     }
+    */
 
     public Employee GetEmployeeById(int id)
     {

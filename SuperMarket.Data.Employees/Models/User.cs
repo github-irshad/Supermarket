@@ -1,5 +1,6 @@
 using SuperMarket.Data.Employees.Common;
 
+
 namespace SuperMarket.Data.Employees.Models
 {
   public class User : CommonProps
@@ -8,7 +9,9 @@ namespace SuperMarket.Data.Employees.Models
         public string UserName {get; set;}
 
         public string Password {get; set;}
-        public  string UserType {get; set;}
+        public  UserType UserType {get; set;}
+
+
 
     }
 }
