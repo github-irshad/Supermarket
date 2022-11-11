@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations;
 using SuperMarket.Data.Employees.Common;
 
 
@@ -5,10 +6,13 @@ namespace SuperMarket.Data.Employees.Models
 {
   public class User : CommonProps
     {
-        public int Id {get; set;}
-        public string UserName {get; set;}
+        public int UserId {get; set;}
 
-        public string Password {get; set;}
+        // [Required]
+        public string? UserName {get; set;}
+
+        // [Required]
+        public string? Password {get; set;}
         public  UserType UserType {get; set;}
 
 
