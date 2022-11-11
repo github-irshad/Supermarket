@@ -1,0 +1,12 @@
+C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Data.Employees\bin\Debug\net6.0\SuperMarket.Data.Employees.deps.json
+C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Data.Employees\bin\Debug\net6.0\SuperMarket.Data.Employees.dll
+C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Data.Employees\bin\Debug\net6.0\SuperMarket.Data.Employees.pdb
+C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Data.Employees\obj\Debug\net6.0\SuperMarket.Data.Employees.csproj.AssemblyReference.cache
+C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Data.Employees\obj\Debug\net6.0\SuperMarket.Data.Employees.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Data.Employees\obj\Debug\net6.0\SuperMarket.Data.Employees.AssemblyInfoInputs.cache
+C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Data.Employees\obj\Debug\net6.0\SuperMarket.Data.Employees.AssemblyInfo.cs
+C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Data.Employees\obj\Debug\net6.0\SuperMarket.Data.Employees.csproj.CoreCompileInputs.cache
+C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Data.Employees\obj\Debug\net6.0\SuperMarket.Data.Employees.dll
+C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Data.Employees\obj\Debug\net6.0\refint\SuperMarket.Data.Employees.dll
+C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Data.Employees\obj\Debug\net6.0\SuperMarket.Data.Employees.pdb
+C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Data.Employees\obj\Debug\net6.0\ref\SuperMarket.Data.Employees.dll

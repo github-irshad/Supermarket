@@ -21,5 +21,8 @@ namespace SuperMarket.Data.Employees.Models
     )]
     public string? Description { get; set; }
 
+    // 1-1 Relation
+    public EmployeeSalary employeeSalary {get; set;}
+
   }
 }

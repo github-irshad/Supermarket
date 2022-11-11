@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
@@ -9,6 +10,7 @@ namespace SuperMarket.Data.Employees.Common
   public class CommonProps
   {
 
+    [Key]
     [Column("id", TypeName = EntityDataType.EntityDataType.IntType)]
     public int Id { get; set; }
 

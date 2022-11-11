@@ -39,5 +39,9 @@ namespace SuperMarket.Data.Employees.Models
 
     [Column("designation", TypeName = EntityDataType.EntityDataType.StringType)]
     public string? Designation { get; set; }
+
+
+  // 1-1 Relation
+    public EmployeeSalary employeeSalary {get; set;}
   }
 }
