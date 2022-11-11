@@ -1,13 +1,26 @@
+using System.ComponentModel.DataAnnotations.Schema;
 using SuperMarket.Data.Employees.Common;
 
 namespace SuperMarket.Data.Employees.Models
 {
+  [Table("SalaryComponents")]
   public class SalaryComponents : CommonProps
-    {
-        public int SalaryComponentsId {get; set;}
-        public string? ComponentName {get;set;}
-        public string? ComponentType {get; set;}
-        public string? Description {get; set;}
-        
-    }
+  {
+    [Column("User_id", TypeName = EntityDataType.EntityDataType.IntType)]
+    public int SalaryComponentsId { get; set; }
+
+
+    [Column("User_id", TypeName = EntityDataType.EntityDataType.StringType)]
+    public string? ComponentName { get; set; }
+
+
+    [Column("User_id", TypeName = EntityDataType.EntityDataType.StringType)]
+    public string? ComponentType { get; set; }
+
+    
+    [Column("User_id", TypeName = EntityDataType.EntityDataType.StringType
+    )]
+    public string? Description { get; set; }
+
+  }
 }
