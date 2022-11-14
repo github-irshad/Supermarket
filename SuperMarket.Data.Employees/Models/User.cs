@@ -10,7 +10,7 @@ namespace SuperMarket.Data.Employees.Models
   {
 
     
-    [Column("userName", TypeName = EntityDataType.EntityDataType.StringType)]
+    [Column("user_name", TypeName = EntityDataType.EntityDataType.StringType)]
     public string UserName { get; set; }
 
 
