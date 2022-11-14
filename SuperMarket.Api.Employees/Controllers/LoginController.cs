@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using SuperMarket.Data.Employees.Data;
 using SuperMarket.Data.Employees.Models;
+using SuperMarket.Service.Employees.Interfaces;
 
 namespace SuperMarket.Api.Employees.Controllers
 {
@@ -14,9 +15,12 @@ namespace SuperMarket.Api.Employees.Controllers
     {
         private readonly EmployeeDbContext employeeDbContext;
 
-    public LoginController(EmployeeDbContext employeeDbContext)
+        private readonly ILoginService loginService;
+
+    public LoginController(EmployeeDbContext employeeDbContext,ILoginService loginService )
     {
       this.employeeDbContext = employeeDbContext;
+      this.loginService = loginService;
     }
 
     [HttpPost]
