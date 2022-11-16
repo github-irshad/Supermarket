@@ -18,22 +18,25 @@ namespace SuperMarket.Api.Employees.Repository
 
     
 
-    /*public void AddNewEmployee(AddEmployeeModel _newEmployee)
+
+
+
+    public void AddNewUser(User _newUser)
     {
-        var newEmployee = new Employee()
-        {
-            
-            FirstName = _newEmployee.FirstName,
-            LastName = _newEmployee.LastName,
-            AadharDocument = _newEmployee.AadharDocument,
-            AadharNumber = _newEmployee.AadharNumber,
-            Address = _newEmployee.Address,
-            Designation = _newEmployee.Designation,
-            isVerified = false
-        };
-      _employeeDbContext.Employees.Add(newEmployee);
+      User newUser = new User(){
+        Id = _newUser.Id,
+        Created_at = _newUser.Created_at,
+        Created_by = _newUser.Created_by,
+        Password = _newUser.Password,
+        Updated_at = _newUser.Updated_at,
+        Updated_by = _newUser.Updated_by,
+        UserType = _newUser.UserType,
+        UserName = _newUser.UserName
+      };
+        
+      _employeeDbContext.Users.Add(newUser);
       _employeeDbContext.SaveChanges();
-    }*/
+    }
 
 
     // public void DeleteEmployee(int id)
@@ -69,10 +72,10 @@ namespace SuperMarket.Api.Employees.Repository
     }
     */
 
-    // public Employee GetEmployeeById(int id)
-    // {
-    //   return _employeeDbContext.Employees.Where(x=>x.EmployeeId==id).FirstOrDefault();
-    // }
+    public Employee GetEmployeeById(int id)
+    {
+      return _employeeDbContext.Employees.Where(x=>x.Id == id).FirstOrDefault();
+    }
 
     //Document CRUD Operations
     public string GetDocumentById(int Id)

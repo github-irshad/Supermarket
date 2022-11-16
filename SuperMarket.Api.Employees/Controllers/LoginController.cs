@@ -9,39 +9,55 @@ using SuperMarket.Service.Employees.Interfaces;
 
 namespace SuperMarket.Api.Employees.Controllers
 {
-    [ApiController]
-    [Route("login")]
-    public class LoginController : ControllerBase
-    {
-        private readonly EmployeeDbContext employeeDbContext;
+  [ApiController]
+  [Route("login")]
+  public class LoginController : ControllerBase
+  {
 
-        private readonly ILoginService loginService;
 
-    public LoginController(EmployeeDbContext employeeDbContext,ILoginService loginService )
+    private readonly ILoginService loginService;
+
+
+    public LoginController()
     {
-      this.employeeDbContext = employeeDbContext;
+
       this.loginService = loginService;
+
     }
 
     [HttpPost]
 
-        public ActionResult UserLogin(User login_obj){
-            if (ModelState.IsValid){
-                if ((employeeDbContext.Users.Any(x=>x.UserName == login_obj.UserName && x.Password == login_obj.Password))){
-                    return RedirectToAction("UserDashboard");
-                }
-                else{
-                    return NotFound("Invalid Login Credentials");
-                }
-            }
-            else{
-                return Content("Model Mismatch");
-            }
+    public ActionResult UserLogin([FromForm] User login_obj)
+    {
+      if (ModelState.IsValid)
+      {
+        if (loginService.UserLogin(login_obj))
+        {
+          // return RedirectToAction("UserDashboard");
+          return Ok();
         }
+        return Ok();
+      }
+      else
+      {
+        return Content("Model is not valid");
+      }
 
-        [HttpGet]
-        public ActionResult UserDashboard(User login_obj){
-            return Ok(employeeDbContext.Employees.Where(x=>x.Id == login_obj.Id).FirstOrDefault());
-        }
     }
+
+
+    [HttpGet]
+    public ActionResult<Employee> User_Dash([FromForm] User login_obj)
+    {
+      if(ModelState.IsValid){
+        return loginService.EmployeeDashboard(login_obj);
+      }else{
+        return Content("Model Mismatch");
+      }
+    }
+
+
+
+
+  }
 }

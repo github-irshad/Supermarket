@@ -7,17 +7,17 @@ namespace SuperMarket.Service.Employees.Services
   public class EmployeeService : IEmployeeService
   {
 
-    // private readonly IEmployeeManagement employeeManagement;
+    private readonly IEmployeeManagement employeeManagement;
 
-    // public EmployeeService(IEmployeeManagement employeeManagement)
-    // {
-    //   this.employeeManagement = employeeManagement;
-    // }
+    public EmployeeService(IEmployeeManagement employeeManagement)
+    {
+      this.employeeManagement = employeeManagement;
+    }
 
-    // // public void AddNewEmployeeService(AddEmployeeModel addEmployeeModel)
-    // // {
-    // //   employeeManagement.AddNewEmployee(addEmployeeModel);
-    // // }
+    public void UserAddService(User user)
+    {
+      employeeManagement.AddNewUser(user);
+    }
 
     // public IEnumerable<Employee> GetAllEmployeesService()
     // {

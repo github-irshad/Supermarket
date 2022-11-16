@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using SuperMarket.Data.Employees.Data;
 // using SuperMarket.Api.Employee.Interfaces;
 // using SuperMarket.Api.Employee.Models;
 using SuperMarket.Service.Employees.Interfaces;
@@ -9,6 +10,18 @@ namespace SuperMarket.Api.Employees.Controllers
     [Route("Employee")]
     public class EmployeeController : ControllerBase
     {
+
+      private readonly EmployeeDbContext employeeDbContext;
+
+      public EmployeeController(EmployeeDbContext employeeDbContext){
+
+        this.employeeDbContext = employeeDbContext;
+      }
+
+      
+
+
+
     //     // private readonly IEmployeeManagement employeeManagement;
 
     //     // public EmployeeController(IEmployeeManagement employeeManagement)
@@ -70,6 +83,8 @@ namespace SuperMarket.Api.Employees.Controllers
     //         documentService.AddDocumentsService(files);
     //         return Ok("Uploaded successfully");
     //     }
+
+          
 
     }
 }
