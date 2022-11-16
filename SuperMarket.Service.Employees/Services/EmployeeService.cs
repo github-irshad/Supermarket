@@ -14,20 +14,23 @@ namespace SuperMarket.Service.Employees.Services
       this.employeeManagement = employeeManagement;
     }
 
+
+    
+
     public void UserAddService(User user)
     {
       employeeManagement.AddNewUser(user);
     }
 
-    // public IEnumerable<Employee> GetAllEmployeesService()
-    // {
-    //   return employeeManagement.GetAllEmployees();
-    // }
+    public IEnumerable<Employee> GetAllEmployeesService()
+    {
+      return employeeManagement.GetAllEmployees();
+    }
 
-    // // public Employee GetEmployeeByIdService(int id)
-    // // {
-    // //   return employeeManagement.GetEmployeeById(id);
-    // // }
+    public Employee EmployeeDashboard(User user){
+      int user_id = user.Id;
+      return employeeManagement.GetEmployeeById(user_id);
+    }
 
     // public void DeleteEmployeeService(int id)
     // {

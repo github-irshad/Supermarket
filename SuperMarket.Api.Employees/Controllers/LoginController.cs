@@ -16,6 +16,7 @@ namespace SuperMarket.Api.Employees.Controllers
 
 
     private readonly ILoginService loginService;
+    private readonly IEmployeeService employeeService;
 
 
     public LoginController()
@@ -33,8 +34,8 @@ namespace SuperMarket.Api.Employees.Controllers
       {
         if (loginService.UserLogin(login_obj))
         {
-          // return RedirectToAction("UserDashboard");
-          return Ok();
+          return RedirectToAction("UserDashboard", "Employee", new { area = "" });
+          // return Ok();
         }
         return Ok();
       }
@@ -46,15 +47,8 @@ namespace SuperMarket.Api.Employees.Controllers
     }
 
 
-    [HttpGet]
-    public ActionResult<Employee> User_Dash([FromForm] User login_obj)
-    {
-      if(ModelState.IsValid){
-        return loginService.EmployeeDashboard(login_obj);
-      }else{
-        return Content("Model Mismatch");
-      }
-    }
+    
+    
 
 
 

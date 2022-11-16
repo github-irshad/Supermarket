@@ -9,7 +9,7 @@ namespace SuperMarket.Service.Employees.Interfaces
     public interface ILoginService
     {
         public bool UserLogin(User login_obj);
-        public Employee EmployeeDashboard(User user);
+        
         
     }
 }
