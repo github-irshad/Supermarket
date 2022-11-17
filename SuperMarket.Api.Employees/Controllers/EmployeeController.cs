@@ -19,30 +19,40 @@ namespace SuperMarket.Api.Employees.Controllers
 
     [HttpGet("All")]
 
-    public IEnumerable<Employee> GetAllEmployees()
+    public ActionResult<IEnumerable<Employee>> GetAllEmployees()
     {
-      return employeeService.GetAllEmployeesService();
+      return Ok (employeeService.GetAllEmployeesService());
     }
 
     [HttpGet("{id}")]
     public ActionResult<Employee> GetIndividualEmployee(int id)
     {
-      if (ModelState.IsValid)
+      try
       {
         return employeeService.EmployeeDashboard(id);
       }
-      else
+      catch (System.Exception)
       {
-        return Content("Model Mismatch");
+        
+        return NotFound();
       }
     }
 
     [HttpPost("Add")]
 
-    public ActionResult AddNewEmployee(Employee newEmployee)
+    public ActionResult AddNewEmployee([FromForm]Employee newEmployee)
     {
-      employeeService.NewEmployee(newEmployee);
+      try
+      {
+        employeeService.NewEmployee(newEmployee);
       return Ok("Added successfully");
+      }
+      catch (System.Exception)
+      {
+        
+        // throw;
+        return new BadRequestResult();
+      }
     }
 
 
