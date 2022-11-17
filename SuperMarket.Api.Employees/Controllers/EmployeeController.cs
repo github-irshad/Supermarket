@@ -21,7 +21,7 @@ namespace SuperMarket.Api.Employees.Controllers
 
     public ActionResult<IEnumerable<Employee>> GetAllEmployees()
     {
-      return Ok (employeeService.GetAllEmployeesService());
+      return Ok(employeeService.GetAllEmployeesService());
     }
 
     [HttpGet("{id}")]
@@ -33,23 +33,23 @@ namespace SuperMarket.Api.Employees.Controllers
       }
       catch (System.Exception)
       {
-        
+
         return NotFound();
       }
     }
 
     [HttpPost("Add")]
 
-    public ActionResult AddNewEmployee([FromForm]Employee newEmployee)
+    public ActionResult AddNewEmployee([FromForm] Employee newEmployee)
     {
       try
       {
         employeeService.NewEmployee(newEmployee);
-      return Ok("Added successfully");
+        return Ok("Added successfully");
       }
       catch (System.Exception)
       {
-        
+
         // throw;
         return new BadRequestResult();
       }

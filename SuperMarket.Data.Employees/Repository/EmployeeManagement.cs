@@ -16,15 +16,15 @@ namespace SuperMarket.Api.Employees.Repository
       _employeeDbContext = employeeDbContext;
     }
 
-    
+
 
 
 
 
     public void AddNewEmployee(Employee newEmployee)
     {
-     
-        
+
+
       _employeeDbContext.Employees.Add(newEmployee);
       _employeeDbContext.SaveChanges();
     }
@@ -65,7 +65,7 @@ namespace SuperMarket.Api.Employees.Repository
 
     public Employee GetEmployeeById(int id)
     {
-      return _employeeDbContext.Employees.Where(x=>x.Id == id).FirstOrDefault();
+      return _employeeDbContext.Employees.Where(x => x.Id == id).FirstOrDefault();
     }
 
     //Document CRUD Operations
@@ -80,26 +80,28 @@ namespace SuperMarket.Api.Employees.Repository
       throw new NotImplementedException();
     }
 
-    
-        public void DeleteDocument(int Id)
+
+    public void DeleteDocument(int Id)
     {
       throw new NotImplementedException();
     }
 
     public void AddDocuments(IFormFile files)
     {
-      var path = Path.Combine(Directory.GetCurrentDirectory(),"Documents");
+      var path = Path.Combine(Directory.GetCurrentDirectory(), "Documents");
 
-            if (!Directory.Exists(path)){
-                Directory.CreateDirectory(path);
+      if (!Directory.Exists(path))
+      {
+        Directory.CreateDirectory(path);
 
-            }
+      }
 
-            var filePath = Path.Combine(path,files.FileName);
+      var filePath = Path.Combine(path, files.FileName);
 
-            using(var filestream = new FileStream (filePath,FileMode.Create)){
-                files.CopyTo(filestream);
-            }
+      using (var filestream = new FileStream(filePath, FileMode.Create))
+      {
+        files.CopyTo(filestream);
+      }
     }
 
   }
