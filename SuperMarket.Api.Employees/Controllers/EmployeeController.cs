@@ -17,12 +17,16 @@ namespace SuperMarket.Api.Employees.Controllers
       this.employeeService = employeeService;
     }
 
+
+
     [HttpGet("All")]
 
     public ActionResult<IEnumerable<Employee>> GetAllEmployees()
     {
       return Ok(employeeService.GetAllEmployeesService());
     }
+
+
 
     [HttpGet("{id}")]
     public ActionResult<Employee> GetIndividualEmployee(int id)
@@ -37,6 +41,8 @@ namespace SuperMarket.Api.Employees.Controllers
         return NotFound();
       }
     }
+
+    
 
     [HttpPost("Add")]
 
@@ -54,11 +60,6 @@ namespace SuperMarket.Api.Employees.Controllers
         return new BadRequestResult();
       }
     }
-
-
-
-
-
 
   }
 }
