@@ -15,11 +15,11 @@ namespace SuperMarket.Service.Employees.Services
     }
 
 
-    
 
-    public void UserAddService(User user)
+
+    public void NewEmployee(Employee employee)
     {
-      employeeManagement.AddNewUser(user);
+      employeeManagement.AddNewEmployee(employee);
     }
 
     public IEnumerable<Employee> GetAllEmployeesService()
@@ -27,9 +27,10 @@ namespace SuperMarket.Service.Employees.Services
       return employeeManagement.GetAllEmployees();
     }
 
-    public Employee EmployeeDashboard(User user){
-      int user_id = user.Id;
-      return employeeManagement.GetEmployeeById(user_id);
+    public Employee EmployeeDashboard(int id)
+    {
+
+      return employeeManagement.GetEmployeeById(id);
     }
 
     // public void DeleteEmployeeService(int id)
@@ -42,6 +43,6 @@ namespace SuperMarket.Service.Employees.Services
     // //   employeeManagement.UpdateDocument(id);
     // // }
 
-    
+
   }
 }

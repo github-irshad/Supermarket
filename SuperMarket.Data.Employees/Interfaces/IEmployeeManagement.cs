@@ -10,7 +10,7 @@ namespace SuperMarket.Data.Employees.Interfaces
         public IEnumerable<Employee> GetAllEmployees();
         public Employee GetEmployeeById(int id);
         // public void DeleteEmployee(int id);
-        public void AddNewUser(User user);
+        public void AddNewEmployee(Employee newEmployee);
         // public Employee UpdateEmployee(int id, UpdateEmployeeModel updateEmployeeModel);
 
 

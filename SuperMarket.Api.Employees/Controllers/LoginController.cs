@@ -1,9 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using SuperMarket.Data.Employees.Data;
 using SuperMarket.Data.Employees.Models;
 using SuperMarket.Service.Employees.Interfaces;
 
@@ -16,10 +11,10 @@ namespace SuperMarket.Api.Employees.Controllers
 
 
     private readonly ILoginService loginService;
-    private readonly IEmployeeService employeeService;
+    
 
 
-    public LoginController()
+    public LoginController(ILoginService loginService)
     {
 
       this.loginService = loginService;
@@ -34,10 +29,9 @@ namespace SuperMarket.Api.Employees.Controllers
       {
         if (loginService.UserLogin(login_obj))
         {
-          return RedirectToAction("UserDashboard", "Employee", new { area = "" });
-          // return Ok();
+          return Ok();
         }
-        return Ok();
+          return Unauthorized();
       }
       else
       {

@@ -14,13 +14,13 @@ namespace SuperMarket.Service.Employees.Services
 
     private readonly ILoginRepository loginRepository;
     private readonly IEmployeeManagement employeeManagement;
-    
-    
+
+
     public LoginService(ILoginRepository loginRepository, IEmployeeManagement employeeManagement)
     {
       this.loginRepository = loginRepository;
-      this.employeeManagement = employeeManagement;     
-      
+      this.employeeManagement = employeeManagement;
+
     }
 
 
@@ -30,13 +30,14 @@ namespace SuperMarket.Service.Employees.Services
       return loginRepository.LoginCheck(login_obj);
     }
 
-    public Employee EmployeeDashboard(User user){
+    public Employee EmployeeDashboard(User user)
+    {
       int user_id = user.Id;
       return employeeManagement.GetEmployeeById(user_id);
     }
 
-    
 
-    
+
+
   }
 }

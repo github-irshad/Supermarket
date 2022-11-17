@@ -6,11 +6,11 @@ namespace SuperMarket.Service.Employees.Interfaces
     {
         public IEnumerable<Employee>GetAllEmployeesService();
 
-        public Employee EmployeeDashboard(User user);
+        public Employee EmployeeDashboard(int id);
 
         // // public void UpdateEmployeeService(int id,UpdateEmployeeModel updateEmployeeModel);
 
-        public void UserAddService(User user);
+        public void NewEmployee(Employee employee);
 
         // public void DeleteEmployeeService(int id);
     }

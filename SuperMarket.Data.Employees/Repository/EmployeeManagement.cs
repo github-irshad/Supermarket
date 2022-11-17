@@ -21,20 +21,11 @@ namespace SuperMarket.Api.Employees.Repository
 
 
 
-    public void AddNewUser(User _newUser)
+    public void AddNewEmployee(Employee newEmployee)
     {
-      User newUser = new User(){
-        Id = _newUser.Id,
-        Created_at = _newUser.Created_at,
-        Created_by = _newUser.Created_by,
-        Password = _newUser.Password,
-        Updated_at = _newUser.Updated_at,
-        Updated_by = _newUser.Updated_by,
-        UserType = _newUser.UserType,
-        UserName = _newUser.UserName
-      };
+     
         
-      _employeeDbContext.Users.Add(newUser);
+      _employeeDbContext.Employees.Add(newEmployee);
       _employeeDbContext.SaveChanges();
     }
 

@@ -20,8 +20,8 @@ builder.Services.AddDbContext<EmployeeDbContext>(options => options.UseNpgsql(bu
 
 builder.Services.AddScoped<IEmployeeService, EmployeeService>();
 builder.Services.AddScoped<IEmployeeManagement, EmployeeManagement>();
-// builder.Services.AddScoped<ILoginService, LoginService>();
-// builder.Services.AddScoped<ILoginRepository, LoginRepository>();
+builder.Services.AddScoped<ILoginService, LoginService>();
+builder.Services.AddScoped<ILoginRepository, LoginRepository>();
 
 var app = builder.Build();
 
