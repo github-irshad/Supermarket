@@ -52,12 +52,12 @@ namespace SuperMarket.Api.Employees.Controllers
       {
         employeeService.NewEmployee(newEmployee);
         return Ok("Added successfully");
-      }
+    }
       catch (System.Exception)
       {
 
-        // throw;
-        return new BadRequestResult();
+        throw;
+        // return new BadRequestResult();
       }
     }
 

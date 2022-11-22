@@ -36,7 +36,8 @@ namespace SuperMarket.Api.Employees.Repository
         isVerified = _newEmployee.isVerified,
         LastName = _newEmployee.LastName,
         Updated_at = _newEmployee.Updated_at,
-        Updated_by = _newEmployee.Updated_by
+        Updated_by = _newEmployee.Updated_by,
+        employeeSalary = _newEmployee.employeeSalary
       };
 
 

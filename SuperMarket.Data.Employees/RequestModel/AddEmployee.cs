@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using SuperMarket.Data.Employees.Common;
+using SuperMarket.Data.Employees.Models;
 
 namespace SuperMarket.Data.Employees.RequestModel
 {
@@ -21,6 +22,7 @@ namespace SuperMarket.Data.Employees.RequestModel
     public string? AadharDocument { get; set; }
     public bool isVerified { get; set; }
     public string? Designation { get; set; }
+    public EmployeeSalary employeeSalary {get; set;}
 
 
   }
