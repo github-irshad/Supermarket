@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "5lAwd1lGCdSGoQv0m0aw9ugzzIpT0quEHtb0aQRWMVE=",
+  "Source": "SuperMarket.Api.Employees",
+  "BasePath": "_content/SuperMarket.Api.Employees",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

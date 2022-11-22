@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using SuperMarket.Data.Employees.Models;
-
+using SuperMarket.Data.Employees.RequestModel;
 using SuperMarket.Service.Employees.Interfaces;
 
 namespace SuperMarket.Api.Employees.Controllers
@@ -42,11 +42,11 @@ namespace SuperMarket.Api.Employees.Controllers
       }
     }
 
-    
+
 
     [HttpPost("Add")]
 
-    public ActionResult AddNewEmployee([FromForm] Employee newEmployee)
+    public ActionResult AddNewEmployee([FromForm] AddEmployee newEmployee)
     {
       try
       {
@@ -57,6 +57,20 @@ namespace SuperMarket.Api.Employees.Controllers
       {
 
         // throw;
+        return new BadRequestResult();
+      }
+    }
+
+    [HttpDelete("Delete/{id}")]
+    public ActionResult DeleteEmployee(int id){
+      try
+      {
+        employeeService.DeleteEmployeeService(id);
+        return Ok();
+      }
+      catch (System.Exception)
+      {
+        
         return new BadRequestResult();
       }
     }

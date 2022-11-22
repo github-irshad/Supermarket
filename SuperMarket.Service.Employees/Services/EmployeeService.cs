@@ -1,5 +1,6 @@
 using SuperMarket.Data.Employees.Interfaces;
 using SuperMarket.Data.Employees.Models;
+using SuperMarket.Data.Employees.RequestModel;
 using SuperMarket.Service.Employees.Interfaces;
 
 namespace SuperMarket.Service.Employees.Services
@@ -17,7 +18,7 @@ namespace SuperMarket.Service.Employees.Services
 
 
 
-    public void NewEmployee(Employee employee)
+    public void NewEmployee(AddEmployee employee)
     {
       employeeManagement.AddNewEmployee(employee);
     }
@@ -33,10 +34,10 @@ namespace SuperMarket.Service.Employees.Services
       return employeeManagement.GetEmployeeById(id);
     }
 
-    // public void DeleteEmployeeService(int id)
-    // {
-    //   throw new NotImplementedException();
-    // }
+    public void DeleteEmployeeService(int id)
+    {
+      employeeManagement.DeleteEmployee(id);
+    }
 
     // // public void UpdateEmployeeService(int id, UpdateEmployeeModel updateEmployeeModel)
     // // {

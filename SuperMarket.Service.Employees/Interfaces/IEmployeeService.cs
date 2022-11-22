@@ -1,4 +1,5 @@
 using SuperMarket.Data.Employees.Models;
+using SuperMarket.Data.Employees.RequestModel;
 
 namespace SuperMarket.Service.Employees.Interfaces
 {
@@ -10,8 +11,8 @@ namespace SuperMarket.Service.Employees.Interfaces
 
     // // public void UpdateEmployeeService(int id,UpdateEmployeeModel updateEmployeeModel);
 
-    public void NewEmployee(Employee employee);
+    public void NewEmployee(AddEmployee employee);
 
-    // public void DeleteEmployeeService(int id);
+    public void DeleteEmployeeService(int id);
   }
 }

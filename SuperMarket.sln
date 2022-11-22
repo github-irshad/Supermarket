@@ -3,8 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperMarket.Data.Employee", "SuperMarket.Data.Employee\SuperMarket.Data.Employee.csproj", "{DF9BF4B7-AAB3-4FBF-BE00-5A2DC08DB81A}"
-EndProject
+
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperMarket.Api.Employees", "SuperMarket.Api.Employees\SuperMarket.Api.Employees.csproj", "{568C37AF-A698-4AE0-BDB7-B81C2D7CA032}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperMarket.Data.Employees", "SuperMarket.Data.Employees\SuperMarket.Data.Employees.csproj", "{B09EFC57-1036-4122-84F2-305B6014EEDB}"

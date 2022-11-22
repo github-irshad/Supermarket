@@ -3,6 +3,7 @@ using SuperMarket.Data.Employees.Interfaces;
 using SuperMarket.Data.Employees.Data;
 using SuperMarket.Data.Employees.Models;
 using Microsoft.AspNetCore.Http;
+using SuperMarket.Data.Employees.RequestModel;
 
 namespace SuperMarket.Api.Employees.Repository
 {
@@ -21,8 +22,22 @@ namespace SuperMarket.Api.Employees.Repository
 
 
 
-    public void AddNewEmployee(Employee newEmployee)
+    public void AddNewEmployee(AddEmployee _newEmployee)
     {
+      Employee newEmployee = new Employee(){
+        Id = _newEmployee.Id,
+        AadharDocument = _newEmployee.AadharDocument,
+        AadharNumber = _newEmployee.AadharNumber,
+        Address = _newEmployee.Address,
+        Created_at = _newEmployee.Created_at,
+        Created_by = _newEmployee.Created_by,
+        Designation = _newEmployee.Designation,
+        FirstName = _newEmployee.FirstName,
+        isVerified = _newEmployee.isVerified,
+        LastName = _newEmployee.LastName,
+        Updated_at = _newEmployee.Updated_at,
+        Updated_by = _newEmployee.Updated_by
+      };
 
 
       _employeeDbContext.Employees.Add(newEmployee);
@@ -30,11 +45,13 @@ namespace SuperMarket.Api.Employees.Repository
     }
 
 
-    // public void DeleteEmployee(int id)
-    // {
-    //     var result = _employeeDbContext.Employees.Where(x=>x.EmployeeId==id).FirstOrDefault();
-    //   _employeeDbContext.Employees.Remove(result);
-    // }
+    public void DeleteEmployee(int id)
+    {
+      var result = _employeeDbContext.Employees.Where(x => x.Id == id).FirstOrDefault();
+      _employeeDbContext.Employees.Remove(result);
+      _employeeDbContext.SaveChanges();
+
+    }
 
 
     public IEnumerable<Employee> GetAllEmployees()
