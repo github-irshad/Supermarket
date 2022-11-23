@@ -4,10 +4,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 
-namespace SuperMarket.Service.Employees.Interfaces
+namespace SuperMarket.Data.Employees.Models
 {
-    public interface IDocumentService
+    public class FilesModel
     {
-       public void AddDocumentsService(IFormFile files);
+        public IFormFile files{get; set;}
     }
 }
