@@ -21,7 +21,7 @@ namespace SuperMarket.Data.Employees.Repository
           {
             Directory.CreateDirectory(webHostEnvironment.WebRootPath + "\\Uploads\\");
             }
-            using(FileStream fileStream = System.IO.File.Create(webHostEnvironment.WebRootPath+"\\Uploads"+filesModel.files.FileName)){
+            using(FileStream fileStream = System.IO.File.Create(webHostEnvironment.WebRootPath+"\\Uploads\\"+filesModel.files.FileName)){
               filesModel.files.CopyTo(fileStream);
               fileStream.Flush();
               
