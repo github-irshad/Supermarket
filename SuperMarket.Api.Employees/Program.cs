@@ -5,6 +5,8 @@ using SuperMarket.Data.Employees.Data;
 using SuperMarket.Data.Employees.Interfaces;
 using SuperMarket.Data.Employees.Repository;
 using SuperMarket.Api.Employees.Repository;
+using AutoMapper;
+using SuperMarket.Data.Employees.Mapping;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -28,6 +30,10 @@ builder.Services.AddScoped<ILoginRepository, LoginRepository>();
 
 builder.Services.AddScoped<IFilesServices, FilesServices>();
 builder.Services.AddScoped<IFilesCRUD, FilesCRUD>();
+
+var autoMapper = new MapperConfiguration(item => item.AddProfile(new AutoMapperProfile()));
+IMapper mapper = autoMapper.CreateMapper();
+builder.Services.AddSingleton(mapper);
 
 var app = builder.Build();
 

@@ -13,12 +13,12 @@ namespace SuperMarket.Api.Employees.Controllers
   public class FileController : ControllerBase
   {
     private readonly IFilesServices filesServices;
-    // private readonly IWebHostEnvironment webHostEnvironment;
+    
 
     public FileController(IFilesServices filesServices)
     {
       this.filesServices = filesServices;
-    //   this.webHostEnvironment = webHostEnvironment;
+    
     }
 
     [HttpPost("Upload")]
