@@ -664,7 +664,6 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.0",
-          "Microsoft.AspNetCore.Http": "2.2.2",
           "Microsoft.EntityFrameworkCore": "7.0.0",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "7.0.0",
           "System.ComponentModel.Annotations": "5.0.0"
@@ -674,7 +673,10 @@
         },
         "runtime": {
           "bin/placeholder/SuperMarket.Data.Employees.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "SuperMarket.Service.Employees/1.0.0": {
         "type": "project",
@@ -1756,11 +1758,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\muhammed.irshad\\Desktop\\.NET\\SuperMarket\\SuperMarket.Api.Employees\\SuperMarket.Api.Employees.csproj",
+      "projectUniqueName": "C:\\Users\\muhammed.irshad\\Desktop\\.NET\\SuperMarket\\SuperMarket.Api.Employees\\SuperMarket.Api.Employees.csproj",
       "projectName": "SuperMarket.Api.Employees",
-      "projectPath": "c:\\Users\\muhammed.irshad\\Desktop\\.NET\\SuperMarket\\SuperMarket.Api.Employees\\SuperMarket.Api.Employees.csproj",
+      "projectPath": "C:\\Users\\muhammed.irshad\\Desktop\\.NET\\SuperMarket\\SuperMarket.Api.Employees\\SuperMarket.Api.Employees.csproj",
       "packagesPath": "C:\\Users\\muhammed.irshad\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\muhammed.irshad\\Desktop\\.NET\\SuperMarket\\SuperMarket.Api.Employees\\obj\\",
+      "outputPath": "C:\\Users\\muhammed.irshad\\Desktop\\.NET\\SuperMarket\\SuperMarket.Api.Employees\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -1778,11 +1780,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "c:\\Users\\muhammed.irshad\\Desktop\\.NET\\SuperMarket\\SuperMarket.Data.Employees\\SuperMarket.Data.Employees.csproj": {
-              "projectPath": "c:\\Users\\muhammed.irshad\\Desktop\\.NET\\SuperMarket\\SuperMarket.Data.Employees\\SuperMarket.Data.Employees.csproj"
+            "C:\\Users\\muhammed.irshad\\Desktop\\.NET\\SuperMarket\\SuperMarket.Data.Employees\\SuperMarket.Data.Employees.csproj": {
+              "projectPath": "C:\\Users\\muhammed.irshad\\Desktop\\.NET\\SuperMarket\\SuperMarket.Data.Employees\\SuperMarket.Data.Employees.csproj"
             },
-            "c:\\Users\\muhammed.irshad\\Desktop\\.NET\\SuperMarket\\SuperMarket.Service.Employees\\SuperMarket.Service.Employees.csproj": {
-              "projectPath": "c:\\Users\\muhammed.irshad\\Desktop\\.NET\\SuperMarket\\SuperMarket.Service.Employees\\SuperMarket.Service.Employees.csproj"
+            "C:\\Users\\muhammed.irshad\\Desktop\\.NET\\SuperMarket\\SuperMarket.Service.Employees\\SuperMarket.Service.Employees.csproj": {
+              "projectPath": "C:\\Users\\muhammed.irshad\\Desktop\\.NET\\SuperMarket\\SuperMarket.Service.Employees\\SuperMarket.Service.Employees.csproj"
             }
           }
         }

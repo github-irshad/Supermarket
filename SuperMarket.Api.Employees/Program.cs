@@ -20,8 +20,14 @@ builder.Services.AddDbContext<EmployeeDbContext>(options => options.UseNpgsql(bu
 
 builder.Services.AddScoped<IEmployeeService, EmployeeService>();
 builder.Services.AddScoped<IEmployeeManagement, EmployeeManagement>();
+
+
 builder.Services.AddScoped<ILoginService, LoginService>();
 builder.Services.AddScoped<ILoginRepository, LoginRepository>();
+
+
+builder.Services.AddScoped<IFilesServices, FilesServices>();
+builder.Services.AddScoped<IFilesCRUD, FilesCRUD>();
 
 var app = builder.Build();
 
@@ -30,6 +36,8 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+}else{
+    app.UseHsts();
 }
 
 app.UseStaticFiles();
