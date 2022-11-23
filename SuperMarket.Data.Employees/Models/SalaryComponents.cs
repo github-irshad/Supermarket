@@ -14,7 +14,7 @@ namespace SuperMarket.Data.Employees.Models
 
 
     [Column("component_type", TypeName = EntityDataType.EntityDataType.StringType)]
-    public ComponentType ComponentType { get; set; }
+    public ComponentType? ComponentType { get; set; }
 
     
     [Column("description", TypeName = EntityDataType.EntityDataType.StringType
@@ -22,7 +22,7 @@ namespace SuperMarket.Data.Employees.Models
     public string Description { get; set; }
 
 
-    public EmployeeSalary employeeSalary {get; set;}
+    public EmployeeSalary? employeeSalary {get; set;}
     
 
    
