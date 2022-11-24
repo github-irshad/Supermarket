@@ -9,7 +9,7 @@ namespace SuperMarket.Service.Employees.Interfaces
 
     public Employee EmployeeDashboard(int id);
 
-    // // public void UpdateEmployeeService(int id,UpdateEmployeeModel updateEmployeeModel);
+    public void UpdateEmployeeService(int id,EditEmployee updateEmployeeModel);
 
     public void NewEmployee(AddEmployee employee);
 

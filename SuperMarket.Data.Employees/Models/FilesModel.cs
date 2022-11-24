@@ -8,6 +8,6 @@ namespace SuperMarket.Data.Employees.Models
 {
     public class FilesModel
     {
-        public IFormFile files {get; set;}
+        public IFormFile? files {get; set;}
     }
 }

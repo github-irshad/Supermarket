@@ -12,16 +12,9 @@ namespace SuperMarket.Data.Employees.Interfaces
     public Employee GetEmployeeById(int id);
     public void DeleteEmployee(int id);
     public void AddNewEmployee(AddEmployee newEmployee);
-    // public Employee UpdateEmployee(int id, UpdateEmployeeModel updateEmployeeModel);
+    public void UpdateEmployee(int id, EditEmployee updateEmployeeModel);
 
 
-    //Document CRUD operations
-    public void AddDocuments(IFormFile files);
 
-    public string GetDocumentById(int Id);
-
-    public void DeleteDocument(int Id);
-
-    public string UpdateDocument(int Id);
   }
 }

@@ -13,6 +13,7 @@ namespace SuperMarket.Data.Employees.Mapping
         public AutoMapperProfile()
         {
             CreateMap<AddEmployee,Employee>();
+            CreateMap<EditEmployee,Employee>();
         }
     }
 }

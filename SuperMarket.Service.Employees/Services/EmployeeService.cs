@@ -39,10 +39,10 @@ namespace SuperMarket.Service.Employees.Services
       employeeManagement.DeleteEmployee(id);
     }
 
-    // // public void UpdateEmployeeService(int id, UpdateEmployeeModel updateEmployeeModel)
-    // // {
-    // //   employeeManagement.UpdateDocument(id);
-    // // }
+    public void UpdateEmployeeService(int id, EditEmployee updateEmployeeModel)
+    {
+      employeeManagement.UpdateEmployee(id,updateEmployeeModel);
+    }
 
 
   }

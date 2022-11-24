@@ -11,12 +11,12 @@ namespace SuperMarket.Data.Employees.Models
 
     
     [Column("user_name", TypeName = EntityDataType.EntityDataType.StringType)]
-    public string UserName { get; set; }
+    public string? UserName { get; set; }
 
 
     
     [Column("password", TypeName = EntityDataType.EntityDataType.StringType)]
-    public string Password { get; set; }
+    public string? Password { get; set; }
 
 
     [Column("user_type", TypeName = EntityDataType.EntityDataType.IntType)]

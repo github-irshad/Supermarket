@@ -75,5 +75,11 @@ namespace SuperMarket.Api.Employees.Controllers
       }
     }
 
+    [HttpPut("id")]
+    public ActionResult EditEmployee(int id,[FromForm]EditEmployee editEmployee){
+      employeeService.UpdateEmployeeService(id,editEmployee);
+      return Ok();
+    }
+
   }
 }

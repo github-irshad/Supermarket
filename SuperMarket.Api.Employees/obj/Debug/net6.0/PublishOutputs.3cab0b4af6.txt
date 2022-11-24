@@ -4,6 +4,8 @@ c:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\bin\
 c:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\bin\Debug\net6.0\publish\SuperMarket.Api.Employees.dll
 c:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\bin\Debug\net6.0\publish\SuperMarket.Api.Employees.runtimeconfig.json
 c:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\bin\Debug\net6.0\publish\SuperMarket.Api.Employees.pdb
+c:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\bin\Debug\net6.0\publish\AutoMapper.dll
+c:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\bin\Debug\net6.0\publish\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 c:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\bin\Debug\net6.0\publish\Microsoft.EntityFrameworkCore.dll
 c:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\bin\Debug\net6.0\publish\Microsoft.EntityFrameworkCore.Abstractions.dll
 c:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\bin\Debug\net6.0\publish\Microsoft.EntityFrameworkCore.Relational.dll

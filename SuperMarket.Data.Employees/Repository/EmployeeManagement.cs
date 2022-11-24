@@ -63,67 +63,48 @@ namespace SuperMarket.Api.Employees.Repository
       return _employeeDbContext.Employees.ToList();
     }
 
-    /*
-    public Employee UpdateEmployee(int id,UpdateEmployeeModel updateEmployeeModel)
+    
+    public void UpdateEmployee(int id,EditEmployee editEmployeeModel)
     {
-        var target = _employeeDbContext.Employees.Where(x=>x.EmployeeModelId==id).FirstOrDefault();
+        var target = _employeeDbContext.Employees.Where(x=>x.Id==id).FirstOrDefault();
 
 
-        target.FirstName = updateEmployeeModel.FirstName;
-        target.LastName = updateEmployeeModel.LastName;
-        target.AadharDocument = updateEmployeeModel.AadharDocument;
-        target.AadharNumber = updateEmployeeModel.AadharNumber;
-        target.Address = updateEmployeeModel.Address;
-        target.Designation = updateEmployeeModel.Designation;
+        // target.FirstName = editEmployeeModel.FirstName;
+        // target.LastName = editEmployeeModel.LastName;
+        // target.AadharDocument = editEmployeeModel.AadharDocument;
+        // target.AadharNumber = editEmployeeModel.AadharNumber;
+        // target.Address = editEmployeeModel.Address;
+        // target.Designation = editEmployeeModel.Designation;
+        // target.Created_at = editEmployeeModel.Created_at;
+        // target.Created_by = editEmployeeModel.Created_by;
+        // target.Updated_at = editEmployeeModel.Updated_at;
+        // target.Updated_by = editEmployeeModel.Updated_by;
+        // target.isVerified = editEmployeeModel.isVerified;
+        // target.employeeSalary = editEmployeeModel.employeeSalary;
+
+
+        
+
+        var editEmployee = mapper.Map<EditEmployee,Employee>(editEmployeeModel);
+        // target = editEmployee;
+
+        _employeeDbContext.Employees.Update(editEmployee);
+
         
       
 
         _employeeDbContext.SaveChanges();
-        return target;
+        
 
     }
-    */
-
+    
+  
     public Employee GetEmployeeById(int id)
     {
       return _employeeDbContext.Employees.Where(x => x.Id == id).FirstOrDefault();
     }
 
-    //Document CRUD Operations
-    public string GetDocumentById(int Id)
-    {
-      throw new NotImplementedException();
-    }
-
-
-    public string UpdateDocument(int Id)
-    {
-      throw new NotImplementedException();
-    }
-
-
-    public void DeleteDocument(int Id)
-    {
-      throw new NotImplementedException();
-    }
-
-    public void AddDocuments(IFormFile files)
-    {
-      var path = Path.Combine(Directory.GetCurrentDirectory(), "Documents");
-
-      if (!Directory.Exists(path))
-      {
-        Directory.CreateDirectory(path);
-
-      }
-
-      var filePath = Path.Combine(path, files.FileName);
-
-      using (var filestream = new FileStream(filePath, FileMode.Create))
-      {
-        files.CopyTo(filestream);
-      }
-    }
+    
 
   }
 }
