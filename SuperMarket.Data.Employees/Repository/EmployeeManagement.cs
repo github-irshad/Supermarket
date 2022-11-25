@@ -85,10 +85,10 @@ namespace SuperMarket.Api.Employees.Repository
 
         
 
-        var editEmployee = mapper.Map<EditEmployee,Employee>(editEmployeeModel);
+        target = mapper.Map<EditEmployee,Employee>(editEmployeeModel);
         // target = editEmployee;
 
-        _employeeDbContext.Employees.Update(editEmployee);
+        // _employeeDbContext.Employees.Update(editEmployee);
 
         
       
