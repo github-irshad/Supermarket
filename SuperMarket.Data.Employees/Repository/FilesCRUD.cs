@@ -29,5 +29,10 @@ namespace SuperMarket.Data.Employees.Repository
         }
       
     }
+
+    public string GetFile()
+    {
+      return webHostEnvironment.WebRootPath+"\\Uploads\\sunset-summer-golden-hour-paul-filitchkin.jpg";
+    }
   }
 }

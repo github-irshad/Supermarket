@@ -22,11 +22,23 @@ namespace SuperMarket.Api.Employees.Controllers
     }
 
     [HttpPost("Upload")]
-    public ActionResult Post([FromForm]FilesModel fileobj)
+    public ActionResult Post([FromForm] FilesModel fileobj)
     {      
         filesServices.AddFilesService(fileobj);
         return Ok();
       
+    }
+
+    [HttpGet("Find")]
+    public ActionResult Get(){
+     
+      return Ok( filesServices.Get());
+    }
+
+    [HttpDelete]
+    public ActionResult DeleteFile()
+    {
+      return Ok();
     }
   }
 }

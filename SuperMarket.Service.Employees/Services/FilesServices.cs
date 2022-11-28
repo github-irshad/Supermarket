@@ -23,5 +23,8 @@ namespace SuperMarket.Service.Employees.Services
       filesOp.AddFile(file);
       
     }
+    public string Get(){
+      return filesOp.GetFile();
+    }
   }
 }

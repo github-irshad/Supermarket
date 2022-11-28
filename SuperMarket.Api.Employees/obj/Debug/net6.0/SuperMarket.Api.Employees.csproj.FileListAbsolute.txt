@@ -53,3 +53,4 @@ C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\obj\
 C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\obj\Debug\net6.0\ref\SuperMarket.Api.Employees.dll
 C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\bin\Debug\net6.0\AutoMapper.dll
 C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\bin\Debug\net6.0\SuperMarket.Api.Employees.staticwebassets.runtime.json

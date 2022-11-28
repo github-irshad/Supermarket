@@ -9,5 +9,7 @@ namespace SuperMarket.Data.Employees.Interfaces
     public interface IFilesCRUD
     {
         public void AddFile(FilesModel filesModel);
+
+        public string GetFile();
     }
 }
