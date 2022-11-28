@@ -12,6 +12,7 @@ namespace SuperMarket.Data.Employees.Common
 
     [Key]
     [Column("id", TypeName = EntityDataType.EntityDataType.IntType)]
+    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public int Id { get; set; }
 
 

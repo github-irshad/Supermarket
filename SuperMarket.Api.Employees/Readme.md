@@ -21,3 +21,7 @@ dotnet ef --startup-project ..\SuperMarket.Api.Employees\ migrations add myMigra
 
 Updation
 dotnet ef database update --startup-project ..\SuperMarket.Api.Employees\
+
+
+auto increment
+    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
