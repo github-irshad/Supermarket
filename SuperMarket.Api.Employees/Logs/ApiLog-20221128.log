@@ -4,3 +4,59 @@
 2022-11-28 16:52:56.534 +05:30 [INF] Hosting environment: Development
 2022-11-28 16:52:56.534 +05:30 [INF] Content root path: C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\
 2022-11-28 17:01:37.619 +05:30 [INF] Application is shutting down...
+2022-11-28 17:59:13.900 +05:30 [INF] Executed DbCommand (66ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+2022-11-28 17:59:14.017 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+2022-11-28 17:59:14.049 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2022-11-28 17:59:14.077 +05:30 [INF] Applying migration '20221128115158_myMigration02'.
+2022-11-28 17:59:14.187 +05:30 [INF] Executed DbCommand (40ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "Employee" DROP CONSTRAINT "FK_Employee_EmployeeSalary_employeeSalaryId";
+2022-11-28 17:59:14.190 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "SalaryComponents" DROP CONSTRAINT "FK_SalaryComponents_EmployeeSalary_employeeSalaryId";
+2022-11-28 17:59:14.190 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "User" ALTER COLUMN user_name DROP NOT NULL;
+2022-11-28 17:59:14.196 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "User" ALTER COLUMN updated_at DROP NOT NULL;
+2022-11-28 17:59:14.196 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "User" ALTER COLUMN password DROP NOT NULL;
+2022-11-28 17:59:14.196 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "User" ALTER COLUMN created_at DROP NOT NULL;
+2022-11-28 17:59:14.197 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "SalaryComponents" ALTER COLUMN updated_at DROP NOT NULL;
+2022-11-28 17:59:14.198 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "SalaryComponents" ALTER COLUMN "employeeSalaryId" DROP NOT NULL;
+2022-11-28 17:59:14.198 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "SalaryComponents" ALTER COLUMN description DROP NOT NULL;
+2022-11-28 17:59:14.198 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "SalaryComponents" ALTER COLUMN created_at DROP NOT NULL;
+2022-11-28 17:59:14.199 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "SalaryComponents" ALTER COLUMN component_type DROP NOT NULL;
+2022-11-28 17:59:14.199 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "SalaryComponents" ALTER COLUMN component_name DROP NOT NULL;
+2022-11-28 17:59:14.200 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "EmployeeSalary" ALTER COLUMN updated_at DROP NOT NULL;
+2022-11-28 17:59:14.200 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "EmployeeSalary" ALTER COLUMN salary_component_id DROP NOT NULL;
+2022-11-28 17:59:14.200 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "EmployeeSalary" ALTER COLUMN employee_id DROP NOT NULL;
+2022-11-28 17:59:14.200 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "EmployeeSalary" ALTER COLUMN created_at DROP NOT NULL;
+2022-11-28 17:59:14.201 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "EmployeeSalary" ALTER COLUMN amount DROP NOT NULL;
+2022-11-28 17:59:14.201 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "Employee" ALTER COLUMN updated_at DROP NOT NULL;
+2022-11-28 17:59:14.201 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "Employee" ALTER COLUMN "employeeSalaryId" DROP NOT NULL;
+2022-11-28 17:59:14.201 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "Employee" ALTER COLUMN created_at DROP NOT NULL;
+2022-11-28 17:59:14.249 +05:30 [INF] Executed DbCommand (48ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "Employee" ADD CONSTRAINT "FK_Employee_EmployeeSalary_employeeSalaryId" FOREIGN KEY ("employeeSalaryId") REFERENCES "EmployeeSalary" (id);
+2022-11-28 17:59:14.263 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "SalaryComponents" ADD CONSTRAINT "FK_SalaryComponents_EmployeeSalary_employeeSalaryId" FOREIGN KEY ("employeeSalaryId") REFERENCES "EmployeeSalary" (id);
+2022-11-28 17:59:14.265 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20221128115158_myMigration02', '7.0.0');
