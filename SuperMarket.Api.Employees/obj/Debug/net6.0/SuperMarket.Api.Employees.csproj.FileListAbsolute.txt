@@ -54,3 +54,12 @@ C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\obj\
 C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\bin\Debug\net6.0\AutoMapper.dll
 C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\bin\Debug\net6.0\SuperMarket.Api.Employees.staticwebassets.runtime.json
+C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\bin\Debug\net6.0\Serilog.dll
+C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\bin\Debug\net6.0\Serilog.AspNetCore.dll
+C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\bin\Debug\net6.0\Serilog.Extensions.Hosting.dll
+C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\bin\Debug\net6.0\Serilog.Extensions.Logging.dll
+C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\bin\Debug\net6.0\Serilog.Formatting.Compact.dll
+C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\bin\Debug\net6.0\Serilog.Settings.Configuration.dll
+C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\bin\Debug\net6.0\Serilog.Sinks.Console.dll
+C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\bin\Debug\net6.0\Serilog.Sinks.Debug.dll
+C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\bin\Debug\net6.0\Serilog.Sinks.File.dll

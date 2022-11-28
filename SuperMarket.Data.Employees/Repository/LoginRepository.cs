@@ -20,7 +20,7 @@ namespace SuperMarket.Data.Employees.Repository
 
     public bool LoginCheck(User login_obj)
     {
-      if (employeeDbContext.Users.Any(x => x.UserName == login_obj.UserName && x.Password == login_obj.Password) )
+      if (employeeDbContext.Users.Any(x => x.UserName == login_obj.UserName && x.Password == login_obj.Password && x.UserType == login_obj.UserType) )
       {
         return true;
       }
