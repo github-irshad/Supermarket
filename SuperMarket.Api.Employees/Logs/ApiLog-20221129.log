@@ -133,3 +133,16 @@ RETURNING id;
 2022-11-29 12:22:51.945 +05:30 [INF] Executed endpoint 'SuperMarket.Api.Employees.Controllers.EmployeeController.AddNewEmployee (SuperMarket.Api.Employees)'
 2022-11-29 12:22:51.945 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7187/Employee/add application/json 346 - 400 - application/problem+json;+charset=utf-8 0.9251ms
 2022-11-29 12:30:14.563 +05:30 [INF] Application is shutting down...
+2022-11-29 13:19:27.656 +05:30 [INF] Now listening on: https://localhost:7187
+2022-11-29 13:19:27.687 +05:30 [INF] Now listening on: http://localhost:5193
+2022-11-29 13:19:27.693 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-29 13:19:27.694 +05:30 [INF] Hosting environment: Development
+2022-11-29 13:19:27.694 +05:30 [INF] Content root path: C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\
+2022-11-29 13:19:28.684 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7187/Employee/add application/json 346
+2022-11-29 13:19:28.722 +05:30 [INF] Executing endpoint 'SuperMarket.Api.Employees.Controllers.EmployeeController.AddNewEmployee (SuperMarket.Api.Employees)'
+2022-11-29 13:19:28.749 +05:30 [INF] Route matched with {action = "AddNewEmployee", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult AddNewEmployee(SuperMarket.Data.Employees.RequestModel.AddEmployee) on controller SuperMarket.Api.Employees.Controllers.EmployeeController (SuperMarket.Api.Employees).
+2022-11-29 13:19:28.936 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2022-11-29 13:19:28.959 +05:30 [INF] Executed action SuperMarket.Api.Employees.Controllers.EmployeeController.AddNewEmployee (SuperMarket.Api.Employees) in 205.8605ms
+2022-11-29 13:19:28.959 +05:30 [INF] Executed endpoint 'SuperMarket.Api.Employees.Controllers.EmployeeController.AddNewEmployee (SuperMarket.Api.Employees)'
+2022-11-29 13:19:28.962 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7187/Employee/add application/json 346 - 400 - application/problem+json;+charset=utf-8 281.8097ms
+2022-11-29 13:26:52.534 +05:30 [INF] Application is shutting down...

@@ -46,7 +46,7 @@ namespace SuperMarket.Api.Employees.Controllers
 
     [HttpPost("Add")]
 
-    public ActionResult AddNewEmployee([FromBody] AddEmployee newEmployee)
+    public ActionResult AddNewEmployee( AddEmployee newEmployee)
     {
       try
       {

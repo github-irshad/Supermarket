@@ -8,6 +8,7 @@ using SuperMarket.Api.Employees.Repository;
 using AutoMapper;
 using SuperMarket.Data.Employees.Mapping;
 using Serilog;
+using SuperMarket.Api.Employees.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -46,6 +47,8 @@ Enrich.FromLogContext().
 CreateLogger();
 builder.Logging.AddSerilog(_logger);
 
+builder.Services.AddTransient<SuperMarketAPIMiddleware>();
+
 
 var app = builder.Build();
 
@@ -58,6 +61,7 @@ if (app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+
 app.UseStaticFiles();
 
 app.UseHttpsRedirection();
@@ -65,5 +69,7 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.UseMiddleware<SuperMarketAPIMiddleware>();
 
 app.Run();
