@@ -21,6 +21,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<EmployeeDbContext>(options => options.UseNpgsql(builder.Configuration.GetConnectionString("SuperMarketDb")));
 
+
 builder.Services.AddScoped<IEmployeeService, EmployeeService>();
 builder.Services.AddScoped<IEmployeeManagement, EmployeeManagement>();
 
@@ -32,9 +33,11 @@ builder.Services.AddScoped<ILoginRepository, LoginRepository>();
 builder.Services.AddScoped<IFilesServices, FilesServices>();
 builder.Services.AddScoped<IFilesCRUD, FilesCRUD>();
 
+
 var autoMapper = new MapperConfiguration(item => item.AddProfile(new AutoMapperProfile()));
 IMapper mapper = autoMapper.CreateMapper();
 builder.Services.AddSingleton(mapper);
+
 
 //Serilog 
 var _logger = new LoggerConfiguration().ReadFrom.Configuration(builder.Configuration).
@@ -42,6 +45,7 @@ Enrich.FromLogContext().
 // WriteTo.File("C:\\Users\\muhammed.irshad\\Desktop\\.NET\\SuperMarket\\SuperMarket.Api.Employees\\Logs\\ApiLog-.log",rollingInterval:RollingInterval.Day).
 CreateLogger();
 builder.Logging.AddSerilog(_logger);
+
 
 var app = builder.Build();
 
