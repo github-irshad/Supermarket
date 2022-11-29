@@ -23,6 +23,7 @@ namespace SuperMarket.Api.Employees.Controllers
 
     public ActionResult<IEnumerable<Employee>> GetAllEmployees()
     {
+      // return new Exception("test");
       return Ok(employeeService.GetAllEmployeesService());
     }
 
@@ -46,7 +47,7 @@ namespace SuperMarket.Api.Employees.Controllers
 
     [HttpPost("Add")]
 
-    public ActionResult AddNewEmployee( AddEmployee newEmployee)
+    public ActionResult AddNewEmployee( [FromBody]AddEmployee newEmployee)
     {
       try
       {

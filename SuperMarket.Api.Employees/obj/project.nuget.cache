@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "S4314HBGwJewTp++gr2eZe1Md/2qL1Dfsa2FznDtj+DIwGQ+TvtOo2TNXIvaMjXr6lkcBzzc4e/UvcNrvO5Ypw==",
+  "dgSpecHash": "xreLE3zCLLmSvPC/Q3ARmDRLQWBkn0vVvMH69HvopS6XnLJ1zdUY3dU3pcVg3En0QF2Qd+kUUkLQDTXdo+ZrkQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\muhammed.irshad\\Desktop\\.NET\\SuperMarket\\SuperMarket.Api.Employees\\SuperMarket.Api.Employees.csproj",
   "expectedPackageFiles": [
@@ -39,6 +39,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.targets\\1.0.1\\microsoft.netcore.targets.1.0.1.nupkg.sha512",
     "C:\\Users\\muhammed.irshad\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\muhammed.irshad\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
+    "C:\\Users\\muhammed.irshad\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512",
     "C:\\Users\\muhammed.irshad\\.nuget\\packages\\npgsql\\7.0.0\\npgsql.7.0.0.nupkg.sha512",
     "C:\\Users\\muhammed.irshad\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\7.0.0\\npgsql.entityframeworkcore.postgresql.7.0.0.nupkg.sha512",
     "C:\\Users\\muhammed.irshad\\.nuget\\packages\\serilog\\2.10.0\\serilog.2.10.0.nupkg.sha512",

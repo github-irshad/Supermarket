@@ -1,148 +1,22 @@
-2022-11-29 10:49:05.574 +05:30 [INF] Executed DbCommand (55ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
-SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
-2022-11-29 10:49:05.669 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
-SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
-2022-11-29 10:49:05.700 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
-SELECT "MigrationId", "ProductVersion"
-FROM "__EFMigrationsHistory"
-ORDER BY "MigrationId";
-2022-11-29 10:49:05.733 +05:30 [INF] Applying migration '20221129050824_SerilogToPostG'.
-2022-11-29 10:49:05.793 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
-INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
-VALUES ('20221129050824_SerilogToPostG', '7.0.0');
-2022-11-29 12:07:31.349 +05:30 [INF] Now listening on: https://localhost:7187
-2022-11-29 12:07:31.381 +05:30 [INF] Now listening on: http://localhost:5193
-2022-11-29 12:07:31.388 +05:30 [INF] Application started. Press Ctrl+C to shut down.
-2022-11-29 12:07:31.389 +05:30 [INF] Hosting environment: Development
-2022-11-29 12:07:31.389 +05:30 [INF] Content root path: C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\
-2022-11-29 12:09:22.632 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7187/Employee/add application/json 390
-2022-11-29 12:09:22.661 +05:30 [INF] Executing endpoint 'SuperMarket.Api.Employees.Controllers.EmployeeController.AddNewEmployee (SuperMarket.Api.Employees)'
-2022-11-29 12:09:22.697 +05:30 [INF] Route matched with {action = "AddNewEmployee", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult AddNewEmployee(SuperMarket.Data.Employees.RequestModel.AddEmployee) on controller SuperMarket.Api.Employees.Controllers.EmployeeController (SuperMarket.Api.Employees).
-2022-11-29 12:09:23.879 +05:30 [INF] Executed DbCommand (53ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?' (DbType = DateTime), @p4='?' (DbType = Int32), @p5='?', @p6='?', @p7='?', @p8='?' (DbType = DateTime), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32), @p11='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
-INSERT INTO "Employee" (aadhar_document, aadhar_number, address, created_at, created_by, designation, "firstName", "lastName", updated_at, updated_by, "employeeSalaryId", verification)
-VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11)
-RETURNING id;
-2022-11-29 12:09:23.925 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
-2022-11-29 12:09:23.934 +05:30 [INF] Executed action SuperMarket.Api.Employees.Controllers.EmployeeController.AddNewEmployee (SuperMarket.Api.Employees) in 1231.9744ms
-2022-11-29 12:09:23.934 +05:30 [INF] Executed endpoint 'SuperMarket.Api.Employees.Controllers.EmployeeController.AddNewEmployee (SuperMarket.Api.Employees)'
-2022-11-29 12:09:23.945 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7187/Employee/add application/json 390 - 200 - text/plain;+charset=utf-8 1317.2628ms
-2022-11-29 12:13:23.972 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7187/swagger/v1/swagger.json - -
-2022-11-29 12:13:24.074 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7187/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 102.3944ms
-2022-11-29 12:14:07.744 +05:30 [INF] Application is shutting down...
-2022-11-29 12:14:12.936 +05:30 [INF] Now listening on: https://localhost:7187
-2022-11-29 12:14:12.966 +05:30 [INF] Now listening on: http://localhost:5193
-2022-11-29 12:14:12.973 +05:30 [INF] Application started. Press Ctrl+C to shut down.
-2022-11-29 12:14:12.974 +05:30 [INF] Hosting environment: Development
-2022-11-29 12:14:12.974 +05:30 [INF] Content root path: C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\
-2022-11-29 12:14:28.242 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7187/Employee/add application/json 342
-2022-11-29 12:14:28.271 +05:30 [INF] Executing endpoint 'SuperMarket.Api.Employees.Controllers.EmployeeController.AddNewEmployee (SuperMarket.Api.Employees)'
-2022-11-29 12:14:28.289 +05:30 [INF] Route matched with {action = "AddNewEmployee", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult AddNewEmployee(SuperMarket.Data.Employees.RequestModel.AddEmployee) on controller SuperMarket.Api.Employees.Controllers.EmployeeController (SuperMarket.Api.Employees).
-2022-11-29 12:14:28.429 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
-2022-11-29 12:14:28.448 +05:30 [INF] Executed action SuperMarket.Api.Employees.Controllers.EmployeeController.AddNewEmployee (SuperMarket.Api.Employees) in 154.6305ms
-2022-11-29 12:14:28.449 +05:30 [INF] Executed endpoint 'SuperMarket.Api.Employees.Controllers.EmployeeController.AddNewEmployee (SuperMarket.Api.Employees)'
-2022-11-29 12:14:28.451 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7187/Employee/add application/json 342 - 400 - application/problem+json;+charset=utf-8 211.9009ms
-2022-11-29 12:15:00.617 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7187/Employee/add application/json 363
-2022-11-29 12:15:00.618 +05:30 [INF] Executing endpoint 'SuperMarket.Api.Employees.Controllers.EmployeeController.AddNewEmployee (SuperMarket.Api.Employees)'
-2022-11-29 12:15:00.618 +05:30 [INF] Route matched with {action = "AddNewEmployee", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult AddNewEmployee(SuperMarket.Data.Employees.RequestModel.AddEmployee) on controller SuperMarket.Api.Employees.Controllers.EmployeeController (SuperMarket.Api.Employees).
-2022-11-29 12:15:00.623 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
-2022-11-29 12:15:00.624 +05:30 [INF] Executed action SuperMarket.Api.Employees.Controllers.EmployeeController.AddNewEmployee (SuperMarket.Api.Employees) in 5.3359ms
-2022-11-29 12:15:00.624 +05:30 [INF] Executed endpoint 'SuperMarket.Api.Employees.Controllers.EmployeeController.AddNewEmployee (SuperMarket.Api.Employees)'
-2022-11-29 12:15:00.625 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7187/Employee/add application/json 363 - 400 - application/problem+json;+charset=utf-8 8.2991ms
-2022-11-29 12:15:08.414 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7187/Employee/add application/json 367
-2022-11-29 12:15:08.415 +05:30 [INF] Executing endpoint 'SuperMarket.Api.Employees.Controllers.EmployeeController.AddNewEmployee (SuperMarket.Api.Employees)'
-2022-11-29 12:15:08.415 +05:30 [INF] Route matched with {action = "AddNewEmployee", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult AddNewEmployee(SuperMarket.Data.Employees.RequestModel.AddEmployee) on controller SuperMarket.Api.Employees.Controllers.EmployeeController (SuperMarket.Api.Employees).
-2022-11-29 12:15:08.417 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
-2022-11-29 12:15:08.417 +05:30 [INF] Executed action SuperMarket.Api.Employees.Controllers.EmployeeController.AddNewEmployee (SuperMarket.Api.Employees) in 2.4613ms
-2022-11-29 12:15:08.417 +05:30 [INF] Executed endpoint 'SuperMarket.Api.Employees.Controllers.EmployeeController.AddNewEmployee (SuperMarket.Api.Employees)'
-2022-11-29 12:15:08.417 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7187/Employee/add application/json 367 - 400 - application/problem+json;+charset=utf-8 3.2050ms
-2022-11-29 12:15:19.075 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7187/Employee/add application/json 369
-2022-11-29 12:15:19.075 +05:30 [INF] Executing endpoint 'SuperMarket.Api.Employees.Controllers.EmployeeController.AddNewEmployee (SuperMarket.Api.Employees)'
-2022-11-29 12:15:19.076 +05:30 [INF] Route matched with {action = "AddNewEmployee", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult AddNewEmployee(SuperMarket.Data.Employees.RequestModel.AddEmployee) on controller SuperMarket.Api.Employees.Controllers.EmployeeController (SuperMarket.Api.Employees).
-2022-11-29 12:15:19.076 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
-2022-11-29 12:15:19.076 +05:30 [INF] Executed action SuperMarket.Api.Employees.Controllers.EmployeeController.AddNewEmployee (SuperMarket.Api.Employees) in 0.8698ms
-2022-11-29 12:15:19.077 +05:30 [INF] Executed endpoint 'SuperMarket.Api.Employees.Controllers.EmployeeController.AddNewEmployee (SuperMarket.Api.Employees)'
-2022-11-29 12:15:19.077 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7187/Employee/add application/json 369 - 400 - application/problem+json;+charset=utf-8 1.4622ms
-2022-11-29 12:16:42.779 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7187/Employee/add application/json 367
-2022-11-29 12:16:42.779 +05:30 [INF] Executing endpoint 'SuperMarket.Api.Employees.Controllers.EmployeeController.AddNewEmployee (SuperMarket.Api.Employees)'
-2022-11-29 12:16:42.780 +05:30 [INF] Route matched with {action = "AddNewEmployee", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult AddNewEmployee(SuperMarket.Data.Employees.RequestModel.AddEmployee) on controller SuperMarket.Api.Employees.Controllers.EmployeeController (SuperMarket.Api.Employees).
-2022-11-29 12:16:42.781 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
-2022-11-29 12:16:42.781 +05:30 [INF] Executed action SuperMarket.Api.Employees.Controllers.EmployeeController.AddNewEmployee (SuperMarket.Api.Employees) in 1.8185ms
-2022-11-29 12:16:42.782 +05:30 [INF] Executed endpoint 'SuperMarket.Api.Employees.Controllers.EmployeeController.AddNewEmployee (SuperMarket.Api.Employees)'
-2022-11-29 12:16:42.782 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7187/Employee/add application/json 367 - 400 - application/problem+json;+charset=utf-8 2.3087ms
-2022-11-29 12:16:56.410 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7187/Employee/add application/json 337
-2022-11-29 12:16:56.410 +05:30 [INF] Executing endpoint 'SuperMarket.Api.Employees.Controllers.EmployeeController.AddNewEmployee (SuperMarket.Api.Employees)'
-2022-11-29 12:16:56.410 +05:30 [INF] Route matched with {action = "AddNewEmployee", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult AddNewEmployee(SuperMarket.Data.Employees.RequestModel.AddEmployee) on controller SuperMarket.Api.Employees.Controllers.EmployeeController (SuperMarket.Api.Employees).
-2022-11-29 12:16:56.410 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
-2022-11-29 12:16:56.410 +05:30 [INF] Executed action SuperMarket.Api.Employees.Controllers.EmployeeController.AddNewEmployee (SuperMarket.Api.Employees) in 0.546ms
-2022-11-29 12:16:56.410 +05:30 [INF] Executed endpoint 'SuperMarket.Api.Employees.Controllers.EmployeeController.AddNewEmployee (SuperMarket.Api.Employees)'
-2022-11-29 12:16:56.411 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7187/Employee/add application/json 337 - 400 - application/problem+json;+charset=utf-8 0.9111ms
-2022-11-29 12:17:06.903 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7187/Employee/add application/json 339
-2022-11-29 12:17:06.903 +05:30 [INF] Executing endpoint 'SuperMarket.Api.Employees.Controllers.EmployeeController.AddNewEmployee (SuperMarket.Api.Employees)'
-2022-11-29 12:17:06.903 +05:30 [INF] Route matched with {action = "AddNewEmployee", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult AddNewEmployee(SuperMarket.Data.Employees.RequestModel.AddEmployee) on controller SuperMarket.Api.Employees.Controllers.EmployeeController (SuperMarket.Api.Employees).
-2022-11-29 12:17:06.905 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
-2022-11-29 12:17:06.905 +05:30 [INF] Executed action SuperMarket.Api.Employees.Controllers.EmployeeController.AddNewEmployee (SuperMarket.Api.Employees) in 1.7016ms
-2022-11-29 12:17:06.905 +05:30 [INF] Executed endpoint 'SuperMarket.Api.Employees.Controllers.EmployeeController.AddNewEmployee (SuperMarket.Api.Employees)'
-2022-11-29 12:17:06.905 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7187/Employee/add application/json 339 - 400 - application/problem+json;+charset=utf-8 2.2300ms
-2022-11-29 12:17:18.101 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7187/Employee/add application/json 335
-2022-11-29 12:17:18.102 +05:30 [INF] Executing endpoint 'SuperMarket.Api.Employees.Controllers.EmployeeController.AddNewEmployee (SuperMarket.Api.Employees)'
-2022-11-29 12:17:18.102 +05:30 [INF] Route matched with {action = "AddNewEmployee", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult AddNewEmployee(SuperMarket.Data.Employees.RequestModel.AddEmployee) on controller SuperMarket.Api.Employees.Controllers.EmployeeController (SuperMarket.Api.Employees).
-2022-11-29 12:17:18.102 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
-2022-11-29 12:17:18.102 +05:30 [INF] Executed action SuperMarket.Api.Employees.Controllers.EmployeeController.AddNewEmployee (SuperMarket.Api.Employees) in 0.5674ms
-2022-11-29 12:17:18.102 +05:30 [INF] Executed endpoint 'SuperMarket.Api.Employees.Controllers.EmployeeController.AddNewEmployee (SuperMarket.Api.Employees)'
-2022-11-29 12:17:18.102 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7187/Employee/add application/json 335 - 400 - application/problem+json;+charset=utf-8 0.9771ms
-2022-11-29 12:18:52.492 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7187/Employee/add application/json 315
-2022-11-29 12:18:52.492 +05:30 [INF] Executing endpoint 'SuperMarket.Api.Employees.Controllers.EmployeeController.AddNewEmployee (SuperMarket.Api.Employees)'
-2022-11-29 12:18:52.492 +05:30 [INF] Route matched with {action = "AddNewEmployee", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult AddNewEmployee(SuperMarket.Data.Employees.RequestModel.AddEmployee) on controller SuperMarket.Api.Employees.Controllers.EmployeeController (SuperMarket.Api.Employees).
-2022-11-29 12:18:52.493 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
-2022-11-29 12:18:52.493 +05:30 [INF] Executed action SuperMarket.Api.Employees.Controllers.EmployeeController.AddNewEmployee (SuperMarket.Api.Employees) in 0.6259ms
-2022-11-29 12:18:52.493 +05:30 [INF] Executed endpoint 'SuperMarket.Api.Employees.Controllers.EmployeeController.AddNewEmployee (SuperMarket.Api.Employees)'
-2022-11-29 12:18:52.493 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7187/Employee/add application/json 315 - 400 - application/problem+json;+charset=utf-8 1.0441ms
-2022-11-29 12:20:45.377 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7187/Employee/add application/json 314
-2022-11-29 12:20:45.377 +05:30 [INF] Executing endpoint 'SuperMarket.Api.Employees.Controllers.EmployeeController.AddNewEmployee (SuperMarket.Api.Employees)'
-2022-11-29 12:20:45.377 +05:30 [INF] Route matched with {action = "AddNewEmployee", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult AddNewEmployee(SuperMarket.Data.Employees.RequestModel.AddEmployee) on controller SuperMarket.Api.Employees.Controllers.EmployeeController (SuperMarket.Api.Employees).
-2022-11-29 12:20:45.377 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
-2022-11-29 12:20:45.377 +05:30 [INF] Executed action SuperMarket.Api.Employees.Controllers.EmployeeController.AddNewEmployee (SuperMarket.Api.Employees) in 0.6117ms
-2022-11-29 12:20:45.377 +05:30 [INF] Executed endpoint 'SuperMarket.Api.Employees.Controllers.EmployeeController.AddNewEmployee (SuperMarket.Api.Employees)'
-2022-11-29 12:20:45.378 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7187/Employee/add application/json 314 - 400 - application/problem+json;+charset=utf-8 1.0234ms
-2022-11-29 12:21:00.650 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7187/Employee/add application/json 316
-2022-11-29 12:21:00.650 +05:30 [INF] Executing endpoint 'SuperMarket.Api.Employees.Controllers.EmployeeController.AddNewEmployee (SuperMarket.Api.Employees)'
-2022-11-29 12:21:00.650 +05:30 [INF] Route matched with {action = "AddNewEmployee", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult AddNewEmployee(SuperMarket.Data.Employees.RequestModel.AddEmployee) on controller SuperMarket.Api.Employees.Controllers.EmployeeController (SuperMarket.Api.Employees).
-2022-11-29 12:21:00.651 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
-2022-11-29 12:21:00.651 +05:30 [INF] Executed action SuperMarket.Api.Employees.Controllers.EmployeeController.AddNewEmployee (SuperMarket.Api.Employees) in 0.6683ms
-2022-11-29 12:21:00.651 +05:30 [INF] Executed endpoint 'SuperMarket.Api.Employees.Controllers.EmployeeController.AddNewEmployee (SuperMarket.Api.Employees)'
-2022-11-29 12:21:00.651 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7187/Employee/add application/json 316 - 400 - application/problem+json;+charset=utf-8 1.0397ms
-2022-11-29 12:22:17.740 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7187/Employee/add - 316
-2022-11-29 12:22:17.740 +05:30 [INF] Executing endpoint 'SuperMarket.Api.Employees.Controllers.EmployeeController.AddNewEmployee (SuperMarket.Api.Employees)'
-2022-11-29 12:22:17.740 +05:30 [INF] Route matched with {action = "AddNewEmployee", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult AddNewEmployee(SuperMarket.Data.Employees.RequestModel.AddEmployee) on controller SuperMarket.Api.Employees.Controllers.EmployeeController (SuperMarket.Api.Employees).
-2022-11-29 12:22:17.742 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
-2022-11-29 12:22:17.743 +05:30 [INF] Executed action SuperMarket.Api.Employees.Controllers.EmployeeController.AddNewEmployee (SuperMarket.Api.Employees) in 2.6439ms
-2022-11-29 12:22:17.743 +05:30 [INF] Executed endpoint 'SuperMarket.Api.Employees.Controllers.EmployeeController.AddNewEmployee (SuperMarket.Api.Employees)'
-2022-11-29 12:22:17.743 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7187/Employee/add - 316 - 415 - application/problem+json;+charset=utf-8 3.1748ms
-2022-11-29 12:22:31.466 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7187/Employee/add application/json 316
-2022-11-29 12:22:31.466 +05:30 [INF] Executing endpoint 'SuperMarket.Api.Employees.Controllers.EmployeeController.AddNewEmployee (SuperMarket.Api.Employees)'
-2022-11-29 12:22:31.466 +05:30 [INF] Route matched with {action = "AddNewEmployee", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult AddNewEmployee(SuperMarket.Data.Employees.RequestModel.AddEmployee) on controller SuperMarket.Api.Employees.Controllers.EmployeeController (SuperMarket.Api.Employees).
-2022-11-29 12:22:31.467 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
-2022-11-29 12:22:31.467 +05:30 [INF] Executed action SuperMarket.Api.Employees.Controllers.EmployeeController.AddNewEmployee (SuperMarket.Api.Employees) in 0.7284ms
-2022-11-29 12:22:31.467 +05:30 [INF] Executed endpoint 'SuperMarket.Api.Employees.Controllers.EmployeeController.AddNewEmployee (SuperMarket.Api.Employees)'
-2022-11-29 12:22:31.467 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7187/Employee/add application/json 316 - 400 - application/problem+json;+charset=utf-8 1.1429ms
-2022-11-29 12:22:51.944 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7187/Employee/add application/json 346
-2022-11-29 12:22:51.944 +05:30 [INF] Executing endpoint 'SuperMarket.Api.Employees.Controllers.EmployeeController.AddNewEmployee (SuperMarket.Api.Employees)'
-2022-11-29 12:22:51.945 +05:30 [INF] Route matched with {action = "AddNewEmployee", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult AddNewEmployee(SuperMarket.Data.Employees.RequestModel.AddEmployee) on controller SuperMarket.Api.Employees.Controllers.EmployeeController (SuperMarket.Api.Employees).
-2022-11-29 12:22:51.945 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
-2022-11-29 12:22:51.945 +05:30 [INF] Executed action SuperMarket.Api.Employees.Controllers.EmployeeController.AddNewEmployee (SuperMarket.Api.Employees) in 0.5037ms
-2022-11-29 12:22:51.945 +05:30 [INF] Executed endpoint 'SuperMarket.Api.Employees.Controllers.EmployeeController.AddNewEmployee (SuperMarket.Api.Employees)'
-2022-11-29 12:22:51.945 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7187/Employee/add application/json 346 - 400 - application/problem+json;+charset=utf-8 0.9251ms
-2022-11-29 12:30:14.563 +05:30 [INF] Application is shutting down...
-2022-11-29 13:19:27.656 +05:30 [INF] Now listening on: https://localhost:7187
-2022-11-29 13:19:27.687 +05:30 [INF] Now listening on: http://localhost:5193
-2022-11-29 13:19:27.693 +05:30 [INF] Application started. Press Ctrl+C to shut down.
-2022-11-29 13:19:27.694 +05:30 [INF] Hosting environment: Development
-2022-11-29 13:19:27.694 +05:30 [INF] Content root path: C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\
-2022-11-29 13:19:28.684 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7187/Employee/add application/json 346
-2022-11-29 13:19:28.722 +05:30 [INF] Executing endpoint 'SuperMarket.Api.Employees.Controllers.EmployeeController.AddNewEmployee (SuperMarket.Api.Employees)'
-2022-11-29 13:19:28.749 +05:30 [INF] Route matched with {action = "AddNewEmployee", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult AddNewEmployee(SuperMarket.Data.Employees.RequestModel.AddEmployee) on controller SuperMarket.Api.Employees.Controllers.EmployeeController (SuperMarket.Api.Employees).
-2022-11-29 13:19:28.936 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
-2022-11-29 13:19:28.959 +05:30 [INF] Executed action SuperMarket.Api.Employees.Controllers.EmployeeController.AddNewEmployee (SuperMarket.Api.Employees) in 205.8605ms
-2022-11-29 13:19:28.959 +05:30 [INF] Executed endpoint 'SuperMarket.Api.Employees.Controllers.EmployeeController.AddNewEmployee (SuperMarket.Api.Employees)'
-2022-11-29 13:19:28.962 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7187/Employee/add application/json 346 - 400 - application/problem+json;+charset=utf-8 281.8097ms
-2022-11-29 13:26:52.534 +05:30 [INF] Application is shutting down...
+2022-11-29 17:30:23.956 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: test
+   at SuperMarket.Service.Employees.Services.EmployeeService.GetAllEmployeesService() in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Service.Employees\Services\EmployeeService.cs:line 28
+   at SuperMarket.Api.Employees.Controllers.EmployeeController.GetAllEmployees() in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\Controllers\EmployeeController.cs:line 27
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)

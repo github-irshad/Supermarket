@@ -25,6 +25,7 @@ namespace SuperMarket.Service.Employees.Services
 
     public IEnumerable<Employee> GetAllEmployeesService()
     {
+      // throw new Exception("test");
       return employeeManagement.GetAllEmployees();
     }
 

@@ -47,7 +47,8 @@ Enrich.FromLogContext().
 CreateLogger();
 builder.Logging.AddSerilog(_logger);
 
-builder.Services.AddTransient<SuperMarketAPIMiddleware>();
+
+// builder.Services.AddTransient<SuperMarketExceptionMiddleware>();
 
 
 var app = builder.Build();
@@ -55,10 +56,13 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}else{
-    app.UseHsts();
+  app.UseSwagger();
+  app.UseSwaggerUI();
+}
+else
+{
+  app.UseHsts();
+  app.UseMiddleware<SuperMarketExceptionMiddleware>();
 }
 
 
@@ -70,6 +74,5 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-app.UseMiddleware<SuperMarketAPIMiddleware>();
 
 app.Run();
