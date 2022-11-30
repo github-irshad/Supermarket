@@ -13,3 +13,6 @@ C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Service.Employees\
 C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Service.Employees\obj\Debug\net6.0\refint\SuperMarket.Service.Employees.dll
 C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Service.Employees\obj\Debug\net6.0\SuperMarket.Service.Employees.pdb
 C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Service.Employees\obj\Debug\net6.0\ref\SuperMarket.Service.Employees.dll
+C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\Builds\30-11\SuperMarket.Service.Employees.deps.json
+C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\Builds\30-11\SuperMarket.Service.Employees.dll
+C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\Builds\30-11\SuperMarket.Service.Employees.pdb

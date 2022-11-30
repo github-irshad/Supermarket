@@ -14,5 +14,7 @@ namespace SuperMarket.Service.Employees.Interfaces
     public void NewEmployee(AddEmployeeDto employee);
 
     public void DeleteEmployeeService(int id);
+
+    public void ChangeVerification(int id);
   }
 }

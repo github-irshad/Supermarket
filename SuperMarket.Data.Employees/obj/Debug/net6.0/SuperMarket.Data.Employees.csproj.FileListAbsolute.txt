@@ -12,3 +12,7 @@ C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Data.Employees\obj
 C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Data.Employees\obj\Debug\net6.0\ref\SuperMarket.Data.Employees.dll
 C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Data.Employees\bin\Debug\net6.0\SuperMarket.Data.Employees.runtimeconfig.json
 C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Data.Employees\obj\Debug\net6.0\SuperMarket.Data.Employees.genruntimeconfig.cache
+C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\Builds\30-11\SuperMarket.Data.Employees.deps.json
+C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\Builds\30-11\SuperMarket.Data.Employees.runtimeconfig.json
+C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\Builds\30-11\SuperMarket.Data.Employees.dll
+C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\Builds\30-11\SuperMarket.Data.Employees.pdb

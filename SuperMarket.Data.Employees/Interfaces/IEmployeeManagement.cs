@@ -13,6 +13,7 @@ namespace SuperMarket.Data.Employees.Interfaces
     public void DeleteEmployee(int id);
     public void AddNewEmployee(AddEmployee newEmployee);
     public void UpdateEmployee(int id, EditEmployee updateEmployeeModel);
+    public void ChangeVerification(int id);
 
 
 

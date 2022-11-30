@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "lHaHyNFyHRU02rbkLQ+GAuGhupmL6pg7BbA21lqFTDo=",
+  "Hash": "FNktSwsd9LycmPyZIdDlrSQwF3Ekct7BzH3aXsyVmds=",
   "Source": "SuperMarket.Api.Employees",
   "BasePath": "_content/SuperMarket.Api.Employees",
   "Mode": "Default",
@@ -10,19 +10,19 @@
     {
       "Name": "SuperMarket.Api.Employees\\wwwroot",
       "Source": "SuperMarket.Api.Employees",
-      "ContentRoot": "C:\\Users\\muhammed.irshad\\Desktop\\.NET\\SuperMarket\\SuperMarket.Api.Employees\\wwwroot\\",
+      "ContentRoot": "c:\\Users\\muhammed.irshad\\Desktop\\.NET\\SuperMarket\\SuperMarket.Api.Employees\\wwwroot\\",
       "BasePath": "_content/SuperMarket.Api.Employees",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\muhammed.irshad\\Desktop\\.NET\\SuperMarket\\SuperMarket.Api.Employees\\wwwroot\\Uploads\\sunset-summer-golden-hour-paul-filitchkin.jpg",
+      "Identity": "c:\\Users\\muhammed.irshad\\Desktop\\.NET\\SuperMarket\\SuperMarket.Api.Employees\\wwwroot\\Uploads\\1\\1.jpeg",
       "SourceId": "SuperMarket.Api.Employees",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\muhammed.irshad\\Desktop\\.NET\\SuperMarket\\SuperMarket.Api.Employees\\wwwroot\\",
+      "ContentRoot": "c:\\Users\\muhammed.irshad\\Desktop\\.NET\\SuperMarket\\SuperMarket.Api.Employees\\wwwroot\\",
       "BasePath": "_content/SuperMarket.Api.Employees",
-      "RelativePath": "Uploads/sunset-summer-golden-hour-paul-filitchkin.jpg",
+      "RelativePath": "Uploads/1/1.jpeg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -31,24 +31,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Uploads\\sunset-summer-golden-hour-paul-filitchkin.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\muhammed.irshad\\Desktop\\.NET\\SuperMarket\\SuperMarket.Api.Employees\\wwwroot\\Uploads\\thumbnail_image002.jpg",
-      "SourceId": "SuperMarket.Api.Employees",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\muhammed.irshad\\Desktop\\.NET\\SuperMarket\\SuperMarket.Api.Employees\\wwwroot\\",
-      "BasePath": "_content/SuperMarket.Api.Employees",
-      "RelativePath": "Uploads/thumbnail_image002.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Uploads\\thumbnail_image002.jpg"
+      "OriginalItemSpec": "wwwroot\\Uploads\\1\\1.jpeg"
     }
   ]
 }

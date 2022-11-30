@@ -90,7 +90,12 @@ namespace SuperMarket.Api.Employees.Repository
       return _employeeDbContext.Employees.Where(x => x.Id == id).FirstOrDefault();
     }
 
-    
+    public void ChangeVerification(int id)
+    {
+      var empStatus = _employeeDbContext.Employees.Where(x=>x.Id == id).FirstOrDefault();
+      empStatus.isVerified = !empStatus.isVerified;
 
+      _employeeDbContext.SaveChanges();
+    }
   }
 }

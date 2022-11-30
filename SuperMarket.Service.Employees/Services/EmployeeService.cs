@@ -58,6 +58,9 @@ namespace SuperMarket.Service.Employees.Services
       employeeManagement.UpdateEmployee(id,updateEmployeeModel);
     }
 
-
+    public void ChangeVerification(int id)
+    {
+      employeeManagement.ChangeVerification(id);
+    }
   }
 }

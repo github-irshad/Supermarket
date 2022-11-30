@@ -66,3 +66,11 @@ C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\bin\
 C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\bin\Debug\net6.0\Serilog.Sinks.PeriodicBatching.dll
 C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\bin\Debug\net6.0\Serilog.Sinks.PostgreSQL.dll
 C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\Builds\30-11\appsettings.Development.json
+C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\Builds\30-11\appsettings.json
+C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\Builds\30-11\SuperMarket.Api.Employees.staticwebassets.runtime.json
+C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\Builds\30-11\SuperMarket.Api.Employees.exe
+C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\Builds\30-11\SuperMarket.Api.Employees.deps.json
+C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\Builds\30-11\SuperMarket.Api.Employees.runtimeconfig.json
+C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\Builds\30-11\SuperMarket.Api.Employees.dll
+C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\Builds\30-11\SuperMarket.Api.Employees.pdb

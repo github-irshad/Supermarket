@@ -18,13 +18,13 @@ namespace SuperMarket.Service.Employees.Services
       this.filesOp = filesOp;
     }
 
-    public void AddFilesService(FilesModel file)
+    public void AddFilesService(FilesModel file,int id)
     {
-      filesOp.AddFile(file);
+      filesOp.AddFile(file,id);
       
     }
-    public string Get(){
-      return filesOp.GetFile();
+    public string Get(int id){
+      return filesOp.GetFile(id);
     }
   }
 }

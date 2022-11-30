@@ -39,6 +39,11 @@ var autoMapper = new MapperConfiguration(item => item.AddProfile(new AutoMapperP
 IMapper mapper = autoMapper.CreateMapper();
 builder.Services.AddSingleton(mapper);
 
+ builder.Services.AddCors(p => p.AddPolicy("corsapp", builder =>
+    {
+        builder.WithOrigins("*").AllowAnyMethod().AllowAnyHeader();
+    }));
+
 
 //Serilog 
 var _logger = new LoggerConfiguration().ReadFrom.Configuration(builder.Configuration).
@@ -67,6 +72,8 @@ else
 
 
 app.UseStaticFiles();
+
+app.UseCors("corsapp");
 
 app.UseHttpsRedirection();
 

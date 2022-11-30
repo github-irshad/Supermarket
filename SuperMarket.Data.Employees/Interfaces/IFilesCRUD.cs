@@ -8,8 +8,8 @@ namespace SuperMarket.Data.Employees.Interfaces
 {
     public interface IFilesCRUD
     {
-        public void AddFile(FilesModel filesModel);
+        public void AddFile(FilesModel filesModel,int id);
 
-        public string GetFile();
+        public string GetFile(int id);
     }
 }

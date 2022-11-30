@@ -8,7 +8,7 @@ namespace SuperMarket.Service.Employees.Interfaces
 {
     public interface IFilesServices
     {
-        public void AddFilesService(FilesModel file);
-        public string Get();
+        public void AddFilesService(FilesModel file,int id);
+        public string Get(int id);
     }
 }

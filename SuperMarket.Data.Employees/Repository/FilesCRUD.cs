@@ -12,16 +12,16 @@ namespace SuperMarket.Data.Employees.Repository
       this.webHostEnvironment = webHostEnvironment;
     }
 
-    public void AddFile(FilesModel filesModel)
+    public void AddFile(FilesModel filesModel,int id)
     {
     
         if (filesModel.files.Length > 0)
         {
-          if (!Directory.Exists(webHostEnvironment.WebRootPath + "\\Uploads\\"))
+          if (!Directory.Exists(webHostEnvironment.WebRootPath + "\\Uploads\\"+id.ToString()))
           {
-            Directory.CreateDirectory(webHostEnvironment.WebRootPath + "\\Uploads\\");
+            Directory.CreateDirectory(webHostEnvironment.WebRootPath + "\\Uploads\\"+id.ToString());
             }
-            using(FileStream fileStream = System.IO.File.Create(webHostEnvironment.WebRootPath+"\\Uploads\\"+filesModel.files.FileName)){
+            using(FileStream fileStream = System.IO.File.Create(webHostEnvironment.WebRootPath+"\\Uploads\\"+id.ToString()+"\\"+id.ToString()+".jpeg")){
               filesModel.files.CopyTo(fileStream);
               fileStream.Flush();
               
@@ -30,9 +30,9 @@ namespace SuperMarket.Data.Employees.Repository
       
     }
 
-    public string GetFile()
+    public string GetFile(int id)
     {
-      return webHostEnvironment.WebRootPath+"\\Uploads\\sunset-summer-golden-hour-paul-filitchkin.jpg";
+      return webHostEnvironment.WebRootPath+"\\Uploads\\"+id.ToString()+"\\"+id.ToString();
     }
   }
 }

@@ -23,7 +23,7 @@ namespace SuperMarket.Api.Employees.Controllers
 
     public ActionResult<IEnumerable<Employee>> GetAllEmployees()
     {
-      throw new Exception("test");
+      // throw new Exception("test");
       return Ok(employeeService.GetAllEmployeesService());
     }
 
@@ -79,6 +79,12 @@ namespace SuperMarket.Api.Employees.Controllers
     [HttpPut("id")]
     public ActionResult EditEmployee(int id,[FromForm]EditEmployee editEmployee){
       employeeService.UpdateEmployeeService(id,editEmployee);
+      return Ok();
+    }
+
+    [HttpPost("Verify")]
+    public ActionResult VerifyAlter(int id){
+      employeeService.ChangeVerification(id);
       return Ok();
     }
 

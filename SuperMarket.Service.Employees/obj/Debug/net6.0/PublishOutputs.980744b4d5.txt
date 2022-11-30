@@ -17,5 +17,8 @@ c:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Service.Employees\
 c:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Service.Employees\bin\Debug\net6.0\publish\Microsoft.Extensions.Primitives.dll
 c:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Service.Employees\bin\Debug\net6.0\publish\Npgsql.dll
 c:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Service.Employees\bin\Debug\net6.0\publish\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+c:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Service.Employees\bin\Debug\net6.0\publish\Serilog.dll
+c:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Service.Employees\bin\Debug\net6.0\publish\Serilog.Sinks.PeriodicBatching.dll
+c:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Service.Employees\bin\Debug\net6.0\publish\Serilog.Sinks.PostgreSQL.dll
 c:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Service.Employees\bin\Debug\net6.0\publish\SuperMarket.Data.Employees.dll
 c:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Service.Employees\bin\Debug\net6.0\publish\SuperMarket.Data.Employees.pdb
