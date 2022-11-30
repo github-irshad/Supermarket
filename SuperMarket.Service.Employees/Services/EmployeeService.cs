@@ -26,8 +26,8 @@ namespace SuperMarket.Service.Employees.Services
       // AddEmployee employee = new AddEmployee();
       var employee = mapper.Map<AddEmployeeDto,AddEmployee>(_employee);
 
-      employee.Created_at = DateTime.Now.ToLocalTime();
-      employee.Updated_at = DateTime.Now.ToLocalTime();
+      employee.Created_at = DateTime.UtcNow;
+      employee.Updated_at = DateTime.UtcNow;
       employee.isVerified = false;
       employee.Created_by = 0;
       employee.Updated_by = 0;

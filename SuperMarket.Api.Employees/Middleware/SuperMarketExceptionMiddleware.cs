@@ -40,6 +40,7 @@ namespace SuperMarket.Api.Employees.Middleware
 
         var errorModel = new ErrorModel()
         {
+        //  ResponseCode = Enum.GetName(typeof(HttpStatusCode.InternalServerError),500),
          ResponseCode = 500,
          Message = "An error occured",
          Error = new List<string>{ex.Message}   
