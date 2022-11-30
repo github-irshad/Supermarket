@@ -11,7 +11,7 @@ namespace SuperMarket.Service.Employees.Interfaces
 
     public void UpdateEmployeeService(int id,EditEmployee updateEmployeeModel);
 
-    public void NewEmployee(AddEmployee employee);
+    public void NewEmployee(AddEmployeeDto employee);
 
     public void DeleteEmployeeService(int id);
   }
