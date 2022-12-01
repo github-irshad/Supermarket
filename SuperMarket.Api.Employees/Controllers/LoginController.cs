@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using SuperMarket.Data.Employees.Models;
+using SuperMarket.Data.Employees.RequestModel;
 using SuperMarket.Service.Employees.Interfaces;
 
 namespace SuperMarket.Api.Employees.Controllers
@@ -23,7 +24,7 @@ namespace SuperMarket.Api.Employees.Controllers
 
     [HttpPost]
 
-    public ActionResult UserLogin([FromForm] User login_obj)
+    public ActionResult UserLogin([FromForm] UserDto login_obj)
     {
       if (ModelState.IsValid)
       {

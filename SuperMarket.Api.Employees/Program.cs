@@ -47,6 +47,17 @@ builder.Services.AddSingleton(mapper);
 
 
 //Serilog 
+
+// builder.Host.UseSerilog((context,config)=> 
+// {
+//   var connectionString = context.Configuration.GetConnectionString("Logging");
+
+//   config.WriteTo.PostgreSQL(connectionString,"SuperMarket_Logs",needAutoCreateTable: true,schemaName:"Logs").
+//   MinimumLevel.Information();
+// });
+
+
+
 var _logger = new LoggerConfiguration().ReadFrom.Configuration(builder.Configuration).
 Enrich.FromLogContext().
 // WriteTo.File("C:\\Users\\muhammed.irshad\\Desktop\\.NET\\SuperMarket\\SuperMarket.Api.Employees\\Logs\\ApiLog-.log",rollingInterval:RollingInterval.Day).

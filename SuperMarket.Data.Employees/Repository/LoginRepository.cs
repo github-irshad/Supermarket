@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using SuperMarket.Data.Employees.Data;
 using SuperMarket.Data.Employees.Interfaces;
 using SuperMarket.Data.Employees.Models;
+using SuperMarket.Data.Employees.RequestModel;
 
 namespace SuperMarket.Data.Employees.Repository
 {
@@ -18,7 +19,7 @@ namespace SuperMarket.Data.Employees.Repository
     }
 
 
-    public bool LoginCheck(User login_obj)
+    public bool LoginCheck(UserDto login_obj)
     {
       if (employeeDbContext.Users.Any(x => x.UserName == login_obj.UserName && x.Password == login_obj.Password && x.UserType == login_obj.UserType) )
       {

@@ -13,7 +13,6 @@ namespace SuperMarket.Data.Employees.Models
 
 
 
-
     // [ForeignKey]
     [Column("salary_component_id", TypeName = EntityDataType.EntityDataType.IntType)]
     public int? SalaryComponentId { get; set; }

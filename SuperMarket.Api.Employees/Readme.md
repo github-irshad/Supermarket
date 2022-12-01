@@ -47,3 +47,33 @@ Options:
                                          when the build is up-to-date.
 
 dotnet ef migrations script --startup-project ..\SuperMarket.Api.Employees\
+
+
+
+
+/////////////
+"Serilog":{
+    "using":["Serilog.Sinks.File",
+    "Serilog.Sinks.PostgreSQL"],
+    "Minimumlevel": {
+      "Default" : "Information"
+    },
+    "WriteTo":[{
+      "Name" : "File",
+      "Args" : {
+        "Path" : "C:\\Users\\muhammed.irshad\\Desktop\\.NET\\SuperMarket\\SuperMarket.Api.Employees\\Logs\\ApiLog-.log",
+        "rollingInterval" : "Day"}
+      },
+      {
+        "Name" : "PostgreSQL",
+        "Args": {
+          "connectionStrings": "Logging",
+          "schemaName" : "Logs",
+          "tableName": "SuperMarket_Logs",
+          "needAutoCreateTable": true,
+          "batchPostingLimit": 1 
+        }
+      }     
+          
+        ]
+      }

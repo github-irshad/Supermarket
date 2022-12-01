@@ -25,3 +25,220 @@ System.InvalidOperationException: No service for type 'SuperMarket.Api.Employees
    at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
    at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-12-01 15:27:30.168 +05:30 [INF] Now listening on: https://localhost:7187
+2022-12-01 15:27:30.202 +05:30 [INF] Now listening on: http://localhost:5193
+2022-12-01 15:27:30.211 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-01 15:27:30.212 +05:30 [INF] Hosting environment: Development
+2022-12-01 15:27:30.212 +05:30 [INF] Content root path: C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\
+2022-12-01 15:27:30.629 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7187/swagger/index.html - -
+2022-12-01 15:27:30.761 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7187/swagger/index.html - - - 200 - text/html;charset=utf-8 134.4948ms
+2022-12-01 15:27:30.780 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7187/_framework/aspnetcore-browser-refresh.js - -
+2022-12-01 15:27:30.781 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7187/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 1.5563ms
+2022-12-01 15:27:30.994 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7187/swagger/v1/swagger.json - -
+2022-12-01 15:27:31.087 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7187/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 93.3037ms
+2022-12-01 15:50:11.228 +05:30 [INF] Application is shutting down...
+2022-12-01 15:50:30.956 +05:30 [INF] Now listening on: https://localhost:7187
+2022-12-01 15:50:30.987 +05:30 [INF] Now listening on: http://localhost:5193
+2022-12-01 15:50:30.994 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-01 15:50:30.995 +05:30 [INF] Hosting environment: Development
+2022-12-01 15:50:30.995 +05:30 [INF] Content root path: C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\
+2022-12-01 15:50:31.414 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7187/swagger/index.html - -
+2022-12-01 15:50:31.552 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7187/swagger/index.html - - - 200 - text/html;charset=utf-8 140.6478ms
+2022-12-01 15:50:31.568 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7187/_framework/aspnetcore-browser-refresh.js - -
+2022-12-01 15:50:31.570 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7187/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 1.2081ms
+2022-12-01 15:50:31.682 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7187/swagger/v1/swagger.json - -
+2022-12-01 15:50:31.776 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7187/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 94.3158ms
+2022-12-01 15:51:16.884 +05:30 [INF] Application is shutting down...
+2022-12-01 15:51:24.050 +05:30 [INF] Now listening on: https://localhost:7187
+2022-12-01 15:51:24.080 +05:30 [INF] Now listening on: http://localhost:5193
+2022-12-01 15:51:24.087 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-01 15:51:24.087 +05:30 [INF] Hosting environment: Development
+2022-12-01 15:51:24.088 +05:30 [INF] Content root path: C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\
+2022-12-01 15:51:24.446 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7187/swagger/index.html - -
+2022-12-01 15:51:24.583 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7187/swagger/index.html - - - 200 - text/html;charset=utf-8 139.8756ms
+2022-12-01 15:51:24.599 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7187/_framework/aspnetcore-browser-refresh.js - -
+2022-12-01 15:51:24.602 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7187/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 2.7501ms
+2022-12-01 15:51:24.705 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7187/swagger/v1/swagger.json - -
+2022-12-01 15:51:24.802 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7187/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 96.2994ms
+2022-12-01 15:59:44.564 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7187/swagger/index.html - -
+2022-12-01 15:59:44.570 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7187/swagger/index.html - - - 200 - text/html;charset=utf-8 5.9869ms
+2022-12-01 15:59:44.582 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7187/_framework/aspnetcore-browser-refresh.js - -
+2022-12-01 15:59:44.582 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7187/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 0.3331ms
+2022-12-01 15:59:44.725 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7187/swagger/v1/swagger.json - -
+2022-12-01 15:59:44.731 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7187/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 6.6140ms
+2022-12-01 16:00:15.191 +05:30 [INF] Application is shutting down...
+2022-12-01 16:56:53.180 +05:30 [INF] Now listening on: https://localhost:7187
+2022-12-01 16:56:53.211 +05:30 [INF] Now listening on: http://localhost:5193
+2022-12-01 16:56:53.218 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-01 16:56:53.219 +05:30 [INF] Hosting environment: Development
+2022-12-01 16:56:53.219 +05:30 [INF] Content root path: C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\
+2022-12-01 16:56:53.594 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7187/swagger/index.html - -
+2022-12-01 16:56:53.735 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7187/swagger/index.html - - - 200 - text/html;charset=utf-8 143.5850ms
+2022-12-01 16:56:53.751 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7187/_framework/aspnetcore-browser-refresh.js - -
+2022-12-01 16:56:53.753 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7187/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 1.7773ms
+2022-12-01 16:56:53.917 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7187/swagger/v1/swagger.json - -
+2022-12-01 16:56:54.025 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7187/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 107.2136ms
+2022-12-01 16:56:59.820 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7187/Employee/All - -
+2022-12-01 16:56:59.827 +05:30 [INF] Executing endpoint 'SuperMarket.Api.Employees.Controllers.EmployeeController.GetAllEmployees (SuperMarket.Api.Employees)'
+2022-12-01 16:56:59.842 +05:30 [INF] Route matched with {action = "GetAllEmployees", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[SuperMarket.Data.Employees.Models.Employee]] GetAllEmployees() on controller SuperMarket.Api.Employees.Controllers.EmployeeController (SuperMarket.Api.Employees).
+2022-12-01 16:57:01.228 +05:30 [INF] Executed DbCommand (45ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT e.id, e.aadhar_document, e.aadhar_number, e.address, e.created_at, e.created_by, e.department, e.designation, e.email, e."firstName", e.verification, e."lastName", e.phone_number, e.updated_at, e.updated_by, e."employeeSalaryId"
+FROM "Employee" AS e
+2022-12-01 16:57:01.321 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[SuperMarket.Data.Employees.Models.Employee, SuperMarket.Data.Employees, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-12-01 16:57:01.346 +05:30 [INF] Executed action SuperMarket.Api.Employees.Controllers.EmployeeController.GetAllEmployees (SuperMarket.Api.Employees) in 1499.9513ms
+2022-12-01 16:57:01.346 +05:30 [INF] Executed endpoint 'SuperMarket.Api.Employees.Controllers.EmployeeController.GetAllEmployees (SuperMarket.Api.Employees)'
+2022-12-01 16:57:01.352 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7187/Employee/All - - - 200 - application/json;+charset=utf-8 1531.9051ms
+2022-12-01 16:57:09.524 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7187/Employee/11 - -
+2022-12-01 16:57:09.525 +05:30 [INF] Executing endpoint 'SuperMarket.Api.Employees.Controllers.EmployeeController.GetIndividualEmployee (SuperMarket.Api.Employees)'
+2022-12-01 16:57:09.534 +05:30 [INF] Route matched with {action = "GetIndividualEmployee", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[SuperMarket.Data.Employees.Models.Employee] GetIndividualEmployee(Int32) on controller SuperMarket.Api.Employees.Controllers.EmployeeController (SuperMarket.Api.Employees).
+2022-12-01 16:57:09.608 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e.id, e.aadhar_document, e.aadhar_number, e.address, e.created_at, e.created_by, e.department, e.designation, e.email, e."firstName", e.verification, e."lastName", e.phone_number, e.updated_at, e.updated_by, e."employeeSalaryId"
+FROM "Employee" AS e
+WHERE e.id = @__id_0
+LIMIT 1
+2022-12-01 16:57:09.609 +05:30 [INF] Executing ObjectResult, writing value of type 'SuperMarket.Data.Employees.Models.Employee'.
+2022-12-01 16:57:09.609 +05:30 [INF] Executed action SuperMarket.Api.Employees.Controllers.EmployeeController.GetIndividualEmployee (SuperMarket.Api.Employees) in 75.0998ms
+2022-12-01 16:57:09.609 +05:30 [INF] Executed endpoint 'SuperMarket.Api.Employees.Controllers.EmployeeController.GetIndividualEmployee (SuperMarket.Api.Employees)'
+2022-12-01 16:57:09.609 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7187/Employee/11 - - - 200 - application/json;+charset=utf-8 85.6777ms
+2022-12-01 16:57:10.335 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7187/Employee/11 - -
+2022-12-01 16:57:10.335 +05:30 [INF] Executing endpoint 'SuperMarket.Api.Employees.Controllers.EmployeeController.GetIndividualEmployee (SuperMarket.Api.Employees)'
+2022-12-01 16:57:10.335 +05:30 [INF] Route matched with {action = "GetIndividualEmployee", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[SuperMarket.Data.Employees.Models.Employee] GetIndividualEmployee(Int32) on controller SuperMarket.Api.Employees.Controllers.EmployeeController (SuperMarket.Api.Employees).
+2022-12-01 16:57:10.381 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e.id, e.aadhar_document, e.aadhar_number, e.address, e.created_at, e.created_by, e.department, e.designation, e.email, e."firstName", e.verification, e."lastName", e.phone_number, e.updated_at, e.updated_by, e."employeeSalaryId"
+FROM "Employee" AS e
+WHERE e.id = @__id_0
+LIMIT 1
+2022-12-01 16:57:10.381 +05:30 [INF] Executing ObjectResult, writing value of type 'SuperMarket.Data.Employees.Models.Employee'.
+2022-12-01 16:57:10.381 +05:30 [INF] Executed action SuperMarket.Api.Employees.Controllers.EmployeeController.GetIndividualEmployee (SuperMarket.Api.Employees) in 45.7983ms
+2022-12-01 16:57:10.381 +05:30 [INF] Executed endpoint 'SuperMarket.Api.Employees.Controllers.EmployeeController.GetIndividualEmployee (SuperMarket.Api.Employees)'
+2022-12-01 16:57:10.381 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7187/Employee/11 - - - 200 - application/json;+charset=utf-8 46.3068ms
+2022-12-01 16:58:45.589 +05:30 [INF] Now listening on: https://localhost:7187
+2022-12-01 16:58:45.628 +05:30 [INF] Now listening on: http://localhost:5193
+2022-12-01 16:58:45.635 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-01 16:58:45.637 +05:30 [INF] Hosting environment: Development
+2022-12-01 16:58:45.637 +05:30 [INF] Content root path: C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\
+2022-12-01 16:58:45.719 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7187/swagger/index.html - -
+2022-12-01 16:58:45.845 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7187/swagger/index.html - - - 200 - text/html;charset=utf-8 128.8412ms
+2022-12-01 16:58:45.856 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7187/_framework/aspnetcore-browser-refresh.js - -
+2022-12-01 16:58:45.858 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7187/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 1.2203ms
+2022-12-01 16:58:45.948 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7187/swagger/v1/swagger.json - -
+2022-12-01 16:58:46.036 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7187/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 87.8726ms
+2022-12-01 16:59:35.476 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7187/swagger/index.html - -
+2022-12-01 16:59:35.483 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7187/swagger/index.html - - - 200 - text/html;charset=utf-8 6.9399ms
+2022-12-01 16:59:35.496 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7187/_framework/aspnetcore-browser-refresh.js - -
+2022-12-01 16:59:35.496 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7187/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 0.3866ms
+2022-12-01 16:59:35.585 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7187/swagger/v1/swagger.json - -
+2022-12-01 16:59:35.604 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7187/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 18.9687ms
+2022-12-01 17:06:17.375 +05:30 [INF] Now listening on: https://localhost:7187
+2022-12-01 17:06:17.423 +05:30 [INF] Now listening on: http://localhost:5193
+2022-12-01 17:06:17.431 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-01 17:06:17.433 +05:30 [INF] Hosting environment: Development
+2022-12-01 17:06:17.433 +05:30 [INF] Content root path: C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\
+2022-12-01 17:06:17.504 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7187/swagger/index.html - -
+2022-12-01 17:06:17.640 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7187/swagger/index.html - - - 200 - text/html;charset=utf-8 139.0993ms
+2022-12-01 17:06:17.648 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7187/_framework/aspnetcore-browser-refresh.js - -
+2022-12-01 17:06:17.650 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7187/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 1.6152ms
+2022-12-01 17:06:17.716 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7187/swagger/v1/swagger.json - -
+2022-12-01 17:06:17.800 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7187/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 84.1351ms
+2022-12-01 17:07:06.793 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7187/login multipart/form-data;+boundary=----WebKitFormBoundarywiHyNSMgef62jrBA 344
+2022-12-01 17:07:06.797 +05:30 [INF] Executing endpoint 'SuperMarket.Api.Employees.Controllers.LoginController.UserLogin (SuperMarket.Api.Employees)'
+2022-12-01 17:07:06.826 +05:30 [INF] Route matched with {action = "UserLogin", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult UserLogin(SuperMarket.Data.Employees.RequestModel.UserDto) on controller SuperMarket.Api.Employees.Controllers.LoginController (SuperMarket.Api.Employees).
+2022-12-01 17:07:07.006 +05:30 [INF] Executed action SuperMarket.Api.Employees.Controllers.LoginController.UserLogin (SuperMarket.Api.Employees) in 175.2027ms
+2022-12-01 17:07:07.007 +05:30 [INF] Executed endpoint 'SuperMarket.Api.Employees.Controllers.LoginController.UserLogin (SuperMarket.Api.Employees)'
+2022-12-01 17:07:07.085 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+UserDto -> User
+SuperMarket.Data.Employees.RequestModel.UserDto -> SuperMarket.Data.Employees.Models.User
+   at lambda_method9(Closure , UserDto , User , ResolutionContext )
+   at SuperMarket.Service.Employees.Services.LoginService.UserLogin(UserDto _login_obj) in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Service.Employees\Services\LoginService.cs:line 34
+   at SuperMarket.Api.Employees.Controllers.LoginController.UserLogin(UserDto login_obj) in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\Controllers\LoginController.cs:line 31
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-12-01 17:07:07.091 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7187/login multipart/form-data;+boundary=----WebKitFormBoundarywiHyNSMgef62jrBA 344 - 500 - text/plain;+charset=utf-8 298.4192ms
+2022-12-01 17:07:49.780 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7187/swagger/index.html - -
+2022-12-01 17:07:49.786 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7187/swagger/index.html - - - 200 - text/html;charset=utf-8 5.6913ms
+2022-12-01 17:07:49.806 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7187/_framework/aspnetcore-browser-refresh.js - -
+2022-12-01 17:07:49.806 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7187/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 0.4146ms
+2022-12-01 17:07:49.967 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7187/swagger/v1/swagger.json - -
+2022-12-01 17:07:49.978 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7187/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 10.3358ms
+2022-12-01 17:08:09.469 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7187/login multipart/form-data;+boundary=----WebKitFormBoundaryJjpl1SKURledfssG 344
+2022-12-01 17:08:09.470 +05:30 [INF] Executing endpoint 'SuperMarket.Api.Employees.Controllers.LoginController.UserLogin (SuperMarket.Api.Employees)'
+2022-12-01 17:08:09.473 +05:30 [INF] Route matched with {action = "UserLogin", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult UserLogin(SuperMarket.Data.Employees.RequestModel.UserDto) on controller SuperMarket.Api.Employees.Controllers.LoginController (SuperMarket.Api.Employees).
+2022-12-01 17:08:09.480 +05:30 [INF] Executed action SuperMarket.Api.Employees.Controllers.LoginController.UserLogin (SuperMarket.Api.Employees) in 6.9896ms
+2022-12-01 17:08:09.480 +05:30 [INF] Executed endpoint 'SuperMarket.Api.Employees.Controllers.LoginController.UserLogin (SuperMarket.Api.Employees)'
+2022-12-01 17:08:09.481 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+UserDto -> User
+SuperMarket.Data.Employees.RequestModel.UserDto -> SuperMarket.Data.Employees.Models.User
+   at lambda_method9(Closure , UserDto , User , ResolutionContext )
+   at SuperMarket.Service.Employees.Services.LoginService.UserLogin(UserDto _login_obj) in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Service.Employees\Services\LoginService.cs:line 34
+   at SuperMarket.Api.Employees.Controllers.LoginController.UserLogin(UserDto login_obj) in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\Controllers\LoginController.cs:line 31
+   at lambda_method10(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-12-01 17:08:09.482 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7187/login multipart/form-data;+boundary=----WebKitFormBoundaryJjpl1SKURledfssG 344 - 500 - text/plain;+charset=utf-8 13.0658ms
+2022-12-01 17:12:31.828 +05:30 [INF] Application is shutting down...
+2022-12-01 17:12:39.954 +05:30 [INF] Now listening on: https://localhost:7187
+2022-12-01 17:12:39.994 +05:30 [INF] Now listening on: http://localhost:5193
+2022-12-01 17:12:40.000 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-01 17:12:40.001 +05:30 [INF] Hosting environment: Development
+2022-12-01 17:12:40.001 +05:30 [INF] Content root path: C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\
+2022-12-01 17:12:40.389 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7187/swagger/index.html - -
+2022-12-01 17:12:40.523 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7187/swagger/index.html - - - 200 - text/html;charset=utf-8 135.9717ms
+2022-12-01 17:12:40.541 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7187/_framework/aspnetcore-browser-refresh.js - -
+2022-12-01 17:12:40.543 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7187/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 2.8474ms
+2022-12-01 17:12:40.640 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7187/swagger/v1/swagger.json - -
+2022-12-01 17:12:40.750 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7187/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 109.6113ms
+2022-12-01 17:13:00.617 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7187/login multipart/form-data;+boundary=----WebKitFormBoundaryolelhVx0bJT6M32p 344
+2022-12-01 17:13:00.622 +05:30 [INF] Executing endpoint 'SuperMarket.Api.Employees.Controllers.LoginController.UserLogin (SuperMarket.Api.Employees)'
+2022-12-01 17:13:00.642 +05:30 [INF] Route matched with {action = "UserLogin", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult UserLogin(SuperMarket.Data.Employees.RequestModel.UserDto) on controller SuperMarket.Api.Employees.Controllers.LoginController (SuperMarket.Api.Employees).
+2022-12-01 17:13:01.990 +05:30 [INF] Executed DbCommand (56ms) [Parameters=[@__login_obj_UserName_0='?', @__login_obj_Password_1='?', @__login_obj_UserType_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "User" AS u
+    WHERE u.user_name = @__login_obj_UserName_0 AND u.password = @__login_obj_Password_1 AND u.user_type = @__login_obj_UserType_2)
+2022-12-01 17:13:02.010 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2022-12-01 17:13:02.014 +05:30 [INF] Executed action SuperMarket.Api.Employees.Controllers.LoginController.UserLogin (SuperMarket.Api.Employees) in 1367.5045ms
+2022-12-01 17:13:02.015 +05:30 [INF] Executed endpoint 'SuperMarket.Api.Employees.Controllers.LoginController.UserLogin (SuperMarket.Api.Employees)'
+2022-12-01 17:13:02.022 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7187/login multipart/form-data;+boundary=----WebKitFormBoundaryolelhVx0bJT6M32p 344 - 200 0 - 1405.1705ms
+2022-12-01 17:34:48.986 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7187/swagger/index.html - -
+2022-12-01 17:34:48.993 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7187/swagger/index.html - - - 200 - text/html;charset=utf-8 6.4145ms
+2022-12-01 17:34:49.008 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7187/_framework/aspnetcore-browser-refresh.js - -
+2022-12-01 17:34:49.009 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7187/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 0.3594ms
+2022-12-01 17:34:49.151 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7187/swagger/v1/swagger.json - -
+2022-12-01 17:34:49.157 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7187/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 6.5159ms
