@@ -29,7 +29,7 @@ namespace SuperMarket.Api.Employees.Repository
     {
 
       var newEmployee = mapper.Map<AddEmployee, Employee>(_newEmployee);
-      
+
       _employeeDbContext.Employees.Add(newEmployee);
       _employeeDbContext.SaveChanges();
     }
@@ -94,7 +94,7 @@ namespace SuperMarket.Api.Employees.Repository
     public void ChangeVerification(int id)
     {
       var empStatus = _employeeDbContext.Employees.Where(x=>x.Id == id).FirstOrDefault();
-      empStatus.isVerified = !empStatus.isVerified;
+      empStatus.IsVerified = !empStatus.IsVerified;
 
       _employeeDbContext.SaveChanges();
     }

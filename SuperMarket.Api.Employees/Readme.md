@@ -17,7 +17,7 @@ script-migration
 
 To this project:
 Migration
-dotnet ef --startup-project ..\SuperMarket.Api.Employees\ migrations add myMigration01
+dotnet ef --startup-project ..\SuperMarket.Api.Employees\ migrations add newDetails
 
 Updation
 dotnet ef database update --startup-project ..\SuperMarket.Api.Employees\
@@ -45,3 +45,5 @@ Options:
   --msbuildprojectextensionspath <PATH>  The MSBuild project extensions path. Defaults to "obj".
   --no-build                             Don't build the project. Only use this 
                                          when the build is up-to-date.
+
+dotnet ef migrations script --startup-project ..\SuperMarket.Api.Employees\

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "NLxu0asSbiRyGuNRn80F2CF9OLrx9XKqD9Ilm5J6DM0=",
+  "Hash": "mQrb/ky6+Tds2uGqv6FJgIBfwy7yrJcLx5wxm06QeWU=",
   "Source": "SuperMarket.Api.Employees",
   "BasePath": "_content/SuperMarket.Api.Employees",
   "Mode": "Default",
@@ -32,23 +32,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Uploads\\1\\1.jpeg"
-    },
-    {
-      "Identity": "C:\\Users\\muhammed.irshad\\Desktop\\.NET\\SuperMarket\\SuperMarket.Api.Employees\\wwwroot\\Uploads\\2\\2.jpeg",
-      "SourceId": "SuperMarket.Api.Employees",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\muhammed.irshad\\Desktop\\.NET\\SuperMarket\\SuperMarket.Api.Employees\\wwwroot\\",
-      "BasePath": "_content/SuperMarket.Api.Employees",
-      "RelativePath": "Uploads/2/2.jpeg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Uploads\\2\\2.jpeg"
     }
   ]
 }
