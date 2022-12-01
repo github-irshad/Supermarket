@@ -11,5 +11,7 @@ namespace SuperMarket.Data.Employees.Interfaces
         public void AddFile(FilesModel filesModel,int id);
 
         public string GetFile(int id);
+
+        public void DeleteFile(int id);
     }
 }

@@ -29,6 +29,7 @@ namespace SuperMarket.Api.Employees.Repository
     {
 
       var newEmployee = mapper.Map<AddEmployee, Employee>(_newEmployee);
+      
       _employeeDbContext.Employees.Add(newEmployee);
       _employeeDbContext.SaveChanges();
     }

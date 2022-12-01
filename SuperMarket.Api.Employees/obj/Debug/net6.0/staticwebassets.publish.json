@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "yICT2ctyvdAoo0ouWoMywFSXG4yx4je3bz0d8M6yjB4=",
+  "Hash": "30hs0YCSQxHbSndEnlumzfwSFZrILL0TTYyGFCwj4Vg=",
   "Source": "SuperMarket.Api.Employees",
   "BasePath": "_content/SuperMarket.Api.Employees",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "SuperMarket.Api.Employees\\wwwroot",
       "Source": "SuperMarket.Api.Employees",
-      "ContentRoot": "c:\\Users\\muhammed.irshad\\Desktop\\.NET\\SuperMarket\\SuperMarket.Api.Employees\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\muhammed.irshad\\Desktop\\.NET\\SuperMarket\\SuperMarket.Api.Employees\\wwwroot\\",
       "BasePath": "_content/SuperMarket.Api.Employees",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "c:\\Users\\muhammed.irshad\\Desktop\\.NET\\SuperMarket\\SuperMarket.Api.Employees\\wwwroot\\Uploads\\1\\1.jpeg",
+      "Identity": "C:\\Users\\muhammed.irshad\\Desktop\\.NET\\SuperMarket\\SuperMarket.Api.Employees\\wwwroot\\Uploads\\1\\1.jpeg",
       "SourceId": "SuperMarket.Api.Employees",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\muhammed.irshad\\Desktop\\.NET\\SuperMarket\\SuperMarket.Api.Employees\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\muhammed.irshad\\Desktop\\.NET\\SuperMarket\\SuperMarket.Api.Employees\\wwwroot\\",
       "BasePath": "_content/SuperMarket.Api.Employees",
       "RelativePath": "Uploads/1/1.jpeg",
       "AssetKind": "All",

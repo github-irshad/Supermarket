@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "FNktSwsd9LycmPyZIdDlrSQwF3Ekct7BzH3aXsyVmds=",
+  "Hash": "NLxu0asSbiRyGuNRn80F2CF9OLrx9XKqD9Ilm5J6DM0=",
   "Source": "SuperMarket.Api.Employees",
   "BasePath": "_content/SuperMarket.Api.Employees",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "SuperMarket.Api.Employees\\wwwroot",
       "Source": "SuperMarket.Api.Employees",
-      "ContentRoot": "c:\\Users\\muhammed.irshad\\Desktop\\.NET\\SuperMarket\\SuperMarket.Api.Employees\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\muhammed.irshad\\Desktop\\.NET\\SuperMarket\\SuperMarket.Api.Employees\\wwwroot\\",
       "BasePath": "_content/SuperMarket.Api.Employees",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "c:\\Users\\muhammed.irshad\\Desktop\\.NET\\SuperMarket\\SuperMarket.Api.Employees\\wwwroot\\Uploads\\1\\1.jpeg",
+      "Identity": "C:\\Users\\muhammed.irshad\\Desktop\\.NET\\SuperMarket\\SuperMarket.Api.Employees\\wwwroot\\Uploads\\1\\1.jpeg",
       "SourceId": "SuperMarket.Api.Employees",
       "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\muhammed.irshad\\Desktop\\.NET\\SuperMarket\\SuperMarket.Api.Employees\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\muhammed.irshad\\Desktop\\.NET\\SuperMarket\\SuperMarket.Api.Employees\\wwwroot\\",
       "BasePath": "_content/SuperMarket.Api.Employees",
       "RelativePath": "Uploads/1/1.jpeg",
       "AssetKind": "All",
@@ -32,6 +32,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Uploads\\1\\1.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\muhammed.irshad\\Desktop\\.NET\\SuperMarket\\SuperMarket.Api.Employees\\wwwroot\\Uploads\\2\\2.jpeg",
+      "SourceId": "SuperMarket.Api.Employees",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\muhammed.irshad\\Desktop\\.NET\\SuperMarket\\SuperMarket.Api.Employees\\wwwroot\\",
+      "BasePath": "_content/SuperMarket.Api.Employees",
+      "RelativePath": "Uploads/2/2.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\2\\2.jpeg"
     }
   ]
 }

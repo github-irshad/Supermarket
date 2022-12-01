@@ -10,6 +10,7 @@ using SuperMarket.Data.Employees.Mapping;
 using Serilog;
 using SuperMarket.Api.Employees.Middleware;
 
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -39,10 +40,10 @@ var autoMapper = new MapperConfiguration(item => item.AddProfile(new AutoMapperP
 IMapper mapper = autoMapper.CreateMapper();
 builder.Services.AddSingleton(mapper);
 
- builder.Services.AddCors(p => p.AddPolicy("corsapp", builder =>
-    {
-        builder.WithOrigins("*").AllowAnyMethod().AllowAnyHeader();
-    }));
+//  builder.Services.AddCors(p => p.AddPolicy("corsapp", builder =>
+//     {
+//         builder.WithOrigins("*").AllowAnyMethod().AllowAnyHeader();
+//     }));
 
 
 //Serilog 
@@ -53,7 +54,9 @@ CreateLogger();
 builder.Logging.AddSerilog(_logger);
 
 
+// var logger =  builder.Services.BuildServiceProvider().GetService<ILogger<SuperMarketExceptionMiddleware>>();
 // builder.Services.AddTransient<SuperMarketExceptionMiddleware>();
+// builder.Services.AddSingleton(logger);
 
 
 var app = builder.Build();
@@ -63,17 +66,17 @@ if (app.Environment.IsDevelopment())
 {
   app.UseSwagger();
   app.UseSwaggerUI();
+//   app.UseMiddleware<SuperMarketExceptionMiddleware>();
 }
 else
 {
   app.UseHsts();
-  app.UseMiddleware<SuperMarketExceptionMiddleware>();
 }
 
 
 app.UseStaticFiles();
 
-app.UseCors("corsapp");
+// app.UseCors("corsapp");
 
 app.UseHttpsRedirection();
 

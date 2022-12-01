@@ -10,5 +10,6 @@ namespace SuperMarket.Service.Employees.Interfaces
     {
         public void AddFilesService(FilesModel file,int id);
         public string Get(int id);
+        public void Delete(int id);
     }
 }

@@ -222,3 +222,31 @@ System.ArgumentException: The route parameter name '' is invalid. Route paramete
    at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
    at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-11-30 18:13:52.243 +05:30 [ERR] Connection id "0HMMIQ24HKO5E", Request id "0HMMIQ24HKO5E:00000002": An unhandled exception was thrown by the application.
+System.InvalidOperationException: No service for type 'SuperMarket.Api.Employees.Middleware.SuperMarketExceptionMiddleware' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Http.MiddlewareFactory.Create(Type middlewareType)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2022-11-30 18:14:11.560 +05:30 [ERR] Connection id "0HMMIQ24HKO5I", Request id "0HMMIQ24HKO5I:00000002": An unhandled exception was thrown by the application.
+System.InvalidOperationException: No service for type 'SuperMarket.Api.Employees.Middleware.SuperMarketExceptionMiddleware' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Http.MiddlewareFactory.Create(Type middlewareType)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2022-11-30 18:14:26.037 +05:30 [ERR] Connection id "0HMMIQ24HKO5Q", Request id "0HMMIQ24HKO5Q:00000002": An unhandled exception was thrown by the application.
+System.InvalidOperationException: No service for type 'SuperMarket.Api.Employees.Middleware.SuperMarketExceptionMiddleware' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Http.MiddlewareFactory.Create(Type middlewareType)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2022-11-30 18:19:14.565 +05:30 [ERR] Connection id "0HMMIQ24HKO5S", Request id "0HMMIQ24HKO5S:00000002": An unhandled exception was thrown by the application.
+System.InvalidOperationException: No service for type 'SuperMarket.Api.Employees.Middleware.SuperMarketExceptionMiddleware' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Http.MiddlewareFactory.Create(Type middlewareType)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)

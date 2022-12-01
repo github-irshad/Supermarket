@@ -26,5 +26,9 @@ namespace SuperMarket.Service.Employees.Services
     public string Get(int id){
       return filesOp.GetFile(id);
     }
+
+    public void Delete(int id){
+      filesOp.DeleteFile(id);
+    }
   }
 }

@@ -35,10 +35,11 @@ namespace SuperMarket.Api.Employees.Controllers
       return Ok( filesServices.Get(id));
     }
 
-    [HttpDelete]
-    public ActionResult DeleteFile()
+    [HttpDelete("{id}")]
+    public ActionResult DeleteFile(int id)
     {
-      return Ok();
+      filesServices.Delete(id);
+      return Ok("Deleted");
     }
   }
 }

@@ -32,7 +32,15 @@ namespace SuperMarket.Data.Employees.Repository
 
     public string GetFile(int id)
     {
-      return webHostEnvironment.WebRootPath+"\\Uploads\\"+id.ToString()+"\\"+id.ToString();
+      return webHostEnvironment.WebRootPath+"\\Uploads\\"+id.ToString()+"\\"+id.ToString()+".jpeg";
+    }
+
+    public void DeleteFile(int id){
+      var filepath = webHostEnvironment.WebRootPath+"\\Uploads\\"+id.ToString()+"\\"+id.ToString()+".jpeg";
+      if(System.IO.File.Exists(filepath)){
+        System.IO.File.Delete(filepath);
+      }
+
     }
   }
 }
