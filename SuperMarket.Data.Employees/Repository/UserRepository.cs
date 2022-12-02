@@ -17,6 +17,11 @@ namespace SuperMarket.Data.Employees.Repository
       _employeeDbContext = employeeDbContext;
     }
 
+    public void Create_Password(string FirstName, string PhoneNum)
+    {
+      throw new NotImplementedException();
+    }
+
     public void UserAdd(User user)
     {
       _employeeDbContext.Users.Add(user);

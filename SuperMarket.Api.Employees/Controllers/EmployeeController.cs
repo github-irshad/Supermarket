@@ -32,15 +32,9 @@ namespace SuperMarket.Api.Employees.Controllers
     [HttpGet("{id}")]
     public ActionResult<Employee> GetIndividualEmployee(int id)
     {
-      try
-      {
+      
         return employeeService.EmployeeDashboard(id);
-      }
-      catch (System.Exception)
-      {
-
-        return NotFound();
-      }
+     
     }
 
 
@@ -49,31 +43,18 @@ namespace SuperMarket.Api.Employees.Controllers
 
     public ActionResult AddNewEmployee( [FromBody]AddEmployeeDto newEmployee)
     {
-      try
-      {
+      
         employeeService.NewEmployee(newEmployee);
-        return Ok("Added successfully");
-    }
-      catch (System.Exception)
-      {
-
-        throw;
-        // return new BadRequestResult();
-      }
+        return Ok("Added");
+    
     }
 
     [HttpDelete("Delete/{id}")]
     public ActionResult DeleteEmployee(int id){
-      try
-      {
+      
         employeeService.DeleteEmployeeService(id);
         return Ok();
-      }
-      catch (System.Exception)
-      {
-        
-        return new BadRequestResult();
-      }
+      
     }
 
     [HttpPut("id")]
