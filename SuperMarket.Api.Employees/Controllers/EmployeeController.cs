@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using SuperMarket.Api.Employees.Exception;
 using SuperMarket.Data.Employees.Models;
 using SuperMarket.Data.Employees.RequestModel;
 using SuperMarket.Service.Employees.Interfaces;
@@ -23,7 +24,8 @@ namespace SuperMarket.Api.Employees.Controllers
 
     public ActionResult<IEnumerable<Employee>> GetAllEmployees()
     {
-      // throw new Exception("test");
+      // throw new System.Exception("test");
+      throw new System.Exception("test");
       return Ok(employeeService.GetAllEmployeesService());
     }
 

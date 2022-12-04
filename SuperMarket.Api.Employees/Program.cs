@@ -15,7 +15,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
+builder.Services.AddTransient<SuperMarketExceptionMiddleware>();
 builder.Services.AddControllers();
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -66,7 +68,6 @@ builder.Logging.AddSerilog(_logger);
 
 
 // var logger =  builder.Services.BuildServiceProvider().GetService<ILogger<SuperMarketExceptionMiddleware>>();
-// builder.Services.AddTransient<SuperMarketExceptionMiddleware>();
 // builder.Services.AddSingleton(logger);
 
 
@@ -77,7 +78,6 @@ if (app.Environment.IsDevelopment())
 {
   app.UseSwagger();
   app.UseSwaggerUI();
-//   app.UseMiddleware<SuperMarketExceptionMiddleware>();
 }
 else
 {
@@ -90,6 +90,8 @@ app.UseStaticFiles();
 // app.UseCors("corsapp");
 
 app.UseHttpsRedirection();
+
+app.UseMiddleware<SuperMarketExceptionMiddleware>();
 
 app.UseAuthorization();
 

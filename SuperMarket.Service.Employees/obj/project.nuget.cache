@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "HzJhoy/JAlkuxpFY/AnKttDfTuocRq6K7TlRDTDX2q+3p8vbAFYI3hf0YSICbMmuM0tV3sLx4zQlDrtS7X8CfQ==",
+  "dgSpecHash": "E/dHrwMmJ+Cg4FdxwPqbiQNK6teJuXVmqe6+keoh6vCTIYl956Vq2GpL2IbhVe7NhBH6KFxJKaVQhPKQr7/0zA==",
   "success": true,
   "projectFilePath": "C:\\Users\\muhammed.irshad\\Desktop\\.NET\\SuperMarket\\SuperMarket.Service.Employees\\SuperMarket.Service.Employees.csproj",
   "expectedPackageFiles": [
@@ -30,6 +30,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
+    "C:\\Users\\muhammed.irshad\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512",
     "C:\\Users\\muhammed.irshad\\.nuget\\packages\\npgsql\\7.0.0\\npgsql.7.0.0.nupkg.sha512",
     "C:\\Users\\muhammed.irshad\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\7.0.0\\npgsql.entityframeworkcore.postgresql.7.0.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",

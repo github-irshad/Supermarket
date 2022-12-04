@@ -1,0 +1,11 @@
+2022-12-04 20:13:33.619 +05:30 [INF] Now listening on: https://localhost:7187
+2022-12-04 20:13:33.647 +05:30 [INF] Now listening on: http://localhost:5193
+2022-12-04 20:13:33.655 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-04 20:13:33.656 +05:30 [INF] Hosting environment: Development
+2022-12-04 20:13:33.656 +05:30 [INF] Content root path: C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\
+2022-12-04 20:13:37.935 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7187/swagger/index.html - -
+2022-12-04 20:13:38.083 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7187/swagger/index.html - - - 200 - text/html;charset=utf-8 155.5948ms
+2022-12-04 20:13:38.104 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7187/_framework/aspnetcore-browser-refresh.js - -
+2022-12-04 20:13:38.105 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7187/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 1.6251ms
+2022-12-04 20:13:38.322 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7187/swagger/v1/swagger.json - -
+2022-12-04 20:13:38.422 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7187/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 99.5248ms
