@@ -12,6 +12,12 @@ namespace SuperMarket.Api.Employees.Middleware
 {
   public class SuperMarketExceptionMiddleware : IMiddleware
   {
+    private readonly ILogger _logger;
+
+    public SuperMarketExceptionMiddleware(ILogger<SuperMarketExceptionMiddleware> logger)
+    {
+      _logger = logger;
+    }
 
     // var errorModel = new ErrorModel()
     // {
@@ -53,9 +59,11 @@ namespace SuperMarket.Api.Employees.Middleware
           
         };
 
+        _logger.LogError(e,e.Message);
+
         context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
         context.Response.ContentType = MediaTypeNames.Application.Json;
-        
+
         await context.Response.WriteAsync(errorModel.ToString());
       }
     }

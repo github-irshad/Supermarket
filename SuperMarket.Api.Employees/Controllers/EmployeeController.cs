@@ -25,7 +25,6 @@ namespace SuperMarket.Api.Employees.Controllers
     public ActionResult<IEnumerable<Employee>> GetAllEmployees()
     {
       // throw new System.Exception("test");
-      throw new System.Exception("test");
       return Ok(employeeService.GetAllEmployeesService());
     }
 
