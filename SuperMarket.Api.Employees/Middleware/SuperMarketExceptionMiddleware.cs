@@ -34,19 +34,29 @@ namespace SuperMarket.Api.Employees.Middleware
 
       catch (DomainNotFoundException e)
       {
-        
+
         context.Response.StatusCode = (int)HttpStatusCode.NotFound;
         await context.Response.WriteAsync(e.Message);
       }
-      catch(DomainValidationException e)
+      catch (DomainValidationException e)
       {
         context.Response.StatusCode = (int)HttpStatusCode.BadRequest;
         await context.Response.WriteAsync(e.Message);
       }
-      catch(System.Exception e)
+      catch (System.Exception e)
       {
-       context.Response.StatusCode = 500;
-        await context.Response.WriteAsync(e.Message); 
+        var errorModel = new ErrorModel()
+        {
+          //  ResponseCode = Enum.GetName(typeof(HttpStatusCode.InternalServerError),500),
+          StatusCode = 500,
+          Message = "An error occured",
+          
+        };
+
+        context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
+        context.Response.ContentType = MediaTypeNames.Application.Json;
+        
+        await context.Response.WriteAsync(errorModel.ToString());
       }
     }
   }
