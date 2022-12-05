@@ -1,3 +1,0 @@
-Add-Migration initial -Context FeedbackDbContext
-dotnet ef Add-Migration initial -Context EmployeeDbContext
-dotnet ef migrations add "Initial Migration" --context EmployeeDbContext
