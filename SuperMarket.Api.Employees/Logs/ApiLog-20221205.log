@@ -1,4 +1,4 @@
-2022-12-05 10:22:08.866 +05:30 [ERR] An error occured
+2022-12-05 11:28:57.182 +05:30 [ERR] test
 System.Exception: test
    at SuperMarket.Api.Employees.Controllers.EmployeeController.GetAllEmployees() in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\Controllers\EmployeeController.cs:line 27
    at lambda_method2(Closure , Object , Object[] )
@@ -17,10 +17,10 @@ System.Exception: test
    at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
    at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
    at SuperMarket.Api.Employees.Middleware.SuperMarketExceptionMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\Middleware\SuperMarketExceptionMiddleware.cs:line 38
-2022-12-05 10:22:55.109 +05:30 [ERR] test
+2022-12-05 11:30:28.277 +05:30 [ERR] test
 System.Exception: test
-   at SuperMarket.Api.Employees.Controllers.EmployeeController.GetAllEmployees()
-   at lambda_method10(Closure , Object , Object[] )
+   at SuperMarket.Api.Employees.Controllers.EmployeeController.GetAllEmployees() in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\Controllers\EmployeeController.cs:line 27
+   at lambda_method2(Closure , Object , Object[] )
    at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
    at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
@@ -35,4 +35,4 @@ System.Exception: test
    at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
    at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
    at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
-   at SuperMarket.Api.Employees.Middleware.SuperMarketExceptionMiddleware.InvokeAsync(HttpContext context, RequestDelegate next)
+   at SuperMarket.Api.Employees.Middleware.SuperMarketExceptionMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\Middleware\SuperMarketExceptionMiddleware.cs:line 38

@@ -632,7 +632,7 @@
           }
         }
       },
-      "Serilog.AspNetCore/6.0.1": {
+      "Serilog.AspNetCore/6.1.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "5.0.0",
@@ -1191,6 +1191,7 @@
           "Microsoft.EntityFrameworkCore": "7.0.0",
           "Newtonsoft.Json": "13.0.2",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "7.0.0",
+          "Serilog.AspNetCore": "6.1.0",
           "Serilog.Sinks.PostgreSQL": "2.3.0",
           "System.ComponentModel.Annotations": "5.0.0"
         },
@@ -2062,10 +2063,10 @@
         "serilog.nuspec"
       ]
     },
-    "Serilog.AspNetCore/6.0.1": {
-      "sha512": "5XW90k62V7G9I0D/j9Iz+NyRBB6/SnoFpHUPeLnV40gONV2vs2A/ewWi91QVjQmyHBfzFeqIrkvE/DJMZ0alTg==",
+    "Serilog.AspNetCore/6.1.0": {
+      "sha512": "iMwFUJDN+/yWIPz4TKCliagJ1Yn//SceCYCzgdPwe/ECYUwb5/WUL8cTzRKV+tFwxGjLEV/xpm0GupS5RwbhSQ==",
       "type": "package",
-      "path": "serilog.aspnetcore/6.0.1",
+      "path": "serilog.aspnetcore/6.1.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2078,7 +2079,7 @@
         "lib/netstandard2.0/Serilog.AspNetCore.xml",
         "lib/netstandard2.1/Serilog.AspNetCore.dll",
         "lib/netstandard2.1/Serilog.AspNetCore.xml",
-        "serilog.aspnetcore.6.0.1.nupkg.sha512",
+        "serilog.aspnetcore.6.1.0.nupkg.sha512",
         "serilog.aspnetcore.nuspec"
       ]
     },
@@ -3676,7 +3677,7 @@
       "Microsoft.EntityFrameworkCore.Design >= 7.0.0",
       "Newtonsoft.Json >= 13.0.2",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 7.0.0",
-      "Serilog.AspNetCore >= 6.0.1",
+      "Serilog.AspNetCore >= 6.1.0",
       "Serilog.Sinks.PostgreSQL >= 2.3.0",
       "SuperMarket.Data.Employees >= 1.0.0",
       "SuperMarket.Service.Employees >= 1.0.0",
@@ -3751,7 +3752,7 @@
           },
           "Serilog.AspNetCore": {
             "target": "Package",
-            "version": "[6.0.1, )"
+            "version": "[6.1.0, )"
           },
           "Serilog.Sinks.PostgreSQL": {
             "target": "Package",

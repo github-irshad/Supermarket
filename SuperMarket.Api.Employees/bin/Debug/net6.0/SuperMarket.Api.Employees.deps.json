@@ -12,7 +12,7 @@
           "Microsoft.EntityFrameworkCore.Design": "7.0.0",
           "Newtonsoft.Json": "13.0.2",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "7.0.0",
-          "Serilog.AspNetCore": "6.0.1",
+          "Serilog.AspNetCore": "6.1.0",
           "Serilog.Sinks.PostgreSQL": "2.3.0",
           "SuperMarket.Data.Employees": "1.0.0",
           "SuperMarket.Service.Employees": "1.0.0",
@@ -345,7 +345,7 @@
           }
         }
       },
-      "Serilog.AspNetCore/6.0.1": {
+      "Serilog.AspNetCore/6.1.0": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "7.0.0",
           "Microsoft.Extensions.Logging": "7.0.0",
@@ -360,7 +360,7 @@
         "runtime": {
           "lib/net5.0/Serilog.AspNetCore.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "6.0.1.0"
+            "fileVersion": "6.1.0.0"
           }
         }
       },
@@ -676,6 +676,7 @@
           "Microsoft.EntityFrameworkCore": "7.0.0",
           "Newtonsoft.Json": "13.0.2",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "7.0.0",
+          "Serilog.AspNetCore": "6.1.0",
           "Serilog.Sinks.PostgreSQL": "2.3.0",
           "System.ComponentModel.Annotations": "5.0.0"
         },
@@ -973,12 +974,12 @@
       "path": "serilog/2.10.0",
       "hashPath": "serilog.2.10.0.nupkg.sha512"
     },
-    "Serilog.AspNetCore/6.0.1": {
+    "Serilog.AspNetCore/6.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-5XW90k62V7G9I0D/j9Iz+NyRBB6/SnoFpHUPeLnV40gONV2vs2A/ewWi91QVjQmyHBfzFeqIrkvE/DJMZ0alTg==",
-      "path": "serilog.aspnetcore/6.0.1",
-      "hashPath": "serilog.aspnetcore.6.0.1.nupkg.sha512"
+      "sha512": "sha512-iMwFUJDN+/yWIPz4TKCliagJ1Yn//SceCYCzgdPwe/ECYUwb5/WUL8cTzRKV+tFwxGjLEV/xpm0GupS5RwbhSQ==",
+      "path": "serilog.aspnetcore/6.1.0",
+      "hashPath": "serilog.aspnetcore.6.1.0.nupkg.sha512"
     },
     "Serilog.Extensions.Hosting/5.0.1": {
       "type": "package",

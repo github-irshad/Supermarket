@@ -1,7 +1,6 @@
 {
   "version": "0.2.0",
   "configurations": [
-    
     {
       // Use IntelliSense to find out which attributes exist for C# debugging
       // Use hover for the description of the existing attributes
@@ -11,9 +10,9 @@
       "request": "launch",
       "preLaunchTask": "build",
       // If you have changed target frameworks, make sure to update the program path.
-      "program": "${workspaceFolder}/SuperMarket.Api.Employee/bin/Debug/net6.0/SuperMarket.Api.Employee.dll",
+      "program": "${workspaceFolder}/SuperMarket.Api.Employees/bin/Debug/net6.0/SuperMarket.Api.Employees.dll",
       "args": [],
-      "cwd": "${workspaceFolder}/SuperMarket.Api.Employee",
+      "cwd": "${workspaceFolder}/SuperMarket.Api.Employees",
       "stopAtEntry": false,
       // Enable launching a web browser when ASP.NET Core starts. For more information: https://aka.ms/VSCode-CS-LaunchJson-WebBrowser
       "serverReadyAction": {

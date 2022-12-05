@@ -77,3 +77,6 @@ dotnet ef migrations script --startup-project ..\SuperMarket.Api.Employees\
           
         ]
       }
+
+///////////////
+If debugger is not working, delete  .vscode folder (somekind of supporting file for debigguing). open command pallette search .net generrate assests for buiilding and debug
