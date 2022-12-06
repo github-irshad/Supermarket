@@ -16,6 +16,8 @@ namespace SuperMarket.Data.Employees.Mapping
             CreateMap<EditEmployee,Employee>();
             CreateMap<AddEmployeeDto,AddEmployee>();
             CreateMap<UserDto,User>();
+            CreateMap<SalaryRequestDto, SalaryComponents>();
+            // CreateMap<List<SalaryComponents>,List<SalaryCompShowDto>>();
         }
     }
 }

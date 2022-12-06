@@ -9,18 +9,18 @@ namespace SuperMarket.Data.Employees.Models
   {
     // [ForeignKey]
     [Column("employee_id", TypeName = EntityDataType.EntityDataType.IntType)]
-    public int? EmployeeId { get; set; }
+    public int EmployeeId { get; set; }
 
 
 
     // [ForeignKey]
     [Column("salary_component_id", TypeName = EntityDataType.EntityDataType.IntType)]
-    public int? SalaryComponentId { get; set; }
+    public int SalaryComponentId { get; set; }
 
 
 
     [Column("amount", TypeName = EntityDataType.EntityDataType.DoubleType)]
-    public double? Amount { get; set; }
+    public double Amount { get; set; }
 
 
     public ICollection<Employee>? Employees {get; set;}

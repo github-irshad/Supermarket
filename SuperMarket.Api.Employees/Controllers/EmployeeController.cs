@@ -58,13 +58,13 @@ namespace SuperMarket.Api.Employees.Controllers
       
     }
 
-    [HttpPut("id")]
+    [HttpPut("edit/{id}")]
     public ActionResult EditEmployee(int id,EditEmployee editEmployee){
       employeeService.UpdateEmployeeService(id,editEmployee);
       return Ok();
     }
 
-    [HttpPost("Verify")]
+    [HttpPost("Verify/{id}")]
     public ActionResult VerifyAlter(int id){
       employeeService.ChangeVerification(id);
       return Ok();

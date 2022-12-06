@@ -52,11 +52,12 @@ dotnet ef migrations script --startup-project ..\SuperMarket.Api.Employees\
 
 
 /////////////
-"Serilog":{
+,
+  "Serilog":{
     "using":["Serilog.Sinks.File",
     "Serilog.Sinks.PostgreSQL"],
     "Minimumlevel": {
-      "Default" : "Information"
+      "Default" : "Error"
     },
     "WriteTo":[{
       "Name" : "File",
@@ -67,7 +68,7 @@ dotnet ef migrations script --startup-project ..\SuperMarket.Api.Employees\
       {
         "Name" : "PostgreSQL",
         "Args": {
-          "connectionStrings": "Logging",
+          "connectionString": "Host=localhost;Database=SuperMarketDb;Username=postgres;Password=Admin@123;Schema = Logs",
           "schemaName" : "Logs",
           "tableName": "SuperMarket_Logs",
           "needAutoCreateTable": true,

@@ -37,6 +37,9 @@ builder.Services.AddScoped<ILoginRepository, LoginRepository>();
 builder.Services.AddScoped<IFilesServices, FilesServices>();
 builder.Services.AddScoped<IFilesCRUD, FilesCRUD>();
 
+builder.Services.AddScoped<ISalaryManagement,SalaryManagement>();
+builder.Services.AddScoped<ISalaryService,SalaryService>();
+
 
 var autoMapper = new MapperConfiguration(item => item.AddProfile(new AutoMapperProfile()));
 IMapper mapper = autoMapper.CreateMapper();
@@ -50,13 +53,19 @@ builder.Services.AddSingleton(mapper);
 
 //Serilog 
 
-// builder.Host.UseSerilog((context,config)=> 
+// builder.Host.UseSerilog((context, config) =>
 // {
-//   var connectionString = context.Configuration.GetConnectionString("Logging");
+//   var connectionString = context.Configuration.GetConnectionString("SuperMarketDb");
 
-//   config.WriteTo.PostgreSQL(connectionString,"SuperMarket_Logs",needAutoCreateTable: true,schemaName:"Logs").
+//   config.WriteTo.PostgreSQL(connectionString, "SuperMarket_Logs", needAutoCreateTable: true, schemaName: "Logs").
 //   MinimumLevel.Information();
+
+//   if (context.HostingEnvironment.IsProduction() == false)
+//   {
+//     config.WriteTo.Console().MinimumLevel.Information();
+//   }
 // });
+
 
 
 
