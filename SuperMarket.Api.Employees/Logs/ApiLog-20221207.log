@@ -624,3 +624,47 @@ DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error
    at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
    at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
    at SuperMarket.Api.Employees.Middleware.SuperMarketExceptionMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\Middleware\SuperMarketExceptionMiddleware.cs:line 38
+2022-12-07 14:10:49.802 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'SuperMarket.Data.Employees.Data.EmployeeDbContext'.
+System.InvalidCastException: Column 'created_at' is null.
+   at Npgsql.ThrowHelper.ThrowInvalidCastException_NoValue(FieldDescription field)
+   at Npgsql.NpgsqlDataReader.GetFieldValue[T](Int32 ordinal)
+   at Npgsql.NpgsqlDataReader.GetDateTime(Int32 ordinal)
+   at lambda_method8(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+System.InvalidCastException: Column 'created_at' is null.
+   at Npgsql.ThrowHelper.ThrowInvalidCastException_NoValue(FieldDescription field)
+   at Npgsql.NpgsqlDataReader.GetFieldValue[T](Int32 ordinal)
+   at Npgsql.NpgsqlDataReader.GetDateTime(Int32 ordinal)
+   at lambda_method8(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2022-12-07 14:10:49.886 +05:30 [ERR] Column 'created_at' is null.
+System.InvalidCastException: Column 'created_at' is null.
+   at Npgsql.ThrowHelper.ThrowInvalidCastException_NoValue(FieldDescription field)
+   at Npgsql.NpgsqlDataReader.GetFieldValue[T](Int32 ordinal)
+   at Npgsql.NpgsqlDataReader.GetDateTime(Int32 ordinal)
+   at lambda_method8(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method9(Closure , QueryContext )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at SuperMarket.Data.Employees.Repository.MasterSalaryManagement.DeleteSalary(Int32 employee_id, Int32 salary_component_id) in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Data.Employees\Repository\MasterSalaryManagement.cs:line 44
+   at SuperMarket.Service.Employees.Services.MasterSalaryService.DeleteSalary(Int32 empId, Int32 compId) in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Service.Employees\Services\MasterSalaryService.cs:line 27
+   at SuperMarket.Api.Employees.Controllers.SalaryController.DeleteSalaryComp(Int32 EmpId, Int32 CompId) in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\Controllers\SalaryController.cs:line 66
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at SuperMarket.Api.Employees.Middleware.SuperMarketExceptionMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\Middleware\SuperMarketExceptionMiddleware.cs:line 38

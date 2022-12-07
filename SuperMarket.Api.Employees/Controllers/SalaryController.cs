@@ -59,5 +59,12 @@ namespace SuperMarket.Api.Employees.Controllers
         masterSalaryService.AddSalary(salaryDto);
         return Ok();
     }
+
+    [HttpDelete]
+    [Route("Delete/{EmpId}/{CompId}")]
+    public ActionResult DeleteSalaryComp(int EmpId,int CompId){
+        masterSalaryService.DeleteSalary(EmpId,CompId);
+        return Ok();
+    }
   }
 }

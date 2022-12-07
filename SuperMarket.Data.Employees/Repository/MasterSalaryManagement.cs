@@ -46,6 +46,8 @@ namespace SuperMarket.Data.Employees.Repository
             x=> x.EmployeeId == employee_id && x.SalaryComponentId == salary_component_id)
             .FirstOrDefault()
       );
+
+      _employeeDbContext.SaveChanges();
     }
   }
 }

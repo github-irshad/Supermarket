@@ -21,5 +21,10 @@ namespace SuperMarket.Service.Employees.Services
     {
       masterSalaryManagement.AddSalary(salaryDto);
     }
+
+    public void DeleteSalary(int empId, int compId)
+    {
+masterSalaryManagement.DeleteSalary(empId,compId);
+    }
   }
 }

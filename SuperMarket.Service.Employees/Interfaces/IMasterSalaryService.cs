@@ -9,5 +9,7 @@ namespace SuperMarket.Service.Employees.Interfaces
     public interface IMasterSalaryService
     {
         public void AddSalary(MasterSalaryDto salaryDto);
+
+        public void DeleteSalary(int empId, int compId);
     }
 }

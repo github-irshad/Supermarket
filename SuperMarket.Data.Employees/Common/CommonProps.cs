@@ -17,7 +17,7 @@ namespace SuperMarket.Data.Employees.Common
 
 
     [Column("created_at", TypeName = EntityDataType.EntityDataType.DateTimeType)]
-    public DateTime Created_at { get; set; }
+    public DateTime? Created_at { get; set; }
 
 
     [Column("created_by", TypeName = EntityDataType.EntityDataType.IntType)]
@@ -25,7 +25,7 @@ namespace SuperMarket.Data.Employees.Common
 
 
     [Column("updated_at", TypeName = EntityDataType.EntityDataType.DateTimeType)]
-    public DateTime Updated_at { get; set; }
+    public DateTime? Updated_at { get; set; }
 
 
     [Column("updated_by", TypeName = EntityDataType.EntityDataType.IntType)]
