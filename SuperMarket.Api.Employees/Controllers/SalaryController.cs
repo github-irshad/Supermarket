@@ -31,40 +31,53 @@ namespace SuperMarket.Api.Employees.Controllers
 
     [HttpGet]
     [Route("Components/All")]
-    public IActionResult GetSalaryComps(){
-        
-        
-        return Ok(salaryService.ShowSalaryComps());
+    public IActionResult GetSalaryComps()
+    {
+
+
+      return Ok(salaryService.ShowSalaryComps());
     }
 
     [HttpPut]
     [Route("Component/Edit")]
-    public ActionResult EditComp(SalaryRequestDto changeRequest, int id){
-        salaryService.EditComponent(changeRequest,id);
-        return Ok();
+    public ActionResult EditComp(SalaryRequestDto changeRequest, int id)
+    {
+      salaryService.EditComponent(changeRequest, id);
+      return Ok();
     }
 
     [HttpDelete]
     [Route("Component/Delete/{id}")]
-    public ActionResult DeleteComp(int id){
-        salaryService.DeleteComponent(id);
-        return Ok();
+    public ActionResult DeleteComp(int id)
+    {
+      salaryService.DeleteComponent(id);
+      return Ok();
     }
 
     //Master Salary Controllers
 
     [HttpPost]
     [Route("Add")]
-    public ActionResult AddSalaries(MasterSalaryDto salaryDto){
-        masterSalaryService.AddSalary(salaryDto);
-        return Ok();
+    public ActionResult AddSalaries(MasterSalaryDto salaryDto)
+    {
+      masterSalaryService.AddSalary(salaryDto);
+      return Ok();
     }
 
     [HttpDelete]
     [Route("Delete/{EmpId}/{CompId}")]
-    public ActionResult DeleteSalaryComp(int EmpId,int CompId){
-        masterSalaryService.DeleteSalary(EmpId,CompId);
-        return Ok();
+    public ActionResult DeleteSalaryComp(int EmpId, int CompId)
+    {
+      masterSalaryService.DeleteSalary(EmpId, CompId);
+      return Ok();
+    }
+
+    [HttpGet]
+    [Route("View/{EmpId}/All")]
+    public ActionResult GetSalariesofEmp(int EmpId){
+      return Ok(
+        masterSalaryService.GetSalariesofAnEmp(EmpId)
+      );
     }
   }
 }
