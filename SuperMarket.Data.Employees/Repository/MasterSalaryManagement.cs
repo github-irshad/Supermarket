@@ -49,5 +49,10 @@ namespace SuperMarket.Data.Employees.Repository
 
       _employeeDbContext.SaveChanges();
     }
+
+
+    public void EditSalaryComp(){
+        
+    }
   }
 }
