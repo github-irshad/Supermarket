@@ -49,5 +49,12 @@ namespace SuperMarket.Api.Employees.Controllers
         return Ok();
     }
 
+    //Master Salary Controllers
+
+    [HttpGet]
+    [Route("All")]
+    public ActionResult AllSalaries(){
+        return Ok();
+    }
   }
 }

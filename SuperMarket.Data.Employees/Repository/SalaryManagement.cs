@@ -54,5 +54,8 @@ namespace SuperMarket.Data.Employees.Repository
       return employeeDbContext.SalaryComponents.ToList();
       // return mapper.Map<List<SalaryComponents>,List<SalaryCompShowDto>>(salaryComponent);
     }
+
+
+    
   }
 }
