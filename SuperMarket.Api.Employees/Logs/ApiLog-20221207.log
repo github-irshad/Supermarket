@@ -1,0 +1,626 @@
+2022-12-07 10:47:18.598 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'SuperMarket.Data.Employees.Data.EmployeeDbContext'.
+System.InvalidCastException: Column 'employeeSalaryId' is null.
+   at Npgsql.ThrowHelper.ThrowInvalidCastException_NoValue(FieldDescription field)
+   at Npgsql.NpgsqlDataReader.GetFieldValue[T](Int32 ordinal)
+   at Npgsql.NpgsqlDataReader.GetInt32(Int32 ordinal)
+   at lambda_method8(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+System.InvalidCastException: Column 'employeeSalaryId' is null.
+   at Npgsql.ThrowHelper.ThrowInvalidCastException_NoValue(FieldDescription field)
+   at Npgsql.NpgsqlDataReader.GetFieldValue[T](Int32 ordinal)
+   at Npgsql.NpgsqlDataReader.GetInt32(Int32 ordinal)
+   at lambda_method8(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2022-12-07 10:47:18.662 +05:30 [ERR] Column 'employeeSalaryId' is null.
+System.InvalidCastException: Column 'employeeSalaryId' is null.
+   at Npgsql.ThrowHelper.ThrowInvalidCastException_NoValue(FieldDescription field)
+   at Npgsql.NpgsqlDataReader.GetFieldValue[T](Int32 ordinal)
+   at Npgsql.NpgsqlDataReader.GetInt32(Int32 ordinal)
+   at lambda_method8(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at SuperMarket.Api.Employees.Repository.EmployeeManagement.GetAllEmployees() in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Data.Employees\Repository\EmployeeManagement.cs:line 49
+   at SuperMarket.Service.Employees.Services.EmployeeService.GetAllEmployeesService() in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Service.Employees\Services\EmployeeService.cs:line 42
+   at SuperMarket.Api.Employees.Controllers.EmployeeController.GetAllEmployees() in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\Controllers\EmployeeController.cs:line 28
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at SuperMarket.Api.Employees.Middleware.SuperMarketExceptionMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\Middleware\SuperMarketExceptionMiddleware.cs:line 38
+2022-12-07 10:47:38.565 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'SuperMarket.Data.Employees.Data.EmployeeDbContext'.
+System.InvalidCastException: Column 'employeeSalaryId' is null.
+   at Npgsql.ThrowHelper.ThrowInvalidCastException_NoValue(FieldDescription field)
+   at Npgsql.NpgsqlDataReader.GetFieldValue[T](Int32 ordinal)
+   at Npgsql.NpgsqlDataReader.GetInt32(Int32 ordinal)
+   at lambda_method8(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+System.InvalidCastException: Column 'employeeSalaryId' is null.
+   at Npgsql.ThrowHelper.ThrowInvalidCastException_NoValue(FieldDescription field)
+   at Npgsql.NpgsqlDataReader.GetFieldValue[T](Int32 ordinal)
+   at Npgsql.NpgsqlDataReader.GetInt32(Int32 ordinal)
+   at lambda_method8(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2022-12-07 10:47:38.567 +05:30 [ERR] Column 'employeeSalaryId' is null.
+System.InvalidCastException: Column 'employeeSalaryId' is null.
+   at Npgsql.ThrowHelper.ThrowInvalidCastException_NoValue(FieldDescription field)
+   at Npgsql.NpgsqlDataReader.GetFieldValue[T](Int32 ordinal)
+   at Npgsql.NpgsqlDataReader.GetInt32(Int32 ordinal)
+   at lambda_method8(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at SuperMarket.Api.Employees.Repository.EmployeeManagement.GetAllEmployees() in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Data.Employees\Repository\EmployeeManagement.cs:line 49
+   at SuperMarket.Service.Employees.Services.EmployeeService.GetAllEmployeesService() in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Service.Employees\Services\EmployeeService.cs:line 42
+   at SuperMarket.Api.Employees.Controllers.EmployeeController.GetAllEmployees() in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\Controllers\EmployeeController.cs:line 28
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at SuperMarket.Api.Employees.Middleware.SuperMarketExceptionMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\Middleware\SuperMarketExceptionMiddleware.cs:line 38
+2022-12-07 10:48:36.480 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'SuperMarket.Data.Employees.Data.EmployeeDbContext'.
+System.InvalidCastException: Column 'employeeSalaryId' is null.
+   at Npgsql.ThrowHelper.ThrowInvalidCastException_NoValue(FieldDescription field)
+   at Npgsql.NpgsqlDataReader.GetFieldValue[T](Int32 ordinal)
+   at Npgsql.NpgsqlDataReader.GetInt32(Int32 ordinal)
+   at lambda_method8(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+System.InvalidCastException: Column 'employeeSalaryId' is null.
+   at Npgsql.ThrowHelper.ThrowInvalidCastException_NoValue(FieldDescription field)
+   at Npgsql.NpgsqlDataReader.GetFieldValue[T](Int32 ordinal)
+   at Npgsql.NpgsqlDataReader.GetInt32(Int32 ordinal)
+   at lambda_method8(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2022-12-07 10:48:36.539 +05:30 [ERR] Column 'employeeSalaryId' is null.
+System.InvalidCastException: Column 'employeeSalaryId' is null.
+   at Npgsql.ThrowHelper.ThrowInvalidCastException_NoValue(FieldDescription field)
+   at Npgsql.NpgsqlDataReader.GetFieldValue[T](Int32 ordinal)
+   at Npgsql.NpgsqlDataReader.GetInt32(Int32 ordinal)
+   at lambda_method8(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at SuperMarket.Api.Employees.Repository.EmployeeManagement.GetAllEmployees() in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Data.Employees\Repository\EmployeeManagement.cs:line 49
+   at SuperMarket.Service.Employees.Services.EmployeeService.GetAllEmployeesService() in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Service.Employees\Services\EmployeeService.cs:line 42
+   at SuperMarket.Api.Employees.Controllers.EmployeeController.GetAllEmployees() in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\Controllers\EmployeeController.cs:line 28
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at SuperMarket.Api.Employees.Middleware.SuperMarketExceptionMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\Middleware\SuperMarketExceptionMiddleware.cs:line 38
+2022-12-07 10:51:03.798 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'SuperMarket.Data.Employees.Data.EmployeeDbContext'.
+System.InvalidCastException: Column 'employeeSalaryId' is null.
+   at Npgsql.ThrowHelper.ThrowInvalidCastException_NoValue(FieldDescription field)
+   at Npgsql.NpgsqlDataReader.GetFieldValue[T](Int32 ordinal)
+   at Npgsql.NpgsqlDataReader.GetInt32(Int32 ordinal)
+   at lambda_method8(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+System.InvalidCastException: Column 'employeeSalaryId' is null.
+   at Npgsql.ThrowHelper.ThrowInvalidCastException_NoValue(FieldDescription field)
+   at Npgsql.NpgsqlDataReader.GetFieldValue[T](Int32 ordinal)
+   at Npgsql.NpgsqlDataReader.GetInt32(Int32 ordinal)
+   at lambda_method8(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2022-12-07 10:51:03.880 +05:30 [ERR] Column 'employeeSalaryId' is null.
+System.InvalidCastException: Column 'employeeSalaryId' is null.
+   at Npgsql.ThrowHelper.ThrowInvalidCastException_NoValue(FieldDescription field)
+   at Npgsql.NpgsqlDataReader.GetFieldValue[T](Int32 ordinal)
+   at Npgsql.NpgsqlDataReader.GetInt32(Int32 ordinal)
+   at lambda_method8(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at SuperMarket.Api.Employees.Repository.EmployeeManagement.GetAllEmployees() in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Data.Employees\Repository\EmployeeManagement.cs:line 49
+   at SuperMarket.Service.Employees.Services.EmployeeService.GetAllEmployeesService() in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Service.Employees\Services\EmployeeService.cs:line 42
+   at SuperMarket.Api.Employees.Controllers.EmployeeController.GetAllEmployees() in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\Controllers\EmployeeController.cs:line 28
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at SuperMarket.Api.Employees.Middleware.SuperMarketExceptionMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\Middleware\SuperMarketExceptionMiddleware.cs:line 38
+2022-12-07 10:51:38.620 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'SuperMarket.Data.Employees.Data.EmployeeDbContext'.
+System.InvalidCastException: Column 'employeeSalaryId' is null.
+   at Npgsql.ThrowHelper.ThrowInvalidCastException_NoValue(FieldDescription field)
+   at Npgsql.NpgsqlDataReader.GetFieldValue[T](Int32 ordinal)
+   at Npgsql.NpgsqlDataReader.GetInt32(Int32 ordinal)
+   at lambda_method8(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+System.InvalidCastException: Column 'employeeSalaryId' is null.
+   at Npgsql.ThrowHelper.ThrowInvalidCastException_NoValue(FieldDescription field)
+   at Npgsql.NpgsqlDataReader.GetFieldValue[T](Int32 ordinal)
+   at Npgsql.NpgsqlDataReader.GetInt32(Int32 ordinal)
+   at lambda_method8(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2022-12-07 10:51:38.622 +05:30 [ERR] Column 'employeeSalaryId' is null.
+System.InvalidCastException: Column 'employeeSalaryId' is null.
+   at Npgsql.ThrowHelper.ThrowInvalidCastException_NoValue(FieldDescription field)
+   at Npgsql.NpgsqlDataReader.GetFieldValue[T](Int32 ordinal)
+   at Npgsql.NpgsqlDataReader.GetInt32(Int32 ordinal)
+   at lambda_method8(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at SuperMarket.Api.Employees.Repository.EmployeeManagement.GetAllEmployees()
+   at SuperMarket.Service.Employees.Services.EmployeeService.GetAllEmployeesService() in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Service.Employees\Services\EmployeeService.cs:line 42
+   at SuperMarket.Api.Employees.Controllers.EmployeeController.GetAllEmployees() in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\Controllers\EmployeeController.cs:line 28
+   at lambda_method19(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at SuperMarket.Api.Employees.Middleware.SuperMarketExceptionMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\Middleware\SuperMarketExceptionMiddleware.cs:line 38
+2022-12-07 10:53:01.670 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'SuperMarket.Data.Employees.Data.EmployeeDbContext'.
+System.InvalidCastException: Column 'employeeSalaryId' is null.
+   at Npgsql.ThrowHelper.ThrowInvalidCastException_NoValue(FieldDescription field)
+   at Npgsql.NpgsqlDataReader.GetFieldValue[T](Int32 ordinal)
+   at Npgsql.NpgsqlDataReader.GetInt32(Int32 ordinal)
+   at lambda_method8(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+System.InvalidCastException: Column 'employeeSalaryId' is null.
+   at Npgsql.ThrowHelper.ThrowInvalidCastException_NoValue(FieldDescription field)
+   at Npgsql.NpgsqlDataReader.GetFieldValue[T](Int32 ordinal)
+   at Npgsql.NpgsqlDataReader.GetInt32(Int32 ordinal)
+   at lambda_method8(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2022-12-07 10:53:01.672 +05:30 [ERR] Column 'employeeSalaryId' is null.
+System.InvalidCastException: Column 'employeeSalaryId' is null.
+   at Npgsql.ThrowHelper.ThrowInvalidCastException_NoValue(FieldDescription field)
+   at Npgsql.NpgsqlDataReader.GetFieldValue[T](Int32 ordinal)
+   at Npgsql.NpgsqlDataReader.GetInt32(Int32 ordinal)
+   at lambda_method8(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at SuperMarket.Api.Employees.Repository.EmployeeManagement.GetAllEmployees()
+   at SuperMarket.Service.Employees.Services.EmployeeService.GetAllEmployeesService() in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Service.Employees\Services\EmployeeService.cs:line 42
+   at SuperMarket.Api.Employees.Controllers.EmployeeController.GetAllEmployees() in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\Controllers\EmployeeController.cs:line 28
+   at lambda_method21(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at SuperMarket.Api.Employees.Middleware.SuperMarketExceptionMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\Middleware\SuperMarketExceptionMiddleware.cs:line 38
+2022-12-07 10:53:25.996 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'SuperMarket.Data.Employees.Data.EmployeeDbContext'.
+System.InvalidCastException: Column 'employeeSalaryId' is null.
+   at Npgsql.ThrowHelper.ThrowInvalidCastException_NoValue(FieldDescription field)
+   at Npgsql.NpgsqlDataReader.GetFieldValue[T](Int32 ordinal)
+   at Npgsql.NpgsqlDataReader.GetInt32(Int32 ordinal)
+   at lambda_method8(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+System.InvalidCastException: Column 'employeeSalaryId' is null.
+   at Npgsql.ThrowHelper.ThrowInvalidCastException_NoValue(FieldDescription field)
+   at Npgsql.NpgsqlDataReader.GetFieldValue[T](Int32 ordinal)
+   at Npgsql.NpgsqlDataReader.GetInt32(Int32 ordinal)
+   at lambda_method8(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2022-12-07 10:53:25.999 +05:30 [ERR] Column 'employeeSalaryId' is null.
+System.InvalidCastException: Column 'employeeSalaryId' is null.
+   at Npgsql.ThrowHelper.ThrowInvalidCastException_NoValue(FieldDescription field)
+   at Npgsql.NpgsqlDataReader.GetFieldValue[T](Int32 ordinal)
+   at Npgsql.NpgsqlDataReader.GetInt32(Int32 ordinal)
+   at lambda_method8(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at SuperMarket.Api.Employees.Repository.EmployeeManagement.GetAllEmployees()
+   at SuperMarket.Service.Employees.Services.EmployeeService.GetAllEmployeesService() in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Service.Employees\Services\EmployeeService.cs:line 42
+   at SuperMarket.Api.Employees.Controllers.EmployeeController.GetAllEmployees() in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\Controllers\EmployeeController.cs:line 28
+   at lambda_method23(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at SuperMarket.Api.Employees.Middleware.SuperMarketExceptionMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\Middleware\SuperMarketExceptionMiddleware.cs:line 38
+2022-12-07 10:54:28.419 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'SuperMarket.Data.Employees.Data.EmployeeDbContext'.
+System.InvalidCastException: Column 'employeeSalaryId' is null.
+   at Npgsql.ThrowHelper.ThrowInvalidCastException_NoValue(FieldDescription field)
+   at Npgsql.NpgsqlDataReader.GetFieldValue[T](Int32 ordinal)
+   at Npgsql.NpgsqlDataReader.GetInt32(Int32 ordinal)
+   at lambda_method8(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+System.InvalidCastException: Column 'employeeSalaryId' is null.
+   at Npgsql.ThrowHelper.ThrowInvalidCastException_NoValue(FieldDescription field)
+   at Npgsql.NpgsqlDataReader.GetFieldValue[T](Int32 ordinal)
+   at Npgsql.NpgsqlDataReader.GetInt32(Int32 ordinal)
+   at lambda_method8(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2022-12-07 10:54:28.422 +05:30 [ERR] Column 'employeeSalaryId' is null.
+System.InvalidCastException: Column 'employeeSalaryId' is null.
+   at Npgsql.ThrowHelper.ThrowInvalidCastException_NoValue(FieldDescription field)
+   at Npgsql.NpgsqlDataReader.GetFieldValue[T](Int32 ordinal)
+   at Npgsql.NpgsqlDataReader.GetInt32(Int32 ordinal)
+   at lambda_method8(Closure , QueryContext , DbDataReader , ResultContext , SingleQueryResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at SuperMarket.Api.Employees.Repository.EmployeeManagement.GetAllEmployees()
+   at SuperMarket.Service.Employees.Services.EmployeeService.GetAllEmployeesService() in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Service.Employees\Services\EmployeeService.cs:line 42
+   at SuperMarket.Api.Employees.Controllers.EmployeeController.GetAllEmployees() in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\Controllers\EmployeeController.cs:line 28
+   at lambda_method25(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at SuperMarket.Api.Employees.Middleware.SuperMarketExceptionMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\Middleware\SuperMarketExceptionMiddleware.cs:line 38
+2022-12-07 12:29:49.258 +05:30 [ERR] Unable to resolve service for type 'SuperMarket.Service.Employees.Interfaces.IMasterSalaryService' while attempting to activate 'SuperMarket.Api.Employees.Controllers.SalaryController'.
+System.InvalidOperationException: Unable to resolve service for type 'SuperMarket.Service.Employees.Interfaces.IMasterSalaryService' while attempting to activate 'SuperMarket.Api.Employees.Controllers.SalaryController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method3(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at SuperMarket.Api.Employees.Middleware.SuperMarketExceptionMiddleware.InvokeAsync(HttpContext context, RequestDelegate next)
+2022-12-07 12:30:25.005 +05:30 [ERR] Unable to resolve service for type 'SuperMarket.Service.Employees.Interfaces.IMasterSalaryService' while attempting to activate 'SuperMarket.Api.Employees.Controllers.SalaryController'.
+System.InvalidOperationException: Unable to resolve service for type 'SuperMarket.Service.Employees.Interfaces.IMasterSalaryService' while attempting to activate 'SuperMarket.Api.Employees.Controllers.SalaryController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method3(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at SuperMarket.Api.Employees.Middleware.SuperMarketExceptionMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\Middleware\SuperMarketExceptionMiddleware.cs:line 38
+2022-12-07 12:33:23.204 +05:30 [ERR] Failed executing DbCommand (68ms) [Parameters=[@p0='?' (DbType = Double), @p1='?' (DbType = DateTime), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = DateTime), @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "EmployeeSalary" (amount, created_at, created_by, employee_id, salary_component_id, updated_at, updated_by)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6)
+RETURNING id;
+2022-12-07 12:33:23.282 +05:30 [ERR] An exception occurred in the database while saving changes for context type 'SuperMarket.Data.Employees.Data.EmployeeDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "PK_EmployeeSalary"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|221_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "PK_EmployeeSalary"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: EmployeeSalary
+    ConstraintName: PK_EmployeeSalary
+    File: d:\pginstaller_12.auto\postgres.windows-x64\src\backend\access\nbtree\nbtinsert.c
+    Line: 570
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__107_0(DbContext _, ValueTuple`2 t)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "PK_EmployeeSalary"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|221_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "PK_EmployeeSalary"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: EmployeeSalary
+    ConstraintName: PK_EmployeeSalary
+    File: d:\pginstaller_12.auto\postgres.windows-x64\src\backend\access\nbtree\nbtinsert.c
+    Line: 570
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__107_0(DbContext _, ValueTuple`2 t)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2022-12-07 12:33:23.492 +05:30 [ERR] An error occurred while saving the entity changes. See the inner exception for details.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "PK_EmployeeSalary"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|221_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "PK_EmployeeSalary"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: EmployeeSalary
+    ConstraintName: PK_EmployeeSalary
+    File: d:\pginstaller_12.auto\postgres.windows-x64\src\backend\access\nbtree\nbtinsert.c
+    Line: 570
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__107_0(DbContext _, ValueTuple`2 t)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at SuperMarket.Data.Employees.Repository.MasterSalaryManagement.AddSalary(MasterSalaryDto masterSalaryDto) in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Data.Employees\Repository\MasterSalaryManagement.cs:line 38
+   at SuperMarket.Service.Employees.Services.MasterSalaryService.AddSalary(MasterSalaryDto salaryDto) in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Service.Employees\Services\MasterSalaryService.cs:line 22
+   at SuperMarket.Api.Employees.Controllers.SalaryController.AddSalaries(MasterSalaryDto salaryDto) in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\Controllers\SalaryController.cs:line 59
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at SuperMarket.Api.Employees.Middleware.SuperMarketExceptionMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\Middleware\SuperMarketExceptionMiddleware.cs:line 38
+2022-12-07 12:33:30.807 +05:30 [ERR] Failed executing DbCommand (2ms) [Parameters=[@p0='?' (DbType = Double), @p1='?' (DbType = DateTime), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = DateTime), @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "EmployeeSalary" (amount, created_at, created_by, employee_id, salary_component_id, updated_at, updated_by)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6)
+RETURNING id;
+2022-12-07 12:33:30.811 +05:30 [ERR] An exception occurred in the database while saving changes for context type 'SuperMarket.Data.Employees.Data.EmployeeDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "PK_EmployeeSalary"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|221_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "PK_EmployeeSalary"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: EmployeeSalary
+    ConstraintName: PK_EmployeeSalary
+    File: d:\pginstaller_12.auto\postgres.windows-x64\src\backend\access\nbtree\nbtinsert.c
+    Line: 570
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__107_0(DbContext _, ValueTuple`2 t)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "PK_EmployeeSalary"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|221_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "PK_EmployeeSalary"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: EmployeeSalary
+    ConstraintName: PK_EmployeeSalary
+    File: d:\pginstaller_12.auto\postgres.windows-x64\src\backend\access\nbtree\nbtinsert.c
+    Line: 570
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__107_0(DbContext _, ValueTuple`2 t)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2022-12-07 12:33:30.819 +05:30 [ERR] An error occurred while saving the entity changes. See the inner exception for details.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "PK_EmployeeSalary"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|221_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "PK_EmployeeSalary"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: EmployeeSalary
+    ConstraintName: PK_EmployeeSalary
+    File: d:\pginstaller_12.auto\postgres.windows-x64\src\backend\access\nbtree\nbtinsert.c
+    Line: 570
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__107_0(DbContext _, ValueTuple`2 t)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at SuperMarket.Data.Employees.Repository.MasterSalaryManagement.AddSalary(MasterSalaryDto masterSalaryDto) in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Data.Employees\Repository\MasterSalaryManagement.cs:line 38
+   at SuperMarket.Service.Employees.Services.MasterSalaryService.AddSalary(MasterSalaryDto salaryDto) in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Service.Employees\Services\MasterSalaryService.cs:line 22
+   at SuperMarket.Api.Employees.Controllers.SalaryController.AddSalaries(MasterSalaryDto salaryDto) in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\Controllers\SalaryController.cs:line 59
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at SuperMarket.Api.Employees.Middleware.SuperMarketExceptionMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\Middleware\SuperMarketExceptionMiddleware.cs:line 38

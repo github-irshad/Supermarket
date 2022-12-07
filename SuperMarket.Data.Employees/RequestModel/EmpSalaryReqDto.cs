@@ -8,6 +8,6 @@ namespace SuperMarket.Data.Employees.RequestModel
     public class EmpSalaryReqDto
     {
         public int SalaryCompId { get; set; }
-        public int Amount { get; set; }
+        public double Amount { get; set; }
     }
 }

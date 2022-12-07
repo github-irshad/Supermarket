@@ -55,7 +55,7 @@ namespace SuperMarket.Api.Employees.Middleware
         {
           //  ResponseCode = Enum.GetName(typeof(HttpStatusCode.InternalServerError),500),
           StatusCode = 500,
-          Message = "An error occured",
+          Message = "An error occured ",
           
         };
 

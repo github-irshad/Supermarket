@@ -8,6 +8,6 @@ namespace SuperMarket.Data.Employees.RequestModel
     public class MasterSalaryDto
     {
         public int Employee_id {get; set;}
-        public List<EmpSalaryReqDto> MyProperty { get; set; }
+        public List<EmpSalaryReqDto> SalaryComps { get; set; }
     }
 }

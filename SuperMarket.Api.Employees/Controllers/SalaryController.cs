@@ -13,10 +13,12 @@ namespace SuperMarket.Api.Employees.Controllers
   public class SalaryController : ControllerBase
   {
     private readonly ISalaryService salaryService;
+    private readonly IMasterSalaryService masterSalaryService;
 
-    public SalaryController(ISalaryService salaryService)
+    public SalaryController(ISalaryService salaryService, IMasterSalaryService masterSalaryService)
     {
       this.salaryService = salaryService;
+      this.masterSalaryService = masterSalaryService;
     }
 
     [HttpPost]
@@ -51,9 +53,10 @@ namespace SuperMarket.Api.Employees.Controllers
 
     //Master Salary Controllers
 
-    [HttpGet]
-    [Route("All")]
-    public ActionResult AllSalaries(){
+    [HttpPost]
+    [Route("Add")]
+    public ActionResult AddSalaries(MasterSalaryDto salaryDto){
+        masterSalaryService.AddSalary(salaryDto);
         return Ok();
     }
   }

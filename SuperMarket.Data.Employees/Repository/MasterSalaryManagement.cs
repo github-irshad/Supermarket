@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using AutoMapper;
 using SuperMarket.Data.Employees.Data;
 using SuperMarket.Data.Employees.Interfaces;
+using SuperMarket.Data.Employees.Models;
 using SuperMarket.Data.Employees.RequestModel;
 
 namespace SuperMarket.Data.Employees.Repository
@@ -23,13 +24,28 @@ namespace SuperMarket.Data.Employees.Repository
 
     public void AddSalary(MasterSalaryDto masterSalaryDto)
     {
-    //     foreach(var Employee_id in masterSalaryDto.Employee_id ){
-    //         foreach(int compId in ){
+      // var SalaryList = new 
+      foreach (var item in masterSalaryDto.SalaryComps)
+      {
+        EmpSalaryDto empSalaryDto = new EmpSalaryDto();
+        empSalaryDto.EmployeeId = masterSalaryDto.Employee_id;
+        empSalaryDto.Amount = item.Amount;
+        empSalaryDto.SalaryComponentId = item.SalaryCompId;
 
-    //  _employeeDbContext.EmployeeSalary.Add(); 
-    //         }
-    //     }
+        var finalSalaryDto = mapper.Map<EmpSalaryDto, EmployeeSalary>(empSalaryDto);
 
+        _employeeDbContext.EmployeeSalary.Add(finalSalaryDto);
+        _employeeDbContext.SaveChanges();
+      }
+    }
+
+    public void DeleteSalary(int employee_id, int salary_component_id)
+    {
+      _employeeDbContext.EmployeeSalary.Remove(
+        _employeeDbContext.EmployeeSalary.Where(
+            x=> x.EmployeeId == employee_id && x.SalaryComponentId == salary_component_id)
+            .FirstOrDefault()
+      );
     }
   }
 }

@@ -24,7 +24,7 @@ namespace SuperMarket.Api.Employees.Controllers
 
     [HttpPost]
 
-    public ActionResult UserLogin([FromForm] UserDto login_obj)
+    public ActionResult UserLogin( UserDto login_obj)
     {
       if (ModelState.IsValid)
       {

@@ -40,6 +40,9 @@ builder.Services.AddScoped<IFilesCRUD, FilesCRUD>();
 builder.Services.AddScoped<ISalaryManagement,SalaryManagement>();
 builder.Services.AddScoped<ISalaryService,SalaryService>();
 
+builder.Services.AddScoped<IMasterSalaryService,MasterSalaryService>();
+builder.Services.AddScoped<IMasterSalaryManagement,MasterSalaryManagement>();
+
 
 var autoMapper = new MapperConfiguration(item => item.AddProfile(new AutoMapperProfile()));
 IMapper mapper = autoMapper.CreateMapper();
