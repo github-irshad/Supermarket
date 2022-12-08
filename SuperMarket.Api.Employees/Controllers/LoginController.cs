@@ -9,6 +9,7 @@ namespace SuperMarket.Api.Employees.Controllers
   [Route("login")]
   public class LoginController : ControllerBase
   {
+    Nullable<int> EmployeeId;
 
 
     private readonly ILoginService loginService;
@@ -24,18 +25,21 @@ namespace SuperMarket.Api.Employees.Controllers
 
     [HttpPost]
 
+    
+
     public ActionResult UserLogin( UserDto login_obj)
     {
       if (ModelState.IsValid)
       {
-        if (loginService.UserLogin(login_obj))
+        if (loginService.UserLogin(login_obj) != 0)
         {
-          return Ok();
+          return Ok(loginService.UserLogin(login_obj));
         }
           return Unauthorized();
       }
       else
       {
+        EmployeeId = null;
         return Content("Model is not valid");
       }
 

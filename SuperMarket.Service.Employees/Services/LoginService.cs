@@ -29,7 +29,7 @@ namespace SuperMarket.Service.Employees.Services
 
 
 
-    public bool UserLogin(UserDto _login_obj)
+    public int UserLogin(UserDto _login_obj)
     {
       // var login_obj = mapper.Map<UserDto,User>(_login_obj);
 
@@ -38,6 +38,7 @@ namespace SuperMarket.Service.Employees.Services
       
       // login_obj.Created_by = 0;
       // login_obj.Updated_by = 0;
+      // Nullable<int> empId;
       
       return loginRepository.LoginCheck(_login_obj);
     }

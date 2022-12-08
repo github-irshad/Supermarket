@@ -9,6 +9,6 @@ namespace SuperMarket.Data.Employees.Interfaces
 {
     public interface ILoginRepository
     {
-        public bool LoginCheck(UserDto login_obj); 
+        public int LoginCheck(UserDto login_obj); 
     }
 }
