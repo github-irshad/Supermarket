@@ -9,7 +9,7 @@ namespace SuperMarket.Data.Employees.Models
   public class User : CommonProps
   {
 
-    
+    // [ForeignKey]
     [Column("user_name", TypeName = EntityDataType.EntityDataType.StringType)]
     public string UserName { get; set; }
 
@@ -19,9 +19,11 @@ namespace SuperMarket.Data.Employees.Models
     public string Password { get; set; }
 
 
-    [Column("user_type", TypeName = EntityDataType.EntityDataType.IntType)]
+    [Column("user_type", TypeName = EntityDataType.EntityDataType.StringType)]
     public UserType UserType { get; set; }
 
+
+    // public Employee? employee {get; set;}
 
 
   }

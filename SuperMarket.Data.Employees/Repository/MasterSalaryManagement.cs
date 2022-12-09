@@ -34,6 +34,11 @@ namespace SuperMarket.Data.Employees.Repository
 
         var finalSalaryDto = mapper.Map<EmpSalaryDto, EmployeeSalary>(empSalaryDto);
 
+        finalSalaryDto.Created_at = DateTime.UtcNow;
+        finalSalaryDto.Updated_at = DateTime.UtcNow;
+        finalSalaryDto.Created_by = 0;
+        finalSalaryDto.Updated_by = 0;
+
         _employeeDbContext.EmployeeSalary.Add(finalSalaryDto);
         _employeeDbContext.SaveChanges();
       }

@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using SuperMarket.Data.Employees.Common;
 
 namespace SuperMarket.Data.Employees.RequestModel
 {
@@ -16,5 +17,6 @@ namespace SuperMarket.Data.Employees.RequestModel
     public string Department { get; set; }
     public string PhoneNumber { get; set; }    
     public string Designation { get; set; }
+    public UserType UserType{get; set;}
   }
 }

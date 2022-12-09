@@ -23,15 +23,13 @@ namespace SuperMarket.Api.Employees.Controllers
 
     }
 
-    [HttpPost]
-
-    
+    [HttpPost]    
 
     public ActionResult UserLogin( UserDto login_obj)
     {
       if (ModelState.IsValid)
       {
-        if (loginService.UserLogin(login_obj) != 0)
+        if (loginService.UserLogin(login_obj) > 0)
         {
           return Ok(loginService.UserLogin(login_obj));
         }

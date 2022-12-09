@@ -1,4 +1,5 @@
 using AutoMapper;
+using SuperMarket.Data.Employees.Common;
 using SuperMarket.Data.Employees.Interfaces;
 using SuperMarket.Data.Employees.Models;
 using SuperMarket.Data.Employees.RequestModel;
@@ -11,11 +12,15 @@ namespace SuperMarket.Service.Employees.Services
 
     private readonly IEmployeeManagement employeeManagement;
     private readonly IMapper mapper;
+    private readonly UserService userService;
 
-    public EmployeeService(IEmployeeManagement employeeManagement,IMapper mapper)
+
+
+    public EmployeeService(IEmployeeManagement employeeManagement, IMapper mapper, UserService userService)
     {
       this.employeeManagement = employeeManagement;
       this.mapper = mapper;
+      this.userService = userService;
     }
 
 
@@ -24,7 +29,7 @@ namespace SuperMarket.Service.Employees.Services
     public void NewEmployee(AddEmployeeDto _employee)
     {
       // AddEmployee employee = new AddEmployee();
-      var employee = mapper.Map<AddEmployeeDto,AddEmployee>(_employee);
+      var employee = mapper.Map<AddEmployeeDto, AddEmployee>(_employee);
 
       employee.Created_at = DateTime.UtcNow;
       employee.Updated_at = DateTime.UtcNow;
@@ -32,8 +37,22 @@ namespace SuperMarket.Service.Employees.Services
       employee.Created_by = 0;
       employee.Updated_by = 0;
 
+      
+      
 
-      employeeManagement.AddNewEmployee(employee);
+      User user = new User(){
+        UserName = _employee.Email,
+        Password = "123456",
+        UserType = _employee.UserType,
+        Created_at = DateTime.UtcNow,
+      Updated_at = DateTime.UtcNow,
+      
+      Created_by = 0,
+      Updated_by = 0
+      };
+
+
+      employeeManagement.AddNewEmployee(employee,user);
     }
 
     public IEnumerable<Employee> GetAllEmployeesService()
@@ -51,16 +70,29 @@ namespace SuperMarket.Service.Employees.Services
     public void DeleteEmployeeService(int id)
     {
       employeeManagement.DeleteEmployee(id);
+      
+      
     }
 
     public void UpdateEmployeeService(int id, EditEmployee updateEmployeeModel)
     {
-      employeeManagement.UpdateEmployee(id,updateEmployeeModel);
+      employeeManagement.UpdateEmployee(id, updateEmployeeModel);
     }
 
     public void ChangeVerification(int id)
     {
       employeeManagement.ChangeVerification(id);
     }
+
+    public Dictionary<int, string> GetEnum_ComponentType()
+    {
+      return employeeManagement.ReturnCompTypeEnums();
+    }
+    public Dictionary<int, string> GetEnum_UserType()
+    {
+      return employeeManagement.ReturnUserTypeEnums();
+    }
   }
+
+  
 }

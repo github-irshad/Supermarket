@@ -115,7 +115,7 @@ namespace SuperMarket.Data.Employees.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
-                    b.Property<double?>("Amount")
+                    b.Property<double>("Amount")
                         .HasColumnType("double precision")
                         .HasColumnName("amount");
 
@@ -127,11 +127,11 @@ namespace SuperMarket.Data.Employees.Migrations
                         .HasColumnType("integer")
                         .HasColumnName("created_by");
 
-                    b.Property<int?>("EmployeeId")
+                    b.Property<int>("EmployeeId")
                         .HasColumnType("integer")
                         .HasColumnName("employee_id");
 
-                    b.Property<int?>("SalaryComponentId")
+                    b.Property<int>("SalaryComponentId")
                         .HasColumnType("integer")
                         .HasColumnName("salary_component_id");
 
@@ -158,10 +158,12 @@ namespace SuperMarket.Data.Employees.Migrations
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
                     b.Property<string>("ComponentName")
+                        .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("component_name");
 
                     b.Property<string>("ComponentType")
+                        .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("component_type");
 
@@ -174,6 +176,7 @@ namespace SuperMarket.Data.Employees.Migrations
                         .HasColumnName("created_by");
 
                     b.Property<string>("Description")
+                        .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("description");
 
@@ -213,6 +216,7 @@ namespace SuperMarket.Data.Employees.Migrations
                         .HasColumnName("created_by");
 
                     b.Property<string>("Password")
+                        .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("password");
 
@@ -225,11 +229,13 @@ namespace SuperMarket.Data.Employees.Migrations
                         .HasColumnName("updated_by");
 
                     b.Property<string>("UserName")
+                        .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("user_name");
 
-                    b.Property<int>("UserType")
-                        .HasColumnType("integer")
+                    b.Property<string>("UserType")
+                        .IsRequired()
+                        .HasColumnType("text")
                         .HasColumnName("user_type");
 
                     b.HasKey("Id");

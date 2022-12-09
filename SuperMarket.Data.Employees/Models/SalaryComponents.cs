@@ -22,7 +22,7 @@ namespace SuperMarket.Data.Employees.Models
     public string Description { get; set; }
 
 
-  #nullable enable
+  // #nullable enable
     public EmployeeSalary? employeeSalary {get; set;}
     
 
