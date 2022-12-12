@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tqOTNEj78vwlV5a+5U1TVHbktjHSl2hlO0aIYUlobZa0DnkN98QqqcFyItWGriw8Kx9BjYHgPhGfjFmYqebwqA==",
+  "dgSpecHash": "k+gdA3IW7+tWUDwC2e5uiVHJQBBd8xW1vgOXZRuuHkvmRoZmkBVxQoMqxy1vLrdVIcSxLJmWoVyd3hpiKHm3vg==",
   "success": true,
-  "projectFilePath": "c:\\Users\\muhammed.irshad\\Desktop\\.NET\\SuperMarket\\SuperMarket.Api.Employees\\SuperMarket.Api.Employees.csproj",
+  "projectFilePath": "C:\\Users\\muhammed.irshad\\Desktop\\.NET\\SuperMarket\\SuperMarket.Api.Employees\\SuperMarket.Api.Employees.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\muhammed.irshad\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\muhammed.irshad\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",

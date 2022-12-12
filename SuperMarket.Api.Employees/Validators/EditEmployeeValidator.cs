@@ -6,12 +6,13 @@ using FluentValidation;
 using SuperMarket.Data.Employees.RequestModel;
 
 namespace SuperMarket.Api.Employees.Validators
-{
-    public class AddEmpDtoValidator : AbstractValidator<AddEmployeeDto>
+{ 
+    public class EditEmployeeValidator : AbstractValidator<EditEmployee>
     {
-        public AddEmpDtoValidator()
+        public EditEmployeeValidator()
         {
-            RuleFor(x=>x.Email).EmailAddress();
+            
+        RuleFor(x=>x.Email).EmailAddress();
             RuleFor(x=>x.FirstName).NotEmpty();
             RuleFor(x=>x.PhoneNumber).NotEmpty();
             RuleFor(x=>x.AadharNumber).NotEmpty();
@@ -20,8 +21,7 @@ namespace SuperMarket.Api.Employees.Validators
             RuleFor(x=>x.Designation).NotEmpty();
             RuleFor(x=>x.Address).NotEmpty();
             RuleFor(x=>x.Department).NotEmpty();
-            RuleFor(x=>x.UserType).NotEmpty();
-
+            // RuleFor(x=>x.UserType).NotEmpty();
         }
     }
 }

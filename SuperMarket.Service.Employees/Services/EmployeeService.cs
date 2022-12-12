@@ -12,15 +12,15 @@ namespace SuperMarket.Service.Employees.Services
 
     private readonly IEmployeeManagement employeeManagement;
     private readonly IMapper mapper;
-    private readonly UserService userService;
+    
 
 
 
-    public EmployeeService(IEmployeeManagement employeeManagement, IMapper mapper, UserService userService)
+    public EmployeeService(IEmployeeManagement employeeManagement, IMapper mapper)
     {
       this.employeeManagement = employeeManagement;
       this.mapper = mapper;
-      this.userService = userService;
+      
     }
 
 

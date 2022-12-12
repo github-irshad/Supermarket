@@ -9,14 +9,29 @@ using AutoMapper;
 using SuperMarket.Data.Employees.Mapping;
 using Serilog;
 using SuperMarket.Api.Employees.Middleware;
-
+using FluentValidation.AspNetCore;
+using FluentValidation;
+using SuperMarket.Data.Employees.RequestModel;
+using SuperMarket.Api.Employees.Validators;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddTransient<SuperMarketExceptionMiddleware>();
-builder.Services.AddControllers();
+
+
+builder.Services
+    .AddControllers()
+.AddFluentValidation (x=>
+     { 
+      x.ImplicitlyValidateChildProperties = true;
+      x.RegisterValidatorsFromAssemblies(AppDomain.CurrentDomain.GetAssemblies());
+     }
+    );
+
+// builder.Services.AddTransient<IValidator<AddEmployeeDto>,AddEmpDtoValidator>();
+
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -43,6 +58,9 @@ builder.Services.AddScoped<ISalaryService,SalaryService>();
 builder.Services.AddScoped<IMasterSalaryService,MasterSalaryService>();
 builder.Services.AddScoped<IMasterSalaryManagement,MasterSalaryManagement>();
 
+builder.Services.AddScoped<IUserService,UserService>();
+builder.Services.AddScoped<IUserRepository,UserRepository>();
+
 
 var autoMapper = new MapperConfiguration(item => item.AddProfile(new AutoMapperProfile()));
 IMapper mapper = autoMapper.CreateMapper();
@@ -52,7 +70,6 @@ builder.Services.AddSingleton(mapper);
     {
         builder.WithOrigins("*").AllowAnyMethod().AllowAnyHeader();
     }));
-
 
 //Serilog 
 

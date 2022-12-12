@@ -75,3 +75,6 @@ C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\Builds\30-11\SuperMarket.Api.E
 C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\Builds\30-11\SuperMarket.Api.Employees.dll
 C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\Builds\30-11\SuperMarket.Api.Employees.pdb
 C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\bin\Debug\net6.0\Serilog.Sinks.PostgreSQL.Configuration.dll
+C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\bin\Debug\net6.0\FluentValidation.dll
+C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll

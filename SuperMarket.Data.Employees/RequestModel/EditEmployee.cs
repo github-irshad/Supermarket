@@ -10,13 +10,13 @@ namespace SuperMarket.Data.Employees.RequestModel
   {
     
    
-    public string? FirstName { get; set; }
-    public string? LastName { get; set; }
-    public string? Address { get; set; }
-    public string? AadharNumber { get; set; }
-    public string? AadharDocument { get; set; }
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
+    public string Address { get; set; }
+    public string AadharNumber { get; set; }
+    public string AadharDocument { get; set; }
     // public bool isVerified { get; set; }
-    public string? Designation { get; set; }
+    public string Designation { get; set; }
     // public EmployeeSalary? employeeSalary { get; set; }
     public string Email{get; set;}
     public string Department { get; set; }
