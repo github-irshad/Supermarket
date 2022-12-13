@@ -75,6 +75,8 @@ namespace SuperMarket.Api.Employees.Controllers
     [HttpGet]
     [Route("View/{EmpId}/All")]
     public ActionResult GetSalariesofEmp(int EmpId){
+        // masterSalaryService.GetSalariesofAnEmp(EmpId);
+      // var result =  masterSalaryService.GetSalariesofAnEmp(EmpId);
       return Ok(
         masterSalaryService.GetSalariesofAnEmp(EmpId)
       );

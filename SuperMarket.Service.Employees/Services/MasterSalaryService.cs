@@ -31,10 +31,11 @@ namespace SuperMarket.Service.Employees.Services
       masterSalaryManagement.DeleteSalary(empId, compId);
     }
 
-    public EmpSalaries GetSalariesofAnEmp(int emp_id)
+    public List<EmpSalaryReqDto> GetSalariesofAnEmp(int emp_id)
     {
       
       return masterSalaryManagement.GetSalariesByEmpId(emp_id);
+      //  masterSalaryManagement.GetSalariesByEmpId(emp_id);
       // EmpSalaries empSalaries = new EmpSalaries();
       // empSalaries.Employee_id = ListOfSalaries.FirstOrDefault().EmployeeId;
 

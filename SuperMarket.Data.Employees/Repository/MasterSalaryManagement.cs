@@ -48,7 +48,7 @@ namespace SuperMarket.Data.Employees.Repository
     {
       _employeeDbContext.EmployeeSalary.Remove(
         _employeeDbContext.EmployeeSalary.Where(
-            x=> x.EmployeeId == employee_id && x.SalaryComponentId == salary_component_id)
+            x => x.EmployeeId == employee_id && x.SalaryComponentId == salary_component_id)
             .FirstOrDefault()
       );
 
@@ -56,27 +56,37 @@ namespace SuperMarket.Data.Employees.Repository
     }
 
 
-    public void EditSalaryComp(){
-        
-    }
-
-    public void GetSalaries(){
+    public void EditSalaryComp()
+    {
 
     }
-    public EmpSalaries GetSalariesByEmpId(int employee_id){
 
-      var DataList = _employeeDbContext.EmployeeSalary.Where(x=>x.EmployeeId == employee_id);
-      EmpSalaries empSalaries = new EmpSalaries();
+    public void GetSalaries()
+    {
 
-      empSalaries.Employee_id = employee_id;
-      foreach(var item in DataList){
-        foreach(var values in empSalaries.SalaryComps){
-          values.SalaryCompId = item.SalaryComponentId;
-          values.Amount = item.Amount;
-        }
-      }
+    }
+    public List<EmpSalaryReqDto> GetSalariesByEmpId(int employee_id)
+    {
 
-      return empSalaries;
+      var DataList = _employeeDbContext.EmployeeSalary
+      .Where(x => x.EmployeeId == employee_id)
+      .Select(y => new EmpSalaryReqDto{
+        Amount = y.Amount,
+        SalaryCompId = y.SalaryComponentId
+
+      })
+      .ToList();
+
+
+
+
+
+
+
+
+      // var empSalaries = mapper.Map<List<EmployeeSalary>,List<EmpSalaryReqDto>>(DataList);
+
+      return DataList;
 
     }
   }

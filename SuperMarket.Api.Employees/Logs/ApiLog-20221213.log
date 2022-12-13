@@ -1,0 +1,801 @@
+2022-12-13 09:54:29.442 +05:30 [ERR] Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[SuperMarket.Data.Employees.Models.EmployeeSalary, SuperMarket.Data.Employees, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[SuperMarket.Data.Employees.RequestModel.EmpSalaryReqDto, SuperMarket.Data.Employees, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[SuperMarket.Data.Employees.Models.EmployeeSalary, SuperMarket.Data.Employees, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[SuperMarket.Data.Employees.RequestModel.EmpSalaryReqDto, SuperMarket.Data.Employees, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+EmployeeSalary -> EmpSalaryReqDto
+SuperMarket.Data.Employees.Models.EmployeeSalary -> SuperMarket.Data.Employees.RequestModel.EmpSalaryReqDto
+   at lambda_method66(Closure , EmployeeSalary , EmpSalaryReqDto , ResolutionContext )
+   at lambda_method65(Closure , List`1 , List`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method65(Closure , List`1 , List`1 , ResolutionContext )
+   at SuperMarket.Data.Employees.Repository.MasterSalaryManagement.GetSalariesByEmpId(Int32 employee_id) in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Data.Employees\Repository\MasterSalaryManagement.cs:line 72
+   at SuperMarket.Service.Employees.Services.MasterSalaryService.GetSalariesofAnEmp(Int32 emp_id) in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Service.Employees\Services\MasterSalaryService.cs:line 37
+   at SuperMarket.Api.Employees.Controllers.SalaryController.GetSalariesofEmp(Int32 EmpId) in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\Controllers\SalaryController.cs:line 78
+   at lambda_method3(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at SuperMarket.Api.Employees.Middleware.SuperMarketExceptionMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\Middleware\SuperMarketExceptionMiddleware.cs:line 38
+2022-12-13 09:55:37.522 +05:30 [ERR] Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[SuperMarket.Data.Employees.Models.EmployeeSalary, SuperMarket.Data.Employees, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[SuperMarket.Data.Employees.RequestModel.EmpSalaryReqDto, SuperMarket.Data.Employees, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[SuperMarket.Data.Employees.Models.EmployeeSalary, SuperMarket.Data.Employees, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[SuperMarket.Data.Employees.RequestModel.EmpSalaryReqDto, SuperMarket.Data.Employees, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+EmployeeSalary -> EmpSalaryReqDto
+SuperMarket.Data.Employees.Models.EmployeeSalary -> SuperMarket.Data.Employees.RequestModel.EmpSalaryReqDto
+   at lambda_method66(Closure , EmployeeSalary , EmpSalaryReqDto , ResolutionContext )
+   at lambda_method65(Closure , List`1 , List`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method65(Closure , List`1 , List`1 , ResolutionContext )
+   at SuperMarket.Data.Employees.Repository.MasterSalaryManagement.GetSalariesByEmpId(Int32 employee_id)
+   at SuperMarket.Service.Employees.Services.MasterSalaryService.GetSalariesofAnEmp(Int32 emp_id) in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Service.Employees\Services\MasterSalaryService.cs:line 37
+   at SuperMarket.Api.Employees.Controllers.SalaryController.GetSalariesofEmp(Int32 EmpId) in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\Controllers\SalaryController.cs:line 78
+   at lambda_method69(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at SuperMarket.Api.Employees.Middleware.SuperMarketExceptionMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\Middleware\SuperMarketExceptionMiddleware.cs:line 38
+2022-12-13 11:25:11.507 +05:30 [ERR] Failed executing DbCommand (2ms) [Parameters=[@__employee_id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+2022-12-13 11:25:11.623 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'SuperMarket.Data.Employees.Data.EmployeeDbContext'.
+Npgsql.NpgsqlOperationInProgressException (0x80004005): A command is already in progress: SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+   at Npgsql.Internal.NpgsqlConnector.<StartUserAction>g__DoStartUserAction|265_0(ConnectorState newState, NpgsqlCommand command, <>c__DisplayClass265_0& )
+   at Npgsql.Internal.NpgsqlConnector.StartUserAction(ConnectorState newState, NpgsqlCommand command, CancellationToken cancellationToken, Boolean attemptPgCancellation)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+Npgsql.NpgsqlOperationInProgressException (0x80004005): A command is already in progress: SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+   at Npgsql.Internal.NpgsqlConnector.<StartUserAction>g__DoStartUserAction|265_0(ConnectorState newState, NpgsqlCommand command, <>c__DisplayClass265_0& )
+   at Npgsql.Internal.NpgsqlConnector.StartUserAction(ConnectorState newState, NpgsqlCommand command, CancellationToken cancellationToken, Boolean attemptPgCancellation)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2022-12-13 11:25:36.990 +05:30 [ERR] Failed executing DbCommand (0ms) [Parameters=[@__employee_id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+2022-12-13 11:25:36.995 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'SuperMarket.Data.Employees.Data.EmployeeDbContext'.
+Npgsql.NpgsqlOperationInProgressException (0x80004005): A command is already in progress: SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+   at Npgsql.Internal.NpgsqlConnector.<StartUserAction>g__DoStartUserAction|265_0(ConnectorState newState, NpgsqlCommand command, <>c__DisplayClass265_0& )
+   at Npgsql.Internal.NpgsqlConnector.StartUserAction(ConnectorState newState, NpgsqlCommand command, CancellationToken cancellationToken, Boolean attemptPgCancellation)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+Npgsql.NpgsqlOperationInProgressException (0x80004005): A command is already in progress: SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+   at Npgsql.Internal.NpgsqlConnector.<StartUserAction>g__DoStartUserAction|265_0(ConnectorState newState, NpgsqlCommand command, <>c__DisplayClass265_0& )
+   at Npgsql.Internal.NpgsqlConnector.StartUserAction(ConnectorState newState, NpgsqlCommand command, CancellationToken cancellationToken, Boolean attemptPgCancellation)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2022-12-13 11:25:59.488 +05:30 [ERR] Failed executing DbCommand (0ms) [Parameters=[@__employee_id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+2022-12-13 11:25:59.492 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'SuperMarket.Data.Employees.Data.EmployeeDbContext'.
+Npgsql.NpgsqlOperationInProgressException (0x80004005): A command is already in progress: SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+   at Npgsql.Internal.NpgsqlConnector.<StartUserAction>g__DoStartUserAction|265_0(ConnectorState newState, NpgsqlCommand command, <>c__DisplayClass265_0& )
+   at Npgsql.Internal.NpgsqlConnector.StartUserAction(ConnectorState newState, NpgsqlCommand command, CancellationToken cancellationToken, Boolean attemptPgCancellation)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+Npgsql.NpgsqlOperationInProgressException (0x80004005): A command is already in progress: SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+   at Npgsql.Internal.NpgsqlConnector.<StartUserAction>g__DoStartUserAction|265_0(ConnectorState newState, NpgsqlCommand command, <>c__DisplayClass265_0& )
+   at Npgsql.Internal.NpgsqlConnector.StartUserAction(ConnectorState newState, NpgsqlCommand command, CancellationToken cancellationToken, Boolean attemptPgCancellation)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2022-12-13 11:26:01.700 +05:30 [ERR] Failed executing DbCommand (0ms) [Parameters=[@__employee_id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+2022-12-13 11:26:01.704 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'SuperMarket.Data.Employees.Data.EmployeeDbContext'.
+Npgsql.NpgsqlOperationInProgressException (0x80004005): A command is already in progress: SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+   at Npgsql.Internal.NpgsqlConnector.<StartUserAction>g__DoStartUserAction|265_0(ConnectorState newState, NpgsqlCommand command, <>c__DisplayClass265_0& )
+   at Npgsql.Internal.NpgsqlConnector.StartUserAction(ConnectorState newState, NpgsqlCommand command, CancellationToken cancellationToken, Boolean attemptPgCancellation)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+Npgsql.NpgsqlOperationInProgressException (0x80004005): A command is already in progress: SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+   at Npgsql.Internal.NpgsqlConnector.<StartUserAction>g__DoStartUserAction|265_0(ConnectorState newState, NpgsqlCommand command, <>c__DisplayClass265_0& )
+   at Npgsql.Internal.NpgsqlConnector.StartUserAction(ConnectorState newState, NpgsqlCommand command, CancellationToken cancellationToken, Boolean attemptPgCancellation)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2022-12-13 11:26:02.915 +05:30 [ERR] Failed executing DbCommand (0ms) [Parameters=[@__employee_id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+2022-12-13 11:26:02.921 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'SuperMarket.Data.Employees.Data.EmployeeDbContext'.
+Npgsql.NpgsqlOperationInProgressException (0x80004005): A command is already in progress: SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+   at Npgsql.Internal.NpgsqlConnector.<StartUserAction>g__DoStartUserAction|265_0(ConnectorState newState, NpgsqlCommand command, <>c__DisplayClass265_0& )
+   at Npgsql.Internal.NpgsqlConnector.StartUserAction(ConnectorState newState, NpgsqlCommand command, CancellationToken cancellationToken, Boolean attemptPgCancellation)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+Npgsql.NpgsqlOperationInProgressException (0x80004005): A command is already in progress: SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+   at Npgsql.Internal.NpgsqlConnector.<StartUserAction>g__DoStartUserAction|265_0(ConnectorState newState, NpgsqlCommand command, <>c__DisplayClass265_0& )
+   at Npgsql.Internal.NpgsqlConnector.StartUserAction(ConnectorState newState, NpgsqlCommand command, CancellationToken cancellationToken, Boolean attemptPgCancellation)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2022-12-13 11:26:03.808 +05:30 [ERR] Failed executing DbCommand (0ms) [Parameters=[@__employee_id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+2022-12-13 11:26:03.813 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'SuperMarket.Data.Employees.Data.EmployeeDbContext'.
+Npgsql.NpgsqlOperationInProgressException (0x80004005): A command is already in progress: SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+   at Npgsql.Internal.NpgsqlConnector.<StartUserAction>g__DoStartUserAction|265_0(ConnectorState newState, NpgsqlCommand command, <>c__DisplayClass265_0& )
+   at Npgsql.Internal.NpgsqlConnector.StartUserAction(ConnectorState newState, NpgsqlCommand command, CancellationToken cancellationToken, Boolean attemptPgCancellation)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+Npgsql.NpgsqlOperationInProgressException (0x80004005): A command is already in progress: SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+   at Npgsql.Internal.NpgsqlConnector.<StartUserAction>g__DoStartUserAction|265_0(ConnectorState newState, NpgsqlCommand command, <>c__DisplayClass265_0& )
+   at Npgsql.Internal.NpgsqlConnector.StartUserAction(ConnectorState newState, NpgsqlCommand command, CancellationToken cancellationToken, Boolean attemptPgCancellation)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2022-12-13 11:26:33.570 +05:30 [ERR] Failed executing DbCommand (4ms) [Parameters=[@__employee_id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+2022-12-13 11:26:33.578 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'SuperMarket.Data.Employees.Data.EmployeeDbContext'.
+Npgsql.NpgsqlOperationInProgressException (0x80004005): A command is already in progress: SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+   at Npgsql.Internal.NpgsqlConnector.<StartUserAction>g__DoStartUserAction|265_0(ConnectorState newState, NpgsqlCommand command, <>c__DisplayClass265_0& )
+   at Npgsql.Internal.NpgsqlConnector.StartUserAction(ConnectorState newState, NpgsqlCommand command, CancellationToken cancellationToken, Boolean attemptPgCancellation)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+Npgsql.NpgsqlOperationInProgressException (0x80004005): A command is already in progress: SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+   at Npgsql.Internal.NpgsqlConnector.<StartUserAction>g__DoStartUserAction|265_0(ConnectorState newState, NpgsqlCommand command, <>c__DisplayClass265_0& )
+   at Npgsql.Internal.NpgsqlConnector.StartUserAction(ConnectorState newState, NpgsqlCommand command, CancellationToken cancellationToken, Boolean attemptPgCancellation)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2022-12-13 11:26:52.330 +05:30 [ERR] Failed executing DbCommand (0ms) [Parameters=[@__employee_id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+2022-12-13 11:26:52.335 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'SuperMarket.Data.Employees.Data.EmployeeDbContext'.
+Npgsql.NpgsqlOperationInProgressException (0x80004005): A command is already in progress: SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+   at Npgsql.Internal.NpgsqlConnector.<StartUserAction>g__DoStartUserAction|265_0(ConnectorState newState, NpgsqlCommand command, <>c__DisplayClass265_0& )
+   at Npgsql.Internal.NpgsqlConnector.StartUserAction(ConnectorState newState, NpgsqlCommand command, CancellationToken cancellationToken, Boolean attemptPgCancellation)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+Npgsql.NpgsqlOperationInProgressException (0x80004005): A command is already in progress: SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+   at Npgsql.Internal.NpgsqlConnector.<StartUserAction>g__DoStartUserAction|265_0(ConnectorState newState, NpgsqlCommand command, <>c__DisplayClass265_0& )
+   at Npgsql.Internal.NpgsqlConnector.StartUserAction(ConnectorState newState, NpgsqlCommand command, CancellationToken cancellationToken, Boolean attemptPgCancellation)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2022-12-13 11:26:53.325 +05:30 [ERR] Failed executing DbCommand (0ms) [Parameters=[@__employee_id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+2022-12-13 11:26:53.330 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'SuperMarket.Data.Employees.Data.EmployeeDbContext'.
+Npgsql.NpgsqlOperationInProgressException (0x80004005): A command is already in progress: SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+   at Npgsql.Internal.NpgsqlConnector.<StartUserAction>g__DoStartUserAction|265_0(ConnectorState newState, NpgsqlCommand command, <>c__DisplayClass265_0& )
+   at Npgsql.Internal.NpgsqlConnector.StartUserAction(ConnectorState newState, NpgsqlCommand command, CancellationToken cancellationToken, Boolean attemptPgCancellation)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+Npgsql.NpgsqlOperationInProgressException (0x80004005): A command is already in progress: SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+   at Npgsql.Internal.NpgsqlConnector.<StartUserAction>g__DoStartUserAction|265_0(ConnectorState newState, NpgsqlCommand command, <>c__DisplayClass265_0& )
+   at Npgsql.Internal.NpgsqlConnector.StartUserAction(ConnectorState newState, NpgsqlCommand command, CancellationToken cancellationToken, Boolean attemptPgCancellation)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2022-12-13 11:26:58.261 +05:30 [ERR] Failed executing DbCommand (0ms) [Parameters=[@__employee_id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+2022-12-13 11:26:58.266 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'SuperMarket.Data.Employees.Data.EmployeeDbContext'.
+Npgsql.NpgsqlOperationInProgressException (0x80004005): A command is already in progress: SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+   at Npgsql.Internal.NpgsqlConnector.<StartUserAction>g__DoStartUserAction|265_0(ConnectorState newState, NpgsqlCommand command, <>c__DisplayClass265_0& )
+   at Npgsql.Internal.NpgsqlConnector.StartUserAction(ConnectorState newState, NpgsqlCommand command, CancellationToken cancellationToken, Boolean attemptPgCancellation)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+Npgsql.NpgsqlOperationInProgressException (0x80004005): A command is already in progress: SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+   at Npgsql.Internal.NpgsqlConnector.<StartUserAction>g__DoStartUserAction|265_0(ConnectorState newState, NpgsqlCommand command, <>c__DisplayClass265_0& )
+   at Npgsql.Internal.NpgsqlConnector.StartUserAction(ConnectorState newState, NpgsqlCommand command, CancellationToken cancellationToken, Boolean attemptPgCancellation)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2022-12-13 11:26:59.628 +05:30 [ERR] Failed executing DbCommand (0ms) [Parameters=[@__employee_id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+2022-12-13 11:26:59.632 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'SuperMarket.Data.Employees.Data.EmployeeDbContext'.
+Npgsql.NpgsqlOperationInProgressException (0x80004005): A command is already in progress: SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+   at Npgsql.Internal.NpgsqlConnector.<StartUserAction>g__DoStartUserAction|265_0(ConnectorState newState, NpgsqlCommand command, <>c__DisplayClass265_0& )
+   at Npgsql.Internal.NpgsqlConnector.StartUserAction(ConnectorState newState, NpgsqlCommand command, CancellationToken cancellationToken, Boolean attemptPgCancellation)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+Npgsql.NpgsqlOperationInProgressException (0x80004005): A command is already in progress: SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+   at Npgsql.Internal.NpgsqlConnector.<StartUserAction>g__DoStartUserAction|265_0(ConnectorState newState, NpgsqlCommand command, <>c__DisplayClass265_0& )
+   at Npgsql.Internal.NpgsqlConnector.StartUserAction(ConnectorState newState, NpgsqlCommand command, CancellationToken cancellationToken, Boolean attemptPgCancellation)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2022-12-13 11:27:11.734 +05:30 [ERR] Failed executing DbCommand (0ms) [Parameters=[@__employee_id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+2022-12-13 11:27:11.740 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'SuperMarket.Data.Employees.Data.EmployeeDbContext'.
+Npgsql.NpgsqlOperationInProgressException (0x80004005): A command is already in progress: SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+   at Npgsql.Internal.NpgsqlConnector.<StartUserAction>g__DoStartUserAction|265_0(ConnectorState newState, NpgsqlCommand command, <>c__DisplayClass265_0& )
+   at Npgsql.Internal.NpgsqlConnector.StartUserAction(ConnectorState newState, NpgsqlCommand command, CancellationToken cancellationToken, Boolean attemptPgCancellation)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+Npgsql.NpgsqlOperationInProgressException (0x80004005): A command is already in progress: SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+   at Npgsql.Internal.NpgsqlConnector.<StartUserAction>g__DoStartUserAction|265_0(ConnectorState newState, NpgsqlCommand command, <>c__DisplayClass265_0& )
+   at Npgsql.Internal.NpgsqlConnector.StartUserAction(ConnectorState newState, NpgsqlCommand command, CancellationToken cancellationToken, Boolean attemptPgCancellation)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2022-12-13 11:29:55.342 +05:30 [ERR] Failed executing DbCommand (2ms) [Parameters=[@__employee_id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+2022-12-13 11:29:55.445 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'SuperMarket.Data.Employees.Data.EmployeeDbContext'.
+Npgsql.NpgsqlOperationInProgressException (0x80004005): A command is already in progress: SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+   at Npgsql.Internal.NpgsqlConnector.<StartUserAction>g__DoStartUserAction|265_0(ConnectorState newState, NpgsqlCommand command, <>c__DisplayClass265_0& )
+   at Npgsql.Internal.NpgsqlConnector.StartUserAction(ConnectorState newState, NpgsqlCommand command, CancellationToken cancellationToken, Boolean attemptPgCancellation)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+Npgsql.NpgsqlOperationInProgressException (0x80004005): A command is already in progress: SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+   at Npgsql.Internal.NpgsqlConnector.<StartUserAction>g__DoStartUserAction|265_0(ConnectorState newState, NpgsqlCommand command, <>c__DisplayClass265_0& )
+   at Npgsql.Internal.NpgsqlConnector.StartUserAction(ConnectorState newState, NpgsqlCommand command, CancellationToken cancellationToken, Boolean attemptPgCancellation)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2022-12-13 11:29:59.225 +05:30 [ERR] Failed executing DbCommand (0ms) [Parameters=[@__employee_id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+2022-12-13 11:29:59.230 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'SuperMarket.Data.Employees.Data.EmployeeDbContext'.
+Npgsql.NpgsqlOperationInProgressException (0x80004005): A command is already in progress: SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+   at Npgsql.Internal.NpgsqlConnector.<StartUserAction>g__DoStartUserAction|265_0(ConnectorState newState, NpgsqlCommand command, <>c__DisplayClass265_0& )
+   at Npgsql.Internal.NpgsqlConnector.StartUserAction(ConnectorState newState, NpgsqlCommand command, CancellationToken cancellationToken, Boolean attemptPgCancellation)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+Npgsql.NpgsqlOperationInProgressException (0x80004005): A command is already in progress: SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+   at Npgsql.Internal.NpgsqlConnector.<StartUserAction>g__DoStartUserAction|265_0(ConnectorState newState, NpgsqlCommand command, <>c__DisplayClass265_0& )
+   at Npgsql.Internal.NpgsqlConnector.StartUserAction(ConnectorState newState, NpgsqlCommand command, CancellationToken cancellationToken, Boolean attemptPgCancellation)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2022-12-13 11:30:12.359 +05:30 [ERR] Failed executing DbCommand (0ms) [Parameters=[@__employee_id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+2022-12-13 11:30:12.365 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'SuperMarket.Data.Employees.Data.EmployeeDbContext'.
+Npgsql.NpgsqlOperationInProgressException (0x80004005): A command is already in progress: SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+   at Npgsql.Internal.NpgsqlConnector.<StartUserAction>g__DoStartUserAction|265_0(ConnectorState newState, NpgsqlCommand command, <>c__DisplayClass265_0& )
+   at Npgsql.Internal.NpgsqlConnector.StartUserAction(ConnectorState newState, NpgsqlCommand command, CancellationToken cancellationToken, Boolean attemptPgCancellation)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+Npgsql.NpgsqlOperationInProgressException (0x80004005): A command is already in progress: SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+   at Npgsql.Internal.NpgsqlConnector.<StartUserAction>g__DoStartUserAction|265_0(ConnectorState newState, NpgsqlCommand command, <>c__DisplayClass265_0& )
+   at Npgsql.Internal.NpgsqlConnector.StartUserAction(ConnectorState newState, NpgsqlCommand command, CancellationToken cancellationToken, Boolean attemptPgCancellation)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2022-12-13 11:30:15.435 +05:30 [ERR] Failed executing DbCommand (0ms) [Parameters=[@__employee_id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+2022-12-13 11:30:15.439 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'SuperMarket.Data.Employees.Data.EmployeeDbContext'.
+Npgsql.NpgsqlOperationInProgressException (0x80004005): A command is already in progress: SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+   at Npgsql.Internal.NpgsqlConnector.<StartUserAction>g__DoStartUserAction|265_0(ConnectorState newState, NpgsqlCommand command, <>c__DisplayClass265_0& )
+   at Npgsql.Internal.NpgsqlConnector.StartUserAction(ConnectorState newState, NpgsqlCommand command, CancellationToken cancellationToken, Boolean attemptPgCancellation)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+Npgsql.NpgsqlOperationInProgressException (0x80004005): A command is already in progress: SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+   at Npgsql.Internal.NpgsqlConnector.<StartUserAction>g__DoStartUserAction|265_0(ConnectorState newState, NpgsqlCommand command, <>c__DisplayClass265_0& )
+   at Npgsql.Internal.NpgsqlConnector.StartUserAction(ConnectorState newState, NpgsqlCommand command, CancellationToken cancellationToken, Boolean attemptPgCancellation)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2022-12-13 11:30:17.241 +05:30 [ERR] Failed executing DbCommand (0ms) [Parameters=[@__employee_id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+2022-12-13 11:30:17.245 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'SuperMarket.Data.Employees.Data.EmployeeDbContext'.
+Npgsql.NpgsqlOperationInProgressException (0x80004005): A command is already in progress: SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+   at Npgsql.Internal.NpgsqlConnector.<StartUserAction>g__DoStartUserAction|265_0(ConnectorState newState, NpgsqlCommand command, <>c__DisplayClass265_0& )
+   at Npgsql.Internal.NpgsqlConnector.StartUserAction(ConnectorState newState, NpgsqlCommand command, CancellationToken cancellationToken, Boolean attemptPgCancellation)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+Npgsql.NpgsqlOperationInProgressException (0x80004005): A command is already in progress: SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+   at Npgsql.Internal.NpgsqlConnector.<StartUserAction>g__DoStartUserAction|265_0(ConnectorState newState, NpgsqlCommand command, <>c__DisplayClass265_0& )
+   at Npgsql.Internal.NpgsqlConnector.StartUserAction(ConnectorState newState, NpgsqlCommand command, CancellationToken cancellationToken, Boolean attemptPgCancellation)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2022-12-13 11:30:19.152 +05:30 [ERR] Failed executing DbCommand (0ms) [Parameters=[@__employee_id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+2022-12-13 11:30:19.156 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'SuperMarket.Data.Employees.Data.EmployeeDbContext'.
+Npgsql.NpgsqlOperationInProgressException (0x80004005): A command is already in progress: SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+   at Npgsql.Internal.NpgsqlConnector.<StartUserAction>g__DoStartUserAction|265_0(ConnectorState newState, NpgsqlCommand command, <>c__DisplayClass265_0& )
+   at Npgsql.Internal.NpgsqlConnector.StartUserAction(ConnectorState newState, NpgsqlCommand command, CancellationToken cancellationToken, Boolean attemptPgCancellation)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+Npgsql.NpgsqlOperationInProgressException (0x80004005): A command is already in progress: SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+   at Npgsql.Internal.NpgsqlConnector.<StartUserAction>g__DoStartUserAction|265_0(ConnectorState newState, NpgsqlCommand command, <>c__DisplayClass265_0& )
+   at Npgsql.Internal.NpgsqlConnector.StartUserAction(ConnectorState newState, NpgsqlCommand command, CancellationToken cancellationToken, Boolean attemptPgCancellation)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2022-12-13 11:31:04.992 +05:30 [ERR] Failed executing DbCommand (0ms) [Parameters=[@__employee_id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+2022-12-13 11:31:04.996 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'SuperMarket.Data.Employees.Data.EmployeeDbContext'.
+Npgsql.NpgsqlOperationInProgressException (0x80004005): A command is already in progress: SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+   at Npgsql.Internal.NpgsqlConnector.<StartUserAction>g__DoStartUserAction|265_0(ConnectorState newState, NpgsqlCommand command, <>c__DisplayClass265_0& )
+   at Npgsql.Internal.NpgsqlConnector.StartUserAction(ConnectorState newState, NpgsqlCommand command, CancellationToken cancellationToken, Boolean attemptPgCancellation)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+Npgsql.NpgsqlOperationInProgressException (0x80004005): A command is already in progress: SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+   at Npgsql.Internal.NpgsqlConnector.<StartUserAction>g__DoStartUserAction|265_0(ConnectorState newState, NpgsqlCommand command, <>c__DisplayClass265_0& )
+   at Npgsql.Internal.NpgsqlConnector.StartUserAction(ConnectorState newState, NpgsqlCommand command, CancellationToken cancellationToken, Boolean attemptPgCancellation)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2022-12-13 11:31:07.954 +05:30 [ERR] Failed executing DbCommand (0ms) [Parameters=[@__employee_id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+2022-12-13 11:31:07.960 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'SuperMarket.Data.Employees.Data.EmployeeDbContext'.
+Npgsql.NpgsqlOperationInProgressException (0x80004005): A command is already in progress: SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+   at Npgsql.Internal.NpgsqlConnector.<StartUserAction>g__DoStartUserAction|265_0(ConnectorState newState, NpgsqlCommand command, <>c__DisplayClass265_0& )
+   at Npgsql.Internal.NpgsqlConnector.StartUserAction(ConnectorState newState, NpgsqlCommand command, CancellationToken cancellationToken, Boolean attemptPgCancellation)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+Npgsql.NpgsqlOperationInProgressException (0x80004005): A command is already in progress: SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+   at Npgsql.Internal.NpgsqlConnector.<StartUserAction>g__DoStartUserAction|265_0(ConnectorState newState, NpgsqlCommand command, <>c__DisplayClass265_0& )
+   at Npgsql.Internal.NpgsqlConnector.StartUserAction(ConnectorState newState, NpgsqlCommand command, CancellationToken cancellationToken, Boolean attemptPgCancellation)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2022-12-13 11:31:15.242 +05:30 [ERR] Failed executing DbCommand (0ms) [Parameters=[@__employee_id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+2022-12-13 11:31:15.247 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'SuperMarket.Data.Employees.Data.EmployeeDbContext'.
+Npgsql.NpgsqlOperationInProgressException (0x80004005): A command is already in progress: SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+   at Npgsql.Internal.NpgsqlConnector.<StartUserAction>g__DoStartUserAction|265_0(ConnectorState newState, NpgsqlCommand command, <>c__DisplayClass265_0& )
+   at Npgsql.Internal.NpgsqlConnector.StartUserAction(ConnectorState newState, NpgsqlCommand command, CancellationToken cancellationToken, Boolean attemptPgCancellation)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+Npgsql.NpgsqlOperationInProgressException (0x80004005): A command is already in progress: SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+   at Npgsql.Internal.NpgsqlConnector.<StartUserAction>g__DoStartUserAction|265_0(ConnectorState newState, NpgsqlCommand command, <>c__DisplayClass265_0& )
+   at Npgsql.Internal.NpgsqlConnector.StartUserAction(ConnectorState newState, NpgsqlCommand command, CancellationToken cancellationToken, Boolean attemptPgCancellation)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2022-12-13 11:31:20.993 +05:30 [ERR] Failed executing DbCommand (0ms) [Parameters=[@__employee_id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+2022-12-13 11:31:20.997 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'SuperMarket.Data.Employees.Data.EmployeeDbContext'.
+Npgsql.NpgsqlOperationInProgressException (0x80004005): A command is already in progress: SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+   at Npgsql.Internal.NpgsqlConnector.<StartUserAction>g__DoStartUserAction|265_0(ConnectorState newState, NpgsqlCommand command, <>c__DisplayClass265_0& )
+   at Npgsql.Internal.NpgsqlConnector.StartUserAction(ConnectorState newState, NpgsqlCommand command, CancellationToken cancellationToken, Boolean attemptPgCancellation)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+Npgsql.NpgsqlOperationInProgressException (0x80004005): A command is already in progress: SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+   at Npgsql.Internal.NpgsqlConnector.<StartUserAction>g__DoStartUserAction|265_0(ConnectorState newState, NpgsqlCommand command, <>c__DisplayClass265_0& )
+   at Npgsql.Internal.NpgsqlConnector.StartUserAction(ConnectorState newState, NpgsqlCommand command, CancellationToken cancellationToken, Boolean attemptPgCancellation)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2022-12-13 11:31:26.325 +05:30 [ERR] Failed executing DbCommand (0ms) [Parameters=[@__employee_id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+2022-12-13 11:31:26.330 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'SuperMarket.Data.Employees.Data.EmployeeDbContext'.
+Npgsql.NpgsqlOperationInProgressException (0x80004005): A command is already in progress: SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+   at Npgsql.Internal.NpgsqlConnector.<StartUserAction>g__DoStartUserAction|265_0(ConnectorState newState, NpgsqlCommand command, <>c__DisplayClass265_0& )
+   at Npgsql.Internal.NpgsqlConnector.StartUserAction(ConnectorState newState, NpgsqlCommand command, CancellationToken cancellationToken, Boolean attemptPgCancellation)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+Npgsql.NpgsqlOperationInProgressException (0x80004005): A command is already in progress: SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+   at Npgsql.Internal.NpgsqlConnector.<StartUserAction>g__DoStartUserAction|265_0(ConnectorState newState, NpgsqlCommand command, <>c__DisplayClass265_0& )
+   at Npgsql.Internal.NpgsqlConnector.StartUserAction(ConnectorState newState, NpgsqlCommand command, CancellationToken cancellationToken, Boolean attemptPgCancellation)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2022-12-13 11:35:50.447 +05:30 [ERR] Failed executing DbCommand (3ms) [Parameters=[@__employee_id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+2022-12-13 11:35:50.493 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'SuperMarket.Data.Employees.Data.EmployeeDbContext'.
+Npgsql.NpgsqlOperationInProgressException (0x80004005): A command is already in progress: SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+   at Npgsql.Internal.NpgsqlConnector.<StartUserAction>g__DoStartUserAction|265_0(ConnectorState newState, NpgsqlCommand command, <>c__DisplayClass265_0& )
+   at Npgsql.Internal.NpgsqlConnector.StartUserAction(ConnectorState newState, NpgsqlCommand command, CancellationToken cancellationToken, Boolean attemptPgCancellation)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+Npgsql.NpgsqlOperationInProgressException (0x80004005): A command is already in progress: SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+   at Npgsql.Internal.NpgsqlConnector.<StartUserAction>g__DoStartUserAction|265_0(ConnectorState newState, NpgsqlCommand command, <>c__DisplayClass265_0& )
+   at Npgsql.Internal.NpgsqlConnector.StartUserAction(ConnectorState newState, NpgsqlCommand command, CancellationToken cancellationToken, Boolean attemptPgCancellation)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2022-12-13 11:35:53.337 +05:30 [ERR] Failed executing DbCommand (0ms) [Parameters=[@__employee_id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+2022-12-13 11:35:53.341 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'SuperMarket.Data.Employees.Data.EmployeeDbContext'.
+Npgsql.NpgsqlOperationInProgressException (0x80004005): A command is already in progress: SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+   at Npgsql.Internal.NpgsqlConnector.<StartUserAction>g__DoStartUserAction|265_0(ConnectorState newState, NpgsqlCommand command, <>c__DisplayClass265_0& )
+   at Npgsql.Internal.NpgsqlConnector.StartUserAction(ConnectorState newState, NpgsqlCommand command, CancellationToken cancellationToken, Boolean attemptPgCancellation)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+Npgsql.NpgsqlOperationInProgressException (0x80004005): A command is already in progress: SELECT e.id, e.amount, e.created_at, e.created_by, e.employee_id, e.salary_component_id, e.updated_at, e.updated_by
+FROM "EmployeeSalary" AS e
+WHERE e.employee_id = @__employee_id_0
+   at Npgsql.Internal.NpgsqlConnector.<StartUserAction>g__DoStartUserAction|265_0(ConnectorState newState, NpgsqlCommand command, <>c__DisplayClass265_0& )
+   at Npgsql.Internal.NpgsqlConnector.StartUserAction(ConnectorState newState, NpgsqlCommand command, CancellationToken cancellationToken, Boolean attemptPgCancellation)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
