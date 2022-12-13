@@ -18,5 +18,6 @@ namespace SuperMarket.Data.Employees.RequestModel
     public string PhoneNumber { get; set; }    
     public string Designation { get; set; }
     public UserType UserType{get; set;}
+    public string ProfilePic { get; set; }
   }
 }

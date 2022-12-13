@@ -49,6 +49,11 @@ namespace SuperMarket.Data.Employees.Models
     [Column("department", TypeName = EntityDataType.EntityDataType.StringType)]
     public string Department { get; set; }
 
+    [Column("profile_picture", TypeName = EntityDataType.EntityDataType.StringType)]
+    public string ProfilePic { get; set; }
+    [Column("user_type", TypeName = EntityDataType.EntityDataType.StringType)]
+    public UserType UserType { get; set; }
+
 
   // 1-1 Relation
     public EmployeeSalary? employeeSalary {get; set;}
