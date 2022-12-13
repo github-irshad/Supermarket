@@ -63,9 +63,20 @@ namespace SuperMarket.Data.Employees.Repository
     public void GetSalaries(){
 
     }
-    public IEnumerable<EmployeeSalary> GetSalariesByEmpId(int employee_id){
+    public EmpSalaries GetSalariesByEmpId(int employee_id){
 
-     return _employeeDbContext.EmployeeSalary.Where(x=>x.EmployeeId == employee_id).ToList();
+      var DataList = _employeeDbContext.EmployeeSalary.Where(x=>x.EmployeeId == employee_id);
+      EmpSalaries empSalaries = new EmpSalaries();
+
+      empSalaries.Employee_id = employee_id;
+      foreach(var item in DataList){
+        foreach(var values in empSalaries.SalaryComps){
+          values.SalaryCompId = item.SalaryComponentId;
+          values.Amount = item.Amount;
+        }
+      }
+
+      return empSalaries;
 
     }
   }

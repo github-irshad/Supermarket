@@ -13,12 +13,14 @@ namespace SuperMarket.Service.Employees.Services
   public class SalaryService : ISalaryService
   {
     private readonly ISalaryManagement salaryManagement;
+    private readonly ISalaryCalculation salaryCalculation;
     private readonly IMapper mapper;
 
-    public SalaryService(ISalaryManagement salaryManagement, IMapper mapper)
+    public SalaryService(ISalaryManagement salaryManagement, IMapper mapper, ISalaryCalculation salaryCalculation)
     {
       this.salaryManagement = salaryManagement;
       this.mapper = mapper;
+      this.salaryCalculation = salaryCalculation;
     }
 
     public void DeleteComponent(int id)
@@ -30,6 +32,7 @@ namespace SuperMarket.Service.Employees.Services
     {
       salaryManagement.EditComponent(id,changeRequest);
     }
+
 
     public void SalaryDtoToEntity(SalaryRequestDto requestDto)
     {
@@ -50,5 +53,18 @@ namespace SuperMarket.Service.Employees.Services
       return salaryManagement.GetSalaryComponents();
     //   mapper.Map<SalaryComponents,SalaryCompShowDto>(salaryComponent);
     }
+
+
+    public double NetSalaryService(int Id)
+    {
+     return salaryCalculation.NetSalaryCalc(Id);
+    }
+
+    public double GrossSalaryService(int id)
+    {
+      return salaryCalculation.GrossSalaryCalc(id);
+    }
+
+
   }
 }

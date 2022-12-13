@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using SuperMarket.Data.Employees.Interfaces;
 using SuperMarket.Data.Employees.Models;
 using SuperMarket.Data.Employees.RequestModel;
@@ -12,10 +13,12 @@ namespace SuperMarket.Service.Employees.Services
   public class MasterSalaryService : IMasterSalaryService
   {
     private readonly IMasterSalaryManagement masterSalaryManagement;
+    private readonly IMapper mapper;
 
-    public MasterSalaryService(IMasterSalaryManagement masterSalaryManagement)
+    public MasterSalaryService(IMasterSalaryManagement masterSalaryManagement, IMapper mapper)
     {
       this.masterSalaryManagement = masterSalaryManagement;
+      this.mapper = mapper;
     }
 
     public void AddSalary(MasterSalaryDto salaryDto)
@@ -28,9 +31,21 @@ namespace SuperMarket.Service.Employees.Services
       masterSalaryManagement.DeleteSalary(empId, compId);
     }
 
-    public IEnumerable<EmployeeSalary> GetSalariesofAnEmp(int emp_id)
+    public EmpSalaries GetSalariesofAnEmp(int emp_id)
     {
+      
       return masterSalaryManagement.GetSalariesByEmpId(emp_id);
+      // EmpSalaries empSalaries = new EmpSalaries();
+      // empSalaries.Employee_id = ListOfSalaries.FirstOrDefault().EmployeeId;
+
+      //   foreach(var values in ListOfSalaries){
+      // foreach(var  item in empSalaries.SalaryComps){
+      //     item.SalaryCompId = values.SalaryComponentId;
+      //     item.Amount = values.Amount;
+      //   }
+      // }
+
+      // return empSalaries;
     }
   }
 }

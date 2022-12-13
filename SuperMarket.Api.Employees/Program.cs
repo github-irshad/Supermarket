@@ -61,6 +61,8 @@ builder.Services.AddScoped<IMasterSalaryManagement,MasterSalaryManagement>();
 builder.Services.AddScoped<IUserService,UserService>();
 builder.Services.AddScoped<IUserRepository,UserRepository>();
 
+builder.Services.AddScoped<ISalaryCalculation,SalaryCalculation>();
+
 
 var autoMapper = new MapperConfiguration(item => item.AddProfile(new AutoMapperProfile()));
 IMapper mapper = autoMapper.CreateMapper();

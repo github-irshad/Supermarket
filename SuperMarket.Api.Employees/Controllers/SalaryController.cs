@@ -79,5 +79,25 @@ namespace SuperMarket.Api.Employees.Controllers
         masterSalaryService.GetSalariesofAnEmp(EmpId)
       );
     }
+
+
+    //Salary Calculations
+
+    [HttpGet]
+    [Route("Net/{id}")]
+    public ActionResult GetNetSalary(int id){
+      return Ok(
+        salaryService.NetSalaryService(id)
+      );
+    }
+
+    [HttpGet]
+    [Route("Gross/{id}")]
+    public ActionResult GetGrossSalary(int id)
+    {
+      return Ok(
+        salaryService.GrossSalaryService(id)
+      );
+    }
   }
 }
