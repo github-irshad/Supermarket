@@ -88,6 +88,11 @@ namespace SuperMarket.Data.Employees.Migrations
                         .HasColumnType("text")
                         .HasColumnName("phone_number");
 
+                    b.Property<string>("ProfilePic")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("profile_picture");
+
                     b.Property<DateTime?>("Updated_at")
                         .HasColumnType("timestamptz")
                         .HasColumnName("updated_at");
@@ -95,6 +100,11 @@ namespace SuperMarket.Data.Employees.Migrations
                     b.Property<int>("Updated_by")
                         .HasColumnType("integer")
                         .HasColumnName("updated_by");
+
+                    b.Property<string>("UserType")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("user_type");
 
                     b.Property<int?>("employeeSalaryId")
                         .HasColumnType("integer");

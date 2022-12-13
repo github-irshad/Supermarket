@@ -10,9 +10,6 @@ using SuperMarket.Data.Employees.Mapping;
 using Serilog;
 using SuperMarket.Api.Employees.Middleware;
 using FluentValidation.AspNetCore;
-using FluentValidation;
-using SuperMarket.Data.Employees.RequestModel;
-using SuperMarket.Api.Employees.Validators;
 
 var builder = WebApplication.CreateBuilder(args);
 
