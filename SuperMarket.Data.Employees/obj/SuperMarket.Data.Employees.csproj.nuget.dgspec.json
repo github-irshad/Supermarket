@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\muhammed.irshad\\Desktop\\.NET\\SuperMarket\\SuperMarket.Data.Employees\\SuperMarket.Data.Employees.csproj": {}
+    "c:\\Users\\muhammed.irshad\\Desktop\\.NET\\SuperMarket\\SuperMarket.Data.Employees\\SuperMarket.Data.Employees.csproj": {}
   },
   "projects": {
-    "C:\\Users\\muhammed.irshad\\Desktop\\.NET\\SuperMarket\\SuperMarket.Data.Employees\\SuperMarket.Data.Employees.csproj": {
+    "c:\\Users\\muhammed.irshad\\Desktop\\.NET\\SuperMarket\\SuperMarket.Data.Employees\\SuperMarket.Data.Employees.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\muhammed.irshad\\Desktop\\.NET\\SuperMarket\\SuperMarket.Data.Employees\\SuperMarket.Data.Employees.csproj",
+        "projectUniqueName": "c:\\Users\\muhammed.irshad\\Desktop\\.NET\\SuperMarket\\SuperMarket.Data.Employees\\SuperMarket.Data.Employees.csproj",
         "projectName": "SuperMarket.Data.Employees",
-        "projectPath": "C:\\Users\\muhammed.irshad\\Desktop\\.NET\\SuperMarket\\SuperMarket.Data.Employees\\SuperMarket.Data.Employees.csproj",
+        "projectPath": "c:\\Users\\muhammed.irshad\\Desktop\\.NET\\SuperMarket\\SuperMarket.Data.Employees\\SuperMarket.Data.Employees.csproj",
         "packagesPath": "C:\\Users\\muhammed.irshad\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\muhammed.irshad\\Desktop\\.NET\\SuperMarket\\SuperMarket.Data.Employees\\obj\\",
+        "outputPath": "c:\\Users\\muhammed.irshad\\Desktop\\.NET\\SuperMarket\\SuperMarket.Data.Employees\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -67,7 +67,7 @@
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.7, )"
             },
             "Serilog.AspNetCore": {
               "target": "Package",

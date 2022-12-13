@@ -51,6 +51,7 @@ namespace SuperMarket.Data.Employees.Models
 
     [Column("profile_picture", TypeName = EntityDataType.EntityDataType.StringType)]
     public string ProfilePic { get; set; }
+    
     [Column("user_type", TypeName = EntityDataType.EntityDataType.StringType)]
     public UserType UserType { get; set; }
 
