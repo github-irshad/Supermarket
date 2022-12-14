@@ -86,20 +86,20 @@ namespace SuperMarket.Api.Employees.Controllers
     //Salary Calculations
 
     [HttpGet]
-    [Route("Net/{id}")]
-    public ActionResult GetNetSalary(int id){
+    [Route("Totals/{id}")]
+    public ActionResult GetTotalSalary(int id){
       return Ok(
-        salaryService.NetSalaryService(id)
+        salaryService.salariesTotals(id)
       );
     }
 
-    [HttpGet]
-    [Route("Gross/{id}")]
-    public ActionResult GetGrossSalary(int id)
-    {
-      return Ok(
-        salaryService.GrossSalaryService(id)
-      );
-    }
+    // [HttpGet]
+    // [Route("Gross/{id}")]
+    // public ActionResult GetGrossSalary(int id)
+    // {
+    //   return Ok(
+    //     salaryService.GrossSalaryService(id)
+    //   );
+    // }
   }
 }

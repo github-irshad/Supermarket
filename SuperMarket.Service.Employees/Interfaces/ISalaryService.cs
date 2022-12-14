@@ -15,8 +15,9 @@ namespace SuperMarket.Service.Employees.Interfaces
 
         public void DeleteComponent(int id);
 
-        public double NetSalaryService(int Id);
+        // public double NetSalaryService(int Id);
 
-        public double GrossSalaryService(int id);
+        // public double GrossSalaryService(int id);
+        public SalariesTotals salariesTotals(int id);
     }
 }

@@ -30,7 +30,7 @@ namespace SuperMarket.Service.Employees.Services
 
     public void EditComponent(SalaryRequestDto changeRequest, int id)
     {
-      salaryManagement.EditComponent(id,changeRequest);
+      salaryManagement.EditComponent(id, changeRequest);
     }
 
 
@@ -51,21 +51,34 @@ namespace SuperMarket.Service.Employees.Services
     public IEnumerable<SalaryComponents> ShowSalaryComps()
     {
       return salaryManagement.GetSalaryComponents();
-    //   mapper.Map<SalaryComponents,SalaryCompShowDto>(salaryComponent);
+      //   mapper.Map<SalaryComponents,SalaryCompShowDto>(salaryComponent);
     }
 
 
-    public double NetSalaryService(int Id)
+    // public double NetSalaryService(int Id)
+    // {
+    //  return salaryCalculation.NetSalaryCalc(Id);
+    // }
+
+    // public double GrossSalaryService(int id)
+    // {
+    //   return salaryCalculation.GrossSalaryCalc(id);
+    // }
+
+    public SalariesTotals salariesTotals(int id)
     {
-     return salaryCalculation.NetSalaryCalc(Id);
+      SalariesTotals salariesTotals = new SalariesTotals()
+      {
+
+        NetSalary = salaryCalculation.NetSalaryCalc(id),
+        TotalGross = salaryCalculation.GrossSalaryCalc(id),
+        TotalDeduction = salaryCalculation.TotalDeduction(id)
+      };
+
+      return salariesTotals;
+
     }
 
-    public double GrossSalaryService(int id)
-    {
-      return salaryCalculation.GrossSalaryCalc(id);
-    }
-
-    
 
 
   }
