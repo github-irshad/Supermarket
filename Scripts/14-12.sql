@@ -236,14 +236,16 @@ COMMIT;
 
 START TRANSACTION;
 
-ALTER TABLE "User" ADD employee_id integer NOT NULL DEFAULT 0;
+ALTER TABLE "User" DROP CONSTRAINT "FK_User_Employee_employee_id";
 
-CREATE UNIQUE INDEX "IX_User_employee_id" ON "User" (employee_id);
+DROP INDEX "IX_User_employee_id";
 
-ALTER TABLE "User" ADD CONSTRAINT "FK_User_Employee_employee_id" FOREIGN KEY (employee_id) REFERENCES "Employee" (id) ON DELETE CASCADE;
+ALTER TABLE "Employee" ALTER COLUMN id DROP IDENTITY;
+
+ALTER TABLE "Employee" ADD CONSTRAINT "FK_Employee_User_id" FOREIGN KEY (id) REFERENCES "User" (id) ON DELETE CASCADE;
 
 INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
-VALUES ('20221214064118_useremployee', '7.0.0');
+VALUES ('20221214092159_useremployee', '7.0.0');
 
 COMMIT;
 

@@ -9,5 +9,6 @@ namespace SuperMarket.Data.Employees.Interfaces
     {
          public double NetSalaryCalc(int id);
          public double GrossSalaryCalc(int id);
+         public double TotalDeduction(int id);
     }
 }

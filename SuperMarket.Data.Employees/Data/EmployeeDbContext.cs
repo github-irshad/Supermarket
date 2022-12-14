@@ -12,10 +12,12 @@ namespace SuperMarket.Data.Employees.Data
             
         }
 
-    // protected override void OnModelCreating(ModelBuilder modelBuilder)
+    //  protected override void OnModelCreating(ModelBuilder modelBuilder)
     // {
-    //   modelBuilder.Entity<EmployeeSalary>()
-    //     .HasOne<Employee>(x=>x.Employees).WithMany(p=>p.employeeSalary).HasForeignKey;
+    //     modelBuilder.Entity<User>()
+    //         .HasOne(b => b.employee)
+    //         .WithOne(i => i.user)
+    //         .HasForeignKey<Employee>(b => b.Id);
     // }
         
         public DbSet<Employee> Employees {get; set;}

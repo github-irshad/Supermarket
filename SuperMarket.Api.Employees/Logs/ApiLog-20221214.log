@@ -1,0 +1,12 @@
+2022-12-14 12:12:57.139 +05:30 [ERR] Failed executing DbCommand (35ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX "IX_User_employee_id" ON "User" (employee_id);
+2022-12-14 12:22:14.400 +05:30 [ERR] Failed executing DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX "IX_User_employee_id" ON "User" (employee_id);
+2022-12-14 14:19:19.449 +05:30 [ERR] Failed executing DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX "IX_User_employee_id" ON "User" (employee_id);
+2022-12-14 14:21:11.628 +05:30 [ERR] Failed executing DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX "IX_User_employee_id" ON "User" (employee_id);
+2022-12-14 14:24:37.102 +05:30 [ERR] Failed executing DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX "IX_User_employee_id" ON "User" (employee_id);
+2022-12-14 14:52:26.742 +05:30 [ERR] Failed executing DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "User" DROP CONSTRAINT "FK_User_Employee_employee_id";

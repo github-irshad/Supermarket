@@ -29,8 +29,6 @@ namespace SuperMarket.Data.Employees.Migrations
                         .HasColumnType("integer")
                         .HasColumnName("id");
 
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
-
                     b.Property<string>("AadharDocument")
                         .IsRequired()
                         .HasColumnType("text")
@@ -254,19 +252,24 @@ namespace SuperMarket.Data.Employees.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("EmployeeId")
-                        .IsUnique();
-
                     b.ToTable("User");
                 });
 
             modelBuilder.Entity("SuperMarket.Data.Employees.Models.Employee", b =>
                 {
+                    b.HasOne("SuperMarket.Data.Employees.Models.User", "user")
+                        .WithOne("employee")
+                        .HasForeignKey("SuperMarket.Data.Employees.Models.Employee", "Id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("SuperMarket.Data.Employees.Models.EmployeeSalary", "employeeSalary")
                         .WithMany("Employees")
                         .HasForeignKey("employeeSalaryId");
 
                     b.Navigation("employeeSalary");
+
+                    b.Navigation("user");
                 });
 
             modelBuilder.Entity("SuperMarket.Data.Employees.Models.SalaryComponents", b =>
@@ -278,27 +281,16 @@ namespace SuperMarket.Data.Employees.Migrations
                     b.Navigation("employeeSalary");
                 });
 
-            modelBuilder.Entity("SuperMarket.Data.Employees.Models.User", b =>
-                {
-                    b.HasOne("SuperMarket.Data.Employees.Models.Employee", "employee")
-                        .WithOne("user")
-                        .HasForeignKey("SuperMarket.Data.Employees.Models.User", "EmployeeId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("employee");
-                });
-
-            modelBuilder.Entity("SuperMarket.Data.Employees.Models.Employee", b =>
-                {
-                    b.Navigation("user");
-                });
-
             modelBuilder.Entity("SuperMarket.Data.Employees.Models.EmployeeSalary", b =>
                 {
                     b.Navigation("Employees");
 
                     b.Navigation("SalaryComponents");
+                });
+
+            modelBuilder.Entity("SuperMarket.Data.Employees.Models.User", b =>
+                {
+                    b.Navigation("employee");
                 });
 #pragma warning restore 612, 618
         }

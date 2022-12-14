@@ -40,6 +40,30 @@ namespace SuperMarket.Data.Employees.Repository
         return gross;
     }
 
+    public double TotalDeduction(int id)
+    {
+      double deduction = 0;
+
+      var listOfCompsid = employeeDbContext.EmployeeSalary.Where(
+          x => x.EmployeeId == id
+      ).ToList();
+
+      foreach (var item in listOfCompsid)
+      {
+
+        int CompId = item.SalaryComponentId;
+        var CompType = (int)(employeeDbContext.SalaryComponents.Where(y => y.Id == CompId).FirstOrDefault().ComponentType);
+
+        if (CompType == 2)
+        {
+          deduction += item.Amount;
+        }
+
+      }
+
+        return deduction;
+    }
+
 
 
     public double NetSalaryCalc(int id)

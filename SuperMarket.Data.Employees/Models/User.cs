@@ -22,12 +22,12 @@ namespace SuperMarket.Data.Employees.Models
     [Column("user_type", TypeName = EntityDataType.EntityDataType.StringType)]
     public UserType UserType { get; set; }
 
-    [Column("employee_id", TypeName = EntityDataType.EntityDataType.IntType)]
-    public int EmployeeId { get; set; }
 
+  
+    // public Employee? employee {get; set;}
 
-    public Employee? employee {get; set;}
-
+    // [Column("employee_id", TypeName = EntityDataType.EntityDataType.IntType)]
+    // public int EmployeeId { get; set; }
 
   }
 }
