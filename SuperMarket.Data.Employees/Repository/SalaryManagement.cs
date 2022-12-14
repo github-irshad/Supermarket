@@ -55,6 +55,11 @@ namespace SuperMarket.Data.Employees.Repository
       // return mapper.Map<List<SalaryComponents>,List<SalaryCompShowDto>>(salaryComponent);
     }
 
+    public string CompToString(int id){
+     var selectedComp = employeeDbContext.SalaryComponents.Where(x => x.Id == id).FirstOrDefault(); 
+     return selectedComp.ComponentName;
+    }
+
 
     
   }

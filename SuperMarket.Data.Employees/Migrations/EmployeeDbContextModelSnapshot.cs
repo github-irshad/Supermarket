@@ -225,6 +225,10 @@ namespace SuperMarket.Data.Employees.Migrations
                         .HasColumnType("integer")
                         .HasColumnName("created_by");
 
+                    b.Property<int>("EmployeeId")
+                        .HasColumnType("integer")
+                        .HasColumnName("employee_id");
+
                     b.Property<string>("Password")
                         .IsRequired()
                         .HasColumnType("text")
@@ -250,6 +254,9 @@ namespace SuperMarket.Data.Employees.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("EmployeeId")
+                        .IsUnique();
+
                     b.ToTable("User");
                 });
 
@@ -269,6 +276,22 @@ namespace SuperMarket.Data.Employees.Migrations
                         .HasForeignKey("employeeSalaryId");
 
                     b.Navigation("employeeSalary");
+                });
+
+            modelBuilder.Entity("SuperMarket.Data.Employees.Models.User", b =>
+                {
+                    b.HasOne("SuperMarket.Data.Employees.Models.Employee", "employee")
+                        .WithOne("user")
+                        .HasForeignKey("SuperMarket.Data.Employees.Models.User", "EmployeeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("employee");
+                });
+
+            modelBuilder.Entity("SuperMarket.Data.Employees.Models.Employee", b =>
+                {
+                    b.Navigation("user");
                 });
 
             modelBuilder.Entity("SuperMarket.Data.Employees.Models.EmployeeSalary", b =>

@@ -58,6 +58,7 @@ namespace SuperMarket.Data.Employees.Models
 
   // 1-1 Relation
     public EmployeeSalary? employeeSalary {get; set;}
-    // public User? user { get; set; }
+    public User? user { get; set; }
+    // public int userId { get; set;}
   }
 }

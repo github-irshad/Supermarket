@@ -18,14 +18,14 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddTransient<SuperMarketExceptionMiddleware>();
 
 
-builder.Services
-    .AddControllers()
-.AddFluentValidation (x=>
-     { 
-      x.ImplicitlyValidateChildProperties = true;
-      x.RegisterValidatorsFromAssemblies(AppDomain.CurrentDomain.GetAssemblies());
-     }
-    );
+// builder.Services
+//     .AddControllers()
+// .AddFluentValidation (x=>
+//      { 
+//       x.ImplicitlyValidateChildProperties = true;
+//       x.RegisterValidatorsFromAssemblies(AppDomain.CurrentDomain.GetAssemblies());
+//      }
+//     );
 
 // builder.Services.AddTransient<IValidator<AddEmployeeDto>,AddEmpDtoValidator>();
 

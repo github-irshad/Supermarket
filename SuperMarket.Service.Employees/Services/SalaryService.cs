@@ -65,6 +65,8 @@ namespace SuperMarket.Service.Employees.Services
       return salaryCalculation.GrossSalaryCalc(id);
     }
 
+    
+
 
   }
 }

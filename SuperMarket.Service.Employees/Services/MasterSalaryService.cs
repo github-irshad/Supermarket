@@ -14,11 +14,13 @@ namespace SuperMarket.Service.Employees.Services
   {
     private readonly IMasterSalaryManagement masterSalaryManagement;
     private readonly IMapper mapper;
+    private readonly ISalaryManagement salaryManagement;
 
-    public MasterSalaryService(IMasterSalaryManagement masterSalaryManagement, IMapper mapper)
+    public MasterSalaryService(IMasterSalaryManagement masterSalaryManagement, IMapper mapper, ISalaryManagement salaryManagement)
     {
       this.masterSalaryManagement = masterSalaryManagement;
       this.mapper = mapper;
+      this.salaryManagement = salaryManagement;
     }
 
     public void AddSalary(MasterSalaryDto salaryDto)
@@ -31,22 +33,24 @@ namespace SuperMarket.Service.Employees.Services
       masterSalaryManagement.DeleteSalary(empId, compId);
     }
 
-    public List<EmpSalaryReqDto> GetSalariesofAnEmp(int emp_id)
+    public List<EmpSalarybreakdown> GetSalariesofAnEmp(int emp_id)
     {
-      
-      return masterSalaryManagement.GetSalariesByEmpId(emp_id);
-      //  masterSalaryManagement.GetSalariesByEmpId(emp_id);
-      // EmpSalaries empSalaries = new EmpSalaries();
-      // empSalaries.Employee_id = ListOfSalaries.FirstOrDefault().EmployeeId;
 
-      //   foreach(var values in ListOfSalaries){
-      // foreach(var  item in empSalaries.SalaryComps){
-      //     item.SalaryCompId = values.SalaryComponentId;
-      //     item.Amount = values.Amount;
-      //   }
-      // }
+      var convertable = masterSalaryManagement.GetSalariesByEmpId(emp_id);
 
-      // return empSalaries;
+      List<EmpSalarybreakdown> empSalarybreakdown = new List<EmpSalarybreakdown>();
+
+      empSalarybreakdown = convertable.Select(s => new EmpSalarybreakdown
+      {
+        Amount = s.Amount,
+        SalaryComp = salaryManagement.CompToString(s.SalaryCompId)
+
+      }).ToList();
+
+
+      return empSalarybreakdown;
     }
+
+
   }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
+using SuperMarket.Data.Employees.Common;
 using SuperMarket.Data.Employees.Data;
 using SuperMarket.Data.Employees.Interfaces;
 using SuperMarket.Data.Employees.Models;
@@ -20,6 +21,7 @@ namespace SuperMarket.Data.Employees.Repository
       _employeeDbContext = employeeDbContext;
       this.mapper = mapper;
     }
+
 
 
     public void AddSalary(MasterSalaryDto masterSalaryDto)
@@ -70,24 +72,25 @@ namespace SuperMarket.Data.Employees.Repository
 
       var DataList = _employeeDbContext.EmployeeSalary
       .Where(x => x.EmployeeId == employee_id)
-      .Select(y => new EmpSalaryReqDto{
+      .Select(y => new EmpSalaryReqDto
+      {
         Amount = y.Amount,
-        SalaryCompId = y.SalaryComponentId
+        SalaryCompId = (y.SalaryComponentId)
 
       })
       .ToList();
-
-
-
-
-
-
-
-
       // var empSalaries = mapper.Map<List<EmployeeSalary>,List<EmpSalaryReqDto>>(DataList);
 
       return DataList;
 
     }
+
+    // public string GetCompToString(int Id)
+    // {
+    //   string CompString = _employeeDbContext.SalaryComponents.Where(x => x.Id == Id).Select(m => m.ComponentName).ToString();
+    //   return CompString;
+    // }
+
+
   }
 }
