@@ -11,6 +11,7 @@ namespace SuperMarket.Data.Employees.Interfaces
     {
         public void AddSalary(MasterSalaryDto masterSalaryDto);
         public void DeleteSalary(int employee_id,int salary_component_id);
+        public void DeleteFullSalary(int EmpId);
         public List<EmpSalaryReqDto> GetSalariesByEmpId(int employee_id);
     }
 }

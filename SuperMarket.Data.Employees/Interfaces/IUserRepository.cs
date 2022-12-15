@@ -10,6 +10,7 @@ namespace SuperMarket.Data.Employees.Interfaces
     {
         
         public void NewUser (User user);
+        public void DeleteUser(int id);
        
     }
 }

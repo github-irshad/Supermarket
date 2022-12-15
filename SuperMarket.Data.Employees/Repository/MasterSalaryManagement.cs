@@ -46,6 +46,19 @@ namespace SuperMarket.Data.Employees.Repository
       }
     }
 
+    public void DeleteFullSalary(int EmpId)
+    {
+      var EmpList = _employeeDbContext.EmployeeSalary.Where(e => e.EmployeeId == EmpId).ToList();
+
+      foreach (var item in EmpList)
+      {
+        _employeeDbContext.EmployeeSalary.Remove(item);
+      }
+
+      _employeeDbContext.SaveChanges();
+
+    }
+
     public void DeleteSalary(int employee_id, int salary_component_id)
     {
       _employeeDbContext.EmployeeSalary.Remove(

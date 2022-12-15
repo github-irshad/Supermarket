@@ -14,6 +14,7 @@ namespace SuperMarket.Service.Employees.Services
     private readonly IEmployeeManagement employeeManagement;
     private readonly IMapper mapper;
     private readonly IUserRepository userRepository;
+    private readonly IMasterSalaryManagement masterSalaryManagement;
 
 
 
@@ -21,12 +22,13 @@ namespace SuperMarket.Service.Employees.Services
 
 
 
-    public EmployeeService(IEmployeeManagement employeeManagement, IMapper mapper, IUserRepository userRepository)
+    public EmployeeService(IEmployeeManagement employeeManagement, IMapper mapper, IUserRepository userRepository, IMasterSalaryManagement masterSalaryManagement)
     {
       this.employeeManagement = employeeManagement;
       this.mapper = mapper;
 
       this.userRepository = userRepository;
+      this.masterSalaryManagement = masterSalaryManagement;
     }
 
 
@@ -79,6 +81,8 @@ namespace SuperMarket.Service.Employees.Services
     public void DeleteEmployeeService(int id)
     {
       employeeManagement.DeleteEmployee(id);
+      userRepository.DeleteUser(id);
+      masterSalaryManagement.DeleteFullSalary(id);
 
 
     }

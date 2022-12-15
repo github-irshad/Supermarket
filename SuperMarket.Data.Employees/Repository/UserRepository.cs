@@ -18,8 +18,12 @@ namespace SuperMarket.Data.Employees.Repository
       _employeeDbContext = employeeDbContext;
     }
 
-
-    
+    public void DeleteUser(int id)
+    {
+      var dUser = _employeeDbContext.Users.Where(e=>e.Id == id).FirstOrDefault();
+      _employeeDbContext.Remove(dUser);
+      _employeeDbContext.SaveChanges();
+    }
 
     public void NewUser(User user)
     {
