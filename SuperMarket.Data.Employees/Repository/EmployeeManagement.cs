@@ -26,7 +26,7 @@ namespace SuperMarket.Api.Employees.Repository
 
 
 
-    public void AddNewEmployee(AddEmployee _newEmployee, User user)
+    public int AddNewEmployee(AddEmployee _newEmployee)
     {
 
       var newEmployee = mapper.Map<AddEmployee, Employee>(_newEmployee);
@@ -35,10 +35,11 @@ namespace SuperMarket.Api.Employees.Repository
       _employeeDbContext.Employees.Add(newEmployee);
 
       _employeeDbContext.SaveChanges();
-      int id = newEmployee.Id;
+      
+      return  newEmployee.Id;
 
-      _employeeDbContext.Users.Add(user);
-      _employeeDbContext.SaveChanges();
+      // _employeeDbContext.Users.Add(user);
+      // _employeeDbContext.SaveChanges();
     }
 
 

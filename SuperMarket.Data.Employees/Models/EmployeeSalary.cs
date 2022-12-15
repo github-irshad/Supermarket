@@ -23,7 +23,7 @@ namespace SuperMarket.Data.Employees.Models
     public double Amount { get; set; }
 
 
-    // public ICollection<Employee>? Employees {get; set;}
+    public ICollection<Employee>? Employees {get; set;}
     public ICollection<SalaryComponents>? SalaryComponents{get; set;}
    
 

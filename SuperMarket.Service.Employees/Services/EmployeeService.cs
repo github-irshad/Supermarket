@@ -4,6 +4,7 @@ using SuperMarket.Data.Employees.Interfaces;
 using SuperMarket.Data.Employees.Models;
 using SuperMarket.Data.Employees.RequestModel;
 using SuperMarket.Service.Employees.Interfaces;
+// using SuperMarket.Service.Employees.Services;
 
 namespace SuperMarket.Service.Employees.Services
 {
@@ -12,6 +13,9 @@ namespace SuperMarket.Service.Employees.Services
 
     private readonly IEmployeeManagement employeeManagement;
     private readonly IMapper mapper;
+
+     
+     
     
 
 
@@ -40,19 +44,22 @@ namespace SuperMarket.Service.Employees.Services
       
       
 
-      User user = new User(){
-        UserName = _employee.Email,
-        Password = "123456",
-        UserType = _employee.UserType,
-        Created_at = DateTime.UtcNow,
-      Updated_at = DateTime.UtcNow,
+      // User user = new User(){
+      //   UserName = _employee.Email,
+      //   Password = "123456",
+      //   UserType = _employee.UserType,
+      //   Created_at = DateTime.UtcNow,
+      // Updated_at = DateTime.UtcNow,
       
-      Created_by = 0,
-      Updated_by = 0
-      };
+      // Created_by = 0,
+      // Updated_by = 0
+      // };
+      UserService userService = new UserService();
 
 
-      employeeManagement.AddNewEmployee(employee,user);
+      int returnEmpId = employeeManagement.AddNewEmployee(employee);
+      userService.UserAddService(_employee,returnEmpId);
+
     }
 
     public IEnumerable<Employee> GetAllEmployeesService()

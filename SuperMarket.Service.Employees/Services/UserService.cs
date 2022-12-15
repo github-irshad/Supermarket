@@ -4,24 +4,41 @@ using System.Linq;
 using System.Threading.Tasks;
 using SuperMarket.Data.Employees.Interfaces;
 using SuperMarket.Data.Employees.Models;
+using SuperMarket.Data.Employees.RequestModel;
 using SuperMarket.Service.Employees.Interfaces;
 
 namespace SuperMarket.Service.Employees.Services
 {
   public class UserService : IUserService
   {
-    private readonly IUserRepository userRepository;
 
-    public UserService(IUserRepository userRepository)
+    public UserService()
+    {
+    }
+    private readonly IUserRepository? userRepository;
+
+    private UserService(IUserRepository userRepository)
     {
       this.userRepository = userRepository;
     }
 
-    public void UserAddService(User user)
+    public void UserAddService(AddEmployeeDto _employee,int id)
     {
-      userRepository.UserAdd(user);
-    }
+       User user = new User(){
+        Id = id,
+        UserName = _employee.Email,
+        Password = "123456",
+        UserType = _employee.UserType,
+        Created_at = DateTime.UtcNow,
+      Updated_at = DateTime.UtcNow,
+      
+      Created_by = 0,
+      Updated_by = 0
 
+      
+    };
+    userRepository.UserAdd(user);
+    }
     
 
   }

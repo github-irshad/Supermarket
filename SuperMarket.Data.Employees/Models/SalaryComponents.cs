@@ -6,7 +6,7 @@ namespace SuperMarket.Data.Employees.Models
   [Table("SalaryComponents")]
   public class SalaryComponents : CommonProps
   {
-    
+
 
 
     [Column("component_name", TypeName = EntityDataType.EntityDataType.StringType)]
@@ -16,17 +16,17 @@ namespace SuperMarket.Data.Employees.Models
     [Column("component_type", TypeName = EntityDataType.EntityDataType.StringType)]
     public ComponentType ComponentType { get; set; }
 
-    
+
     [Column("description", TypeName = EntityDataType.EntityDataType.StringType
     )]
     public string Description { get; set; }
 
 
-  // #nullable enable
-    public EmployeeSalary? employeeSalary {get; set;}
-    
+    // #nullable enable
+    public EmployeeSalary? employeeSalary { get; set; }
 
-   
+
+
 
   }
 }
