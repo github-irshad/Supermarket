@@ -12,8 +12,8 @@ using SuperMarket.Data.Employees.Data;
 namespace SuperMarket.Data.Employees.Migrations
 {
     [DbContext(typeof(EmployeeDbContext))]
-    [Migration("20221114064314_SecongMigration")]
-    partial class SecongMigration
+    [Migration("20221215052105_PKFK")]
+    partial class PKFK
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -35,18 +35,21 @@ namespace SuperMarket.Data.Employees.Migrations
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
                     b.Property<string>("AadharDocument")
+                        .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("aadhar_document");
 
                     b.Property<string>("AadharNumber")
+                        .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("aadhar_number");
 
                     b.Property<string>("Address")
+                        .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("address");
 
-                    b.Property<DateTime>("Created_at")
+                    b.Property<DateTime?>("Created_at")
                         .HasColumnType("timestamptz")
                         .HasColumnName("created_at");
 
@@ -54,19 +57,46 @@ namespace SuperMarket.Data.Employees.Migrations
                         .HasColumnType("integer")
                         .HasColumnName("created_by");
 
+                    b.Property<string>("Department")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("department");
+
                     b.Property<string>("Designation")
+                        .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("designation");
 
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("email");
+
                     b.Property<string>("FirstName")
+                        .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("firstName");
 
+                    b.Property<bool>("IsVerified")
+                        .HasColumnType("boolean")
+                        .HasColumnName("verification");
+
                     b.Property<string>("LastName")
+                        .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("lastName");
 
-                    b.Property<DateTime>("Updated_at")
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("phone_number");
+
+                    b.Property<string>("ProfilePic")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("profile_picture");
+
+                    b.Property<DateTime?>("Updated_at")
                         .HasColumnType("timestamptz")
                         .HasColumnName("updated_at");
 
@@ -74,16 +104,12 @@ namespace SuperMarket.Data.Employees.Migrations
                         .HasColumnType("integer")
                         .HasColumnName("updated_by");
 
-                    b.Property<int>("employeeSalaryId")
-                        .HasColumnType("integer");
-
-                    b.Property<bool>("isVerified")
-                        .HasColumnType("boolean")
-                        .HasColumnName("verification");
+                    b.Property<string>("UserType")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("user_type");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("employeeSalaryId");
 
                     b.ToTable("Employee");
                 });
@@ -101,7 +127,7 @@ namespace SuperMarket.Data.Employees.Migrations
                         .HasColumnType("double precision")
                         .HasColumnName("amount");
 
-                    b.Property<DateTime>("Created_at")
+                    b.Property<DateTime?>("Created_at")
                         .HasColumnType("timestamptz")
                         .HasColumnName("created_at");
 
@@ -117,7 +143,7 @@ namespace SuperMarket.Data.Employees.Migrations
                         .HasColumnType("integer")
                         .HasColumnName("salary_component_id");
 
-                    b.Property<DateTime>("Updated_at")
+                    b.Property<DateTime?>("Updated_at")
                         .HasColumnType("timestamptz")
                         .HasColumnName("updated_at");
 
@@ -149,7 +175,7 @@ namespace SuperMarket.Data.Employees.Migrations
                         .HasColumnType("text")
                         .HasColumnName("component_type");
 
-                    b.Property<DateTime>("Created_at")
+                    b.Property<DateTime?>("Created_at")
                         .HasColumnType("timestamptz")
                         .HasColumnName("created_at");
 
@@ -162,7 +188,7 @@ namespace SuperMarket.Data.Employees.Migrations
                         .HasColumnType("text")
                         .HasColumnName("description");
 
-                    b.Property<DateTime>("Updated_at")
+                    b.Property<DateTime?>("Updated_at")
                         .HasColumnType("timestamptz")
                         .HasColumnName("updated_at");
 
@@ -170,7 +196,7 @@ namespace SuperMarket.Data.Employees.Migrations
                         .HasColumnType("integer")
                         .HasColumnName("updated_by");
 
-                    b.Property<int>("employeeSalaryId")
+                    b.Property<int?>("employeeSalaryId")
                         .HasColumnType("integer");
 
                     b.HasKey("Id");
@@ -183,13 +209,10 @@ namespace SuperMarket.Data.Employees.Migrations
             modelBuilder.Entity("SuperMarket.Data.Employees.Models.User", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("integer")
                         .HasColumnName("id");
 
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
-
-                    b.Property<DateTime>("Created_at")
+                    b.Property<DateTime?>("Created_at")
                         .HasColumnType("timestamptz")
                         .HasColumnName("created_at");
 
@@ -202,7 +225,7 @@ namespace SuperMarket.Data.Employees.Migrations
                         .HasColumnType("text")
                         .HasColumnName("password");
 
-                    b.Property<DateTime>("Updated_at")
+                    b.Property<DateTime?>("Updated_at")
                         .HasColumnType("timestamptz")
                         .HasColumnName("updated_at");
 
@@ -215,8 +238,9 @@ namespace SuperMarket.Data.Employees.Migrations
                         .HasColumnType("text")
                         .HasColumnName("user_name");
 
-                    b.Property<int>("UserType")
-                        .HasColumnType("integer")
+                    b.Property<string>("UserType")
+                        .IsRequired()
+                        .HasColumnType("text")
                         .HasColumnName("user_type");
 
                     b.HasKey("Id");
@@ -224,32 +248,33 @@ namespace SuperMarket.Data.Employees.Migrations
                     b.ToTable("User");
                 });
 
-            modelBuilder.Entity("SuperMarket.Data.Employees.Models.Employee", b =>
-                {
-                    b.HasOne("SuperMarket.Data.Employees.Models.EmployeeSalary", "employeeSalary")
-                        .WithMany("Employees")
-                        .HasForeignKey("employeeSalaryId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("employeeSalary");
-                });
-
             modelBuilder.Entity("SuperMarket.Data.Employees.Models.SalaryComponents", b =>
                 {
                     b.HasOne("SuperMarket.Data.Employees.Models.EmployeeSalary", "employeeSalary")
                         .WithMany("SalaryComponents")
-                        .HasForeignKey("employeeSalaryId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("employeeSalaryId");
 
                     b.Navigation("employeeSalary");
                 });
 
+            modelBuilder.Entity("SuperMarket.Data.Employees.Models.User", b =>
+                {
+                    b.HasOne("SuperMarket.Data.Employees.Models.Employee", "employee")
+                        .WithOne("user")
+                        .HasForeignKey("SuperMarket.Data.Employees.Models.User", "Id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("employee");
+                });
+
+            modelBuilder.Entity("SuperMarket.Data.Employees.Models.Employee", b =>
+                {
+                    b.Navigation("user");
+                });
+
             modelBuilder.Entity("SuperMarket.Data.Employees.Models.EmployeeSalary", b =>
                 {
-                    b.Navigation("Employees");
-
                     b.Navigation("SalaryComponents");
                 });
 #pragma warning restore 612, 618

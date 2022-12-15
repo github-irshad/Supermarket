@@ -33,8 +33,11 @@ namespace SuperMarket.Api.Employees.Repository
 
 
       _employeeDbContext.Employees.Add(newEmployee);
-      _employeeDbContext.Users.Add(user);
 
+      _employeeDbContext.SaveChanges();
+      int id = newEmployee.Id;
+
+      _employeeDbContext.Users.Add(user);
       _employeeDbContext.SaveChanges();
     }
 
@@ -111,7 +114,7 @@ namespace SuperMarket.Api.Employees.Repository
     public Dictionary<int, string> ReturnCompTypeEnums()
     {
       Dictionary<int, string> myDic = new Dictionary<int, string>();
-      
+
       foreach (ComponentType foo in Enum.GetValues(typeof(ComponentType)))
       {
         myDic.Add((int)foo, foo.ToString());

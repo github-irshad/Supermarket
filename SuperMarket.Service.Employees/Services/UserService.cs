@@ -8,9 +8,9 @@ using SuperMarket.Service.Employees.Interfaces;
 
 namespace SuperMarket.Service.Employees.Services
 {
-    public class UserService : IUserService
-    {
-        private readonly IUserRepository userRepository;
+  public class UserService : IUserService
+  {
+    private readonly IUserRepository userRepository;
 
     public UserService(IUserRepository userRepository)
     {
@@ -18,8 +18,11 @@ namespace SuperMarket.Service.Employees.Services
     }
 
     public void UserAddService(User user)
-        {
-            userRepository.UserAdd(user);
-        }
+    {
+      userRepository.UserAdd(user);
     }
+
+    
+
+  }
 }

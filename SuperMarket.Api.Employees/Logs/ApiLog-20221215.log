@@ -1,0 +1,148 @@
+2022-12-15 10:20:05.109 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - SuperMarket.Api.Employees.Controllers.EmployeeController.GetAllEmployees (SuperMarket.Api.Employees). See inner exception
+ ---> Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate schema for type - System.Collections.Generic.IEnumerable`1[SuperMarket.Data.Employees.Models.Employee]. See inner exception
+ ---> System.ArgumentOutOfRangeException: Token 2007ff9 is not valid in the scope of module System.ModuleHandle. (Parameter 'typeToken')
+   at System.ModuleHandle.ResolveTypeHandle(Int32 typeToken, RuntimeTypeHandle[] typeInstantiationContext, RuntimeTypeHandle[] methodInstantiationContext)
+   at System.Reflection.CustomAttribute.FilterCustomAttributeRecord(MetadataToken caCtorToken, MetadataImport& scope, RuntimeModule decoratedModule, MetadataToken decoratedToken, RuntimeType attributeFilterType, Boolean mustBeInheritable, ListBuilder`1& derivedAttributes, RuntimeType& attributeType, IRuntimeMethodInfo& ctorWithParameters, Boolean& isVarArg)
+   at System.Reflection.CustomAttribute.AddCustomAttributes(ListBuilder`1& attributes, RuntimeModule decoratedModule, Int32 decoratedMetadataToken, RuntimeType attributeFilterType, Boolean mustBeInheritable, ListBuilder`1 derivedAttributes)
+   at System.Reflection.CustomAttribute.GetCustomAttributes(RuntimePropertyInfo property, RuntimeType caType)
+   at Swashbuckle.AspNetCore.SwaggerGen.MemberInfoExtensions.GetInlineAndMetadataAttributes(MemberInfo memberInfo)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaGenerator.CreateObjectSchema(DataContract dataContract, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaGenerator.<>c__DisplayClass10_0.<GenerateConcreteSchema>b__3()
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaGenerator.GenerateReferencedSchema(DataContract dataContract, SchemaRepository schemaRepository, Func`1 definitionFactory)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaGenerator.GenerateConcreteSchema(DataContract dataContract, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaGenerator.GenerateSchemaForMember(Type modelType, SchemaRepository schemaRepository, MemberInfo memberInfo, DataProperty dataProperty)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaGenerator.CreateObjectSchema(DataContract dataContract, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaGenerator.<>c__DisplayClass10_0.<GenerateConcreteSchema>b__3()
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaGenerator.GenerateReferencedSchema(DataContract dataContract, SchemaRepository schemaRepository, Func`1 definitionFactory)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaGenerator.GenerateConcreteSchema(DataContract dataContract, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaGenerator.GenerateSchemaForType(Type modelType, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaGenerator.CreateArraySchema(DataContract dataContract, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaGenerator.<>c__DisplayClass10_0.<GenerateConcreteSchema>b__1()
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaGenerator.GenerateConcreteSchema(DataContract dataContract, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaGenerator.GenerateSchemaForType(Type modelType, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateSchema(Type type, SchemaRepository schemaRepository, PropertyInfo propertyInfo, ParameterInfo parameterInfo)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateSchema(Type type, SchemaRepository schemaRepository, PropertyInfo propertyInfo, ParameterInfo parameterInfo)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.CreateResponseMediaType(ModelMetadata modelMetadata, SchemaRepository schemaRespository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.<>c__DisplayClass19_0.<GenerateResponse>b__2(String contentType)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateResponse(ApiDescription apiDescription, SchemaRepository schemaRepository, String statusCode, ApiResponseType apiResponseType)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateResponses(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-12-15 10:46:39.884 +05:30 [ERR] Failed executing DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "User" DROP CONSTRAINT "FK_User_Employee_employee_id";
+2022-12-15 10:47:19.781 +05:30 [ERR] Failed executing DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "User" DROP CONSTRAINT "FK_User_Employee_employee_id";
+2022-12-15 10:48:06.310 +05:30 [ERR] Failed executing DbCommand (49ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "EmployeeSalary" (
+    id integer GENERATED BY DEFAULT AS IDENTITY,
+    employee_id integer NOT NULL,
+    salary_component_id integer NOT NULL,
+    amount double precision NOT NULL,
+    created_at timestamptz NULL,
+    created_by integer NOT NULL,
+    updated_at timestamptz NULL,
+    updated_by integer NOT NULL,
+    CONSTRAINT "PK_EmployeeSalary" PRIMARY KEY (id)
+);
+2022-12-15 10:58:01.898 +05:30 [ERR] An exception occurred in the database while saving changes for context type 'SuperMarket.Data.Employees.Data.EmployeeDbContext'.
+System.InvalidOperationException: The value of 'User.Id' is unknown when attempting to save changes. This is because the property is also part of a foreign key for which the principal entity in the relationship is not known.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.PrepareToSave()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.GetEntriesToSave(Boolean cascadeChanges)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__107_0(DbContext _, ValueTuple`2 t)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+System.InvalidOperationException: The value of 'User.Id' is unknown when attempting to save changes. This is because the property is also part of a foreign key for which the principal entity in the relationship is not known.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.PrepareToSave()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.GetEntriesToSave(Boolean cascadeChanges)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__107_0(DbContext _, ValueTuple`2 t)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2022-12-15 10:58:01.957 +05:30 [ERR] The value of 'User.Id' is unknown when attempting to save changes. This is because the property is also part of a foreign key for which the principal entity in the relationship is not known.
+System.InvalidOperationException: The value of 'User.Id' is unknown when attempting to save changes. This is because the property is also part of a foreign key for which the principal entity in the relationship is not known.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.PrepareToSave()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.GetEntriesToSave(Boolean cascadeChanges)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__107_0(DbContext _, ValueTuple`2 t)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at SuperMarket.Api.Employees.Repository.EmployeeManagement.AddNewEmployee(AddEmployee _newEmployee, User user) in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Data.Employees\Repository\EmployeeManagement.cs:line 38
+   at SuperMarket.Service.Employees.Services.EmployeeService.NewEmployee(AddEmployeeDto _employee) in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Service.Employees\Services\EmployeeService.cs:line 55
+   at SuperMarket.Api.Employees.Controllers.EmployeeController.AddNewEmployee(AddEmployeeDto newEmployee) in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\Controllers\EmployeeController.cs:line 65
+   at lambda_method3(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at SuperMarket.Api.Employees.Middleware.SuperMarketExceptionMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\Middleware\SuperMarketExceptionMiddleware.cs:line 38
+2022-12-15 11:09:00.108 +05:30 [ERR] An exception occurred in the database while saving changes for context type 'SuperMarket.Data.Employees.Data.EmployeeDbContext'.
+System.InvalidOperationException: The value of 'User.Id' is unknown when attempting to save changes. This is because the property is also part of a foreign key for which the principal entity in the relationship is not known.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.PrepareToSave()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.GetEntriesToSave(Boolean cascadeChanges)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__107_0(DbContext _, ValueTuple`2 t)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+System.InvalidOperationException: The value of 'User.Id' is unknown when attempting to save changes. This is because the property is also part of a foreign key for which the principal entity in the relationship is not known.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.PrepareToSave()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.GetEntriesToSave(Boolean cascadeChanges)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__107_0(DbContext _, ValueTuple`2 t)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2022-12-15 11:09:00.112 +05:30 [ERR] The value of 'User.Id' is unknown when attempting to save changes. This is because the property is also part of a foreign key for which the principal entity in the relationship is not known.
+System.InvalidOperationException: The value of 'User.Id' is unknown when attempting to save changes. This is because the property is also part of a foreign key for which the principal entity in the relationship is not known.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.PrepareToSave()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.GetEntriesToSave(Boolean cascadeChanges)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__107_0(DbContext _, ValueTuple`2 t)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at SuperMarket.Api.Employees.Repository.EmployeeManagement.AddNewEmployee(AddEmployee _newEmployee, User user)
+   at SuperMarket.Service.Employees.Services.EmployeeService.NewEmployee(AddEmployeeDto _employee) in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Service.Employees\Services\EmployeeService.cs:line 55
+   at SuperMarket.Api.Employees.Controllers.EmployeeController.AddNewEmployee(AddEmployeeDto newEmployee) in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\Controllers\EmployeeController.cs:line 65
+   at lambda_method223(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at SuperMarket.Api.Employees.Middleware.SuperMarketExceptionMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\muhammed.irshad\Desktop\.NET\SuperMarket\SuperMarket.Api.Employees\Middleware\SuperMarketExceptionMiddleware.cs:line 38
