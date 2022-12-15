@@ -27,15 +27,15 @@ namespace SuperMarket.Data.Employees.Repository
       employeeDbContext.SaveChanges();
     }
 
-    public void DeleteComponent(int id)
-    {
+    // public void DeleteComponent(int id)
+    // {
 
-      employeeDbContext.SalaryComponents.Remove(
-        employeeDbContext.SalaryComponents.Where(x => x.Id == id).FirstOrDefault()
-      );
-      employeeDbContext.SaveChanges();
+    //   employeeDbContext.SalaryComponents.Remove(
+    //     employeeDbContext.SalaryComponents.Where(x => x.Id == id).FirstOrDefault()
+    //   );
+    //   employeeDbContext.SaveChanges();
 
-    }
+    // }
 
     
 

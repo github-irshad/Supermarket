@@ -13,7 +13,7 @@ namespace SuperMarket.Service.Employees.Interfaces
         public IEnumerable<SalaryComponents> ShowSalaryComps();
         public void EditComponent(SalaryRequestDto changeRequest, int id);
 
-        public void DeleteComponent(int id);
+        // public void DeleteComponent(int id);
 
         // public double NetSalaryService(int Id);
 

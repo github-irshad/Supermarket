@@ -23,10 +23,10 @@ namespace SuperMarket.Service.Employees.Services
       this.salaryCalculation = salaryCalculation;
     }
 
-    public void DeleteComponent(int id)
-    {
-      salaryManagement.DeleteComponent(id);
-    }
+    // public void DeleteComponent(int id)
+    // {
+    //   salaryManagement.DeleteComponent(id);
+    // }
 
     public void EditComponent(SalaryRequestDto changeRequest, int id)
     {

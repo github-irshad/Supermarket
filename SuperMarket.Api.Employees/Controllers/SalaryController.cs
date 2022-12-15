@@ -46,13 +46,13 @@ namespace SuperMarket.Api.Employees.Controllers
       return Ok();
     }
 
-    [HttpDelete]
-    [Route("Component/Delete/{id}")]
-    public ActionResult DeleteComp(int id)
-    {
-      salaryService.DeleteComponent(id);
-      return Ok();
-    }
+    // [HttpDelete]
+    // [Route("Component/Delete/{id}")]
+    // public ActionResult DeleteComp(int id)
+    // {
+    //   salaryService.DeleteComponent(id);
+    //   return Ok();
+    // }
 
     //Master Salary Controllers
 

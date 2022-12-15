@@ -9,7 +9,7 @@ namespace SuperMarket.Data.Employees.Interfaces
 
     public IEnumerable<SalaryComponents> GetSalaryComponents();
 
-    public void DeleteComponent(int id);
+    // public void DeleteComponent(int id);
 
     public void EditComponent(int id, SalaryRequestDto editedSalaryComp);
 

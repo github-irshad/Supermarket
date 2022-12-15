@@ -17,7 +17,7 @@ namespace SuperMarket.Data.Employees.Mapping
       CreateMap<AddEmployeeDto, AddEmployee>();
       CreateMap<UserDto, User>();
       CreateMap<SalaryRequestDto, SalaryComponents>();
-      // CreateMap<List<SalaryComponents>,List<SalaryCompShowDto>>();
+      // CreateMap<EditEmployee,User>();
       CreateMap<EmpSalaryDto, EmployeeSalary>();
       CreateMap<MasterSalaryReq, MasterSalaryDto>();
       // CreateMap<List<EmployeeSalary>,List<EmpSalaryReqDto>>();

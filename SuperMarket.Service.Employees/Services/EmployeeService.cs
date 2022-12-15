@@ -90,6 +90,7 @@ namespace SuperMarket.Service.Employees.Services
     public void UpdateEmployeeService(int id, EditEmployee updateEmployeeModel)
     {
       employeeManagement.UpdateEmployee(id, updateEmployeeModel);
+      userRepository.UpdateUser(id,updateEmployeeModel);
     }
 
     public void ChangeVerification(int id)
