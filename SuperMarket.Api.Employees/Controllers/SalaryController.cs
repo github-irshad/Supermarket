@@ -57,10 +57,10 @@ namespace SuperMarket.Api.Employees.Controllers
     //Master Salary Controllers
 
     [HttpPost]
-    [Route("Add")]
-    public ActionResult AddSalaries(MasterSalaryDto salaryDto)
+    [Route("Add/{id}")]
+    public ActionResult AddSalaries(int id,MasterSalaryReq salaryDto)
     {
-      masterSalaryService.AddSalary(salaryDto);
+      masterSalaryService.AddSalary(id,salaryDto);
       return Ok();
     }
 

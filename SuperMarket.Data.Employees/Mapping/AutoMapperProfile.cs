@@ -8,19 +8,20 @@ using SuperMarket.Data.Employees.RequestModel;
 
 namespace SuperMarket.Data.Employees.Mapping
 {
-    public class AutoMapperProfile:Profile
+  public class AutoMapperProfile : Profile
+  {
+    public AutoMapperProfile()
     {
-        public AutoMapperProfile()
-        {
-            CreateMap<AddEmployee,Employee>();
-            CreateMap<EditEmployee,Employee>();
-            CreateMap<AddEmployeeDto,AddEmployee>();
-            CreateMap<UserDto,User>();
-            CreateMap<SalaryRequestDto, SalaryComponents>();
-            // CreateMap<List<SalaryComponents>,List<SalaryCompShowDto>>();
-            CreateMap<EmpSalaryDto,EmployeeSalary>();
-            // CreateMap<List<EmployeeSalary>,List<EmpSalaryReqDto>>();
-            
-        }
+      CreateMap<AddEmployee, Employee>();
+      CreateMap<EditEmployee, Employee>();
+      CreateMap<AddEmployeeDto, AddEmployee>();
+      CreateMap<UserDto, User>();
+      CreateMap<SalaryRequestDto, SalaryComponents>();
+      // CreateMap<List<SalaryComponents>,List<SalaryCompShowDto>>();
+      CreateMap<EmpSalaryDto, EmployeeSalary>();
+      CreateMap<MasterSalaryReq, MasterSalaryDto>();
+      // CreateMap<List<EmployeeSalary>,List<EmpSalaryReqDto>>();
+
     }
+  }
 }

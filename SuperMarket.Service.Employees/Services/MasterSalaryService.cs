@@ -23,9 +23,14 @@ namespace SuperMarket.Service.Employees.Services
       this.salaryManagement = salaryManagement;
     }
 
-    public void AddSalary(MasterSalaryDto salaryDto)
+    public void AddSalary(int id,MasterSalaryReq salaryDto)
     {
-      masterSalaryManagement.AddSalary(salaryDto);
+       MasterSalaryDto salary_Dto=  mapper.Map<MasterSalaryReq,MasterSalaryDto>(salaryDto);
+       salary_Dto.Employee_id = id;
+      // MasterSalaryDto salaryDto = new MasterSalaryDto(){
+      //   Employee_id = id,
+      // }
+      masterSalaryManagement.AddSalary(salary_Dto);
     }
 
     public void DeleteSalary(int empId, int compId)
