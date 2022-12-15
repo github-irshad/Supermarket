@@ -17,3 +17,16 @@ VALUES ('20221215052105_PKFK', '7.0.0');
 
 COMMIT;
 
+START TRANSACTION;
+
+ALTER TABLE "SalaryComponents" DROP CONSTRAINT "FK_SalaryComponents_EmployeeSalary_employeeSalaryId";
+
+DROP INDEX "IX_SalaryComponents_employeeSalaryId";
+
+ALTER TABLE "SalaryComponents" DROP COLUMN "employeeSalaryId";
+
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20221215083806_PKFK1', '7.0.0');
+
+COMMIT;
+

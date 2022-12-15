@@ -10,6 +10,10 @@ namespace SuperMarket.Data.Employees.Repository
 {
   public class UserRepository : IUserRepository
   {
+    public UserRepository()
+    {
+      
+    }
     private readonly EmployeeDbContext _employeeDbContext;
 
     public UserRepository(EmployeeDbContext employeeDbContext)

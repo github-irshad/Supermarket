@@ -14,8 +14,9 @@ namespace SuperMarket.Service.Employees.Services
 
     public UserService()
     {
+      
     }
-    private readonly IUserRepository? userRepository;
+    private readonly IUserRepository userRepository;
 
     private UserService(IUserRepository userRepository)
     {

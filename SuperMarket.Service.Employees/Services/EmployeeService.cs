@@ -13,18 +13,19 @@ namespace SuperMarket.Service.Employees.Services
 
     private readonly IEmployeeManagement employeeManagement;
     private readonly IMapper mapper;
-
-     
-     
-    
+    private readonly IUserService userService;
 
 
 
-    public EmployeeService(IEmployeeManagement employeeManagement, IMapper mapper)
+
+
+
+
+    public EmployeeService(IEmployeeManagement employeeManagement, IMapper mapper, IUserService userService)
     {
       this.employeeManagement = employeeManagement;
       this.mapper = mapper;
-      
+      this.userService = userService;
     }
 
 
@@ -54,7 +55,7 @@ namespace SuperMarket.Service.Employees.Services
       // Created_by = 0,
       // Updated_by = 0
       // };
-      UserService userService = new UserService();
+      // UserService userService = new UserService();
 
 
       int returnEmpId = employeeManagement.AddNewEmployee(employee);
