@@ -13,7 +13,7 @@ namespace SuperMarket.Service.Employees.Services
 
     private readonly IEmployeeManagement employeeManagement;
     private readonly IMapper mapper;
-    private readonly IUserService userService;
+    private readonly IUserRepository userRepository;
 
 
 
@@ -21,11 +21,12 @@ namespace SuperMarket.Service.Employees.Services
 
 
 
-    public EmployeeService(IEmployeeManagement employeeManagement, IMapper mapper, IUserService userService)
+    public EmployeeService(IEmployeeManagement employeeManagement, IMapper mapper, IUserRepository userRepository)
     {
       this.employeeManagement = employeeManagement;
       this.mapper = mapper;
-      this.userService = userService;
+
+      this.userRepository = userRepository;
     }
 
 
@@ -42,24 +43,24 @@ namespace SuperMarket.Service.Employees.Services
       employee.Created_by = 0;
       employee.Updated_by = 0;
 
-      
-      
-
-      // User user = new User(){
-      //   UserName = _employee.Email,
-      //   Password = "123456",
-      //   UserType = _employee.UserType,
-      //   Created_at = DateTime.UtcNow,
-      // Updated_at = DateTime.UtcNow,
-      
-      // Created_by = 0,
-      // Updated_by = 0
-      // };
-      // UserService userService = new UserService();
 
 
-      int returnEmpId = employeeManagement.AddNewEmployee(employee);
-      userService.UserAddService(_employee,returnEmpId);
+
+      User user = new User()
+      {
+        UserName = _employee.Email,
+        Password = "123456",
+        UserType = _employee.UserType,
+
+        Created_at = DateTime.UtcNow,
+        Updated_at = DateTime.UtcNow,
+
+        Created_by = 0,
+        Updated_by = 0
+      };
+
+      employeeManagement.AddNewEmployee(employee);
+      userRepository.NewUser(user);
 
     }
 
@@ -78,8 +79,8 @@ namespace SuperMarket.Service.Employees.Services
     public void DeleteEmployeeService(int id)
     {
       employeeManagement.DeleteEmployee(id);
-      
-      
+
+
     }
 
     public void UpdateEmployeeService(int id, EditEmployee updateEmployeeModel)
@@ -102,5 +103,5 @@ namespace SuperMarket.Service.Employees.Services
     }
   }
 
-  
+
 }

@@ -14,13 +14,13 @@ namespace SuperMarket.Api.Employees.Controllers
   {
 
     private readonly IEmployeeService employeeService;
-    private readonly IUserService userService;
+  
 
 
-    public EmployeeController(IEmployeeService employeeService, IUserService userService)
+    public EmployeeController(IEmployeeService employeeService)
     {
       this.employeeService = employeeService;
-      this.userService = userService;
+      
     }
 
     [HttpGet]
@@ -64,11 +64,12 @@ namespace SuperMarket.Api.Employees.Controllers
     {
 
       employeeService.NewEmployee(newEmployee);
-      // userService.UserAddService(newEmployee);
+     
       
       return Ok("Added");
 
     }
+    
 
     [HttpDelete("Delete/{id}")]
     public ActionResult DeleteEmployee(int id)

@@ -106,7 +106,12 @@ namespace SuperMarket.Data.Employees.Migrations
                         .HasColumnType("text")
                         .HasColumnName("user_type");
 
+                    b.Property<int?>("employeeSalaryId")
+                        .HasColumnType("integer");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("employeeSalaryId");
 
                     b.ToTable("Employee");
                 });
@@ -193,7 +198,12 @@ namespace SuperMarket.Data.Employees.Migrations
                         .HasColumnType("integer")
                         .HasColumnName("updated_by");
 
+                    b.Property<int?>("employeeSalaryId")
+                        .HasColumnType("integer");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("employeeSalaryId");
 
                     b.ToTable("SalaryComponents");
                 });
@@ -201,8 +211,11 @@ namespace SuperMarket.Data.Employees.Migrations
             modelBuilder.Entity("SuperMarket.Data.Employees.Models.User", b =>
                 {
                     b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("integer")
                         .HasColumnName("id");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
                     b.Property<DateTime?>("Created_at")
                         .HasColumnType("timestamptz")
@@ -240,20 +253,29 @@ namespace SuperMarket.Data.Employees.Migrations
                     b.ToTable("User");
                 });
 
-            modelBuilder.Entity("SuperMarket.Data.Employees.Models.User", b =>
-                {
-                    b.HasOne("SuperMarket.Data.Employees.Models.Employee", "employee")
-                        .WithOne("user")
-                        .HasForeignKey("SuperMarket.Data.Employees.Models.User", "Id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("employee");
-                });
-
             modelBuilder.Entity("SuperMarket.Data.Employees.Models.Employee", b =>
                 {
-                    b.Navigation("user");
+                    b.HasOne("SuperMarket.Data.Employees.Models.EmployeeSalary", "employeeSalary")
+                        .WithMany("Employees")
+                        .HasForeignKey("employeeSalaryId");
+
+                    b.Navigation("employeeSalary");
+                });
+
+            modelBuilder.Entity("SuperMarket.Data.Employees.Models.SalaryComponents", b =>
+                {
+                    b.HasOne("SuperMarket.Data.Employees.Models.EmployeeSalary", "employeeSalary")
+                        .WithMany("SalaryComponents")
+                        .HasForeignKey("employeeSalaryId");
+
+                    b.Navigation("employeeSalary");
+                });
+
+            modelBuilder.Entity("SuperMarket.Data.Employees.Models.EmployeeSalary", b =>
+                {
+                    b.Navigation("Employees");
+
+                    b.Navigation("SalaryComponents");
                 });
 #pragma warning restore 612, 618
         }

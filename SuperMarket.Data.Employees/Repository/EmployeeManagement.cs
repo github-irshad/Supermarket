@@ -22,11 +22,7 @@ namespace SuperMarket.Api.Employees.Repository
     }
 
 
-
-
-
-
-    public int AddNewEmployee(AddEmployee _newEmployee)
+    public void AddNewEmployee(AddEmployee _newEmployee)
     {
 
       var newEmployee = mapper.Map<AddEmployee, Employee>(_newEmployee);
@@ -35,11 +31,7 @@ namespace SuperMarket.Api.Employees.Repository
       _employeeDbContext.Employees.Add(newEmployee);
 
       _employeeDbContext.SaveChanges();
-      
-      return  newEmployee.Id;
-
-      // _employeeDbContext.Users.Add(user);
-      // _employeeDbContext.SaveChanges();
+     
     }
 
 
@@ -62,32 +54,8 @@ namespace SuperMarket.Api.Employees.Repository
     {
       var target = _employeeDbContext.Employees.Where(x => x.Id == id).FirstOrDefault();
 
-
-      /*target.FirstName = editEmployeeModel.FirstName;
-       target.LastName = editEmployeeModel.LastName;
-       target.AadharDocument = editEmployeeModel.AadharDocument;
-       target.AadharNumber = editEmployeeModel.AadharNumber;
-       target.Address = editEmployeeModel.Address;
-       target.Designation = editEmployeeModel.Designation;
-       target.Created_at = editEmployeeModel.Created_at;
-       target.Created_by = editEmployeeModel.Created_by;
-       target.Updated_at = editEmployeeModel.Updated_at;
-       target.Updated_by = editEmployeeModel.Updated_by;
-       target.isVerified = editEmployeeModel.isVerified;
-       target.employeeSalary = editEmployeeModel.employeeSalary;*/
-
-
-
-
-      // target = mapper.Map<EditEmployee,Employee>(editEmployeeModel,target);
       mapper.Map<EditEmployee, Employee>(editEmployeeModel, target);
-      // target = editEmployee;
-
-      // _employeeDbContext.Employees.Update(target);
-
-
-
-
+     
       _employeeDbContext.SaveChanges();
 
 

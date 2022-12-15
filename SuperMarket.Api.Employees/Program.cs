@@ -55,7 +55,7 @@ builder.Services.AddScoped<ISalaryService,SalaryService>();
 builder.Services.AddScoped<IMasterSalaryService,MasterSalaryService>();
 builder.Services.AddScoped<IMasterSalaryManagement,MasterSalaryManagement>();
 
-builder.Services.AddScoped<IUserService,UserService>();
+
 builder.Services.AddScoped<IUserRepository,UserRepository>();
 
 builder.Services.AddScoped<ISalaryCalculation,SalaryCalculation>();

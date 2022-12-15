@@ -10,10 +10,7 @@ namespace SuperMarket.Data.Employees.Repository
 {
   public class UserRepository : IUserRepository
   {
-    public UserRepository()
-    {
-      
-    }
+   
     private readonly EmployeeDbContext _employeeDbContext;
 
     public UserRepository(EmployeeDbContext employeeDbContext)
@@ -21,14 +18,14 @@ namespace SuperMarket.Data.Employees.Repository
       _employeeDbContext = employeeDbContext;
     }
 
-    public void Create_Password(string FirstName, string PhoneNum)
-    {
-      throw new NotImplementedException();
-    }
 
-    public void UserAdd(User user)
+    
+
+    public void NewUser(User user)
     {
       _employeeDbContext.Users.Add(user);
+      _employeeDbContext.SaveChanges();
+
     }
   }
 }
