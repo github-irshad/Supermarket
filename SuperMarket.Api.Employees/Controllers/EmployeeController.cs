@@ -60,13 +60,12 @@ namespace SuperMarket.Api.Employees.Controllers
 
     [HttpPost("Add")]
 
-    public ActionResult AddNewEmployee(AddEmployeeDto newEmployee)
-    {
+    public ActionResult AddNewEmployee(AddEmployeeDto newEmployee)  {
 
-      employeeService.NewEmployee(newEmployee);
+      
      
       
-      return Ok("Added");
+      return Ok(employeeService.NewEmployee(newEmployee));
 
     }
     

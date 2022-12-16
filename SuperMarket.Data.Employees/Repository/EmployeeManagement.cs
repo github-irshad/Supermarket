@@ -102,5 +102,10 @@ namespace SuperMarket.Api.Employees.Repository
 
       return myDic;
     }
+
+    public bool CheckEmpExist(int id)
+    {
+     return _employeeDbContext.Employees.Any(s=>s.Id == id);
+    }
   }
 }

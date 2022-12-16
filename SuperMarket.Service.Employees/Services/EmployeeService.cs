@@ -34,35 +34,44 @@ namespace SuperMarket.Service.Employees.Services
 
 
 
-    public void NewEmployee(AddEmployeeDto _employee)
+    public string NewEmployee(AddEmployeeDto _employee)
     {
-      // AddEmployee employee = new AddEmployee();
-      var employee = mapper.Map<AddEmployeeDto, AddEmployee>(_employee);
 
-      employee.Created_at = DateTime.UtcNow;
-      employee.Updated_at = DateTime.UtcNow;
-      employee.isVerified = false;
-      employee.Created_by = 0;
-      employee.Updated_by = 0;
-
-
-
-
-      User user = new User()
+      if (!userRepository.CheckEmailExist(_employee.Email))
       {
-        UserName = _employee.Email,
-        Password = "123456",
-        UserType = _employee.UserType,
 
-        Created_at = DateTime.UtcNow,
-        Updated_at = DateTime.UtcNow,
+        // AddEmployee employee = new AddEmployee();
+        var employee = mapper.Map<AddEmployeeDto, AddEmployee>(_employee);
 
-        Created_by = 0,
-        Updated_by = 0
-      };
+        employee.Created_at = DateTime.UtcNow;
+        employee.Updated_at = DateTime.UtcNow;
+        employee.isVerified = false;
+        employee.Created_by = 0;
+        employee.Updated_by = 0;
 
-      employeeManagement.AddNewEmployee(employee);
-      userRepository.NewUser(user);
+
+
+
+        User user = new User()
+        {
+          UserName = _employee.Email,
+          Password = "123456",
+          UserType = _employee.UserType,
+
+          Created_at = DateTime.UtcNow,
+          Updated_at = DateTime.UtcNow,
+
+          Created_by = 0,
+          Updated_by = 0
+        };
+
+        employeeManagement.AddNewEmployee(employee);
+        userRepository.NewUser(user);
+
+        return "Added";
+      }else{
+        return "Email Already Exists";
+      }
 
     }
 
@@ -80,9 +89,22 @@ namespace SuperMarket.Service.Employees.Services
 
     public void DeleteEmployeeService(int id)
     {
-      employeeManagement.DeleteEmployee(id);
-      userRepository.DeleteUser(id);
-      masterSalaryManagement.DeleteFullSalary(id);
+
+      if (CheckEmpExist(id))
+      {
+        employeeManagement.DeleteEmployee(id);
+      }
+      if (userRepository.CheckUserExist(id))
+      {
+
+        userRepository.DeleteUser(id);
+      }
+
+      if (masterSalaryManagement.SalaryExist(id))
+      {
+
+        masterSalaryManagement.DeleteFullSalary(id);
+      }
 
 
     }
@@ -90,7 +112,7 @@ namespace SuperMarket.Service.Employees.Services
     public void UpdateEmployeeService(int id, EditEmployee updateEmployeeModel)
     {
       employeeManagement.UpdateEmployee(id, updateEmployeeModel);
-      userRepository.UpdateUser(id,updateEmployeeModel);
+      userRepository.UpdateUser(id, updateEmployeeModel);
     }
 
     public void ChangeVerification(int id)
@@ -105,6 +127,11 @@ namespace SuperMarket.Service.Employees.Services
     public Dictionary<int, string> GetEnum_UserType()
     {
       return employeeManagement.ReturnUserTypeEnums();
+    }
+
+    public bool CheckEmpExist(int id)
+    {
+      return employeeManagement.CheckEmpExist(id);
     }
   }
 

@@ -22,6 +22,16 @@ namespace SuperMarket.Data.Employees.Repository
       this.mapper = mapper;
     }
 
+    public bool CheckEmailExist(string email)
+    {
+      return _employeeDbContext.Users.Any(e=>e.UserName == email);
+    }
+
+    public bool CheckUserExist(int id)
+    {
+      return _employeeDbContext.Users.Any(e=>e.Id==id);
+    }
+
     public void DeleteUser(int id)
     {
       var dUser = _employeeDbContext.Users.Where(e=>e.Id == id).FirstOrDefault();

@@ -38,6 +38,9 @@ namespace SuperMarket.Api.Employees.Controllers
       return Ok(salaryService.ShowSalaryComps());
     }
 
+    
+
+
     [HttpPut]
     [Route("Component/Edit")]
     public ActionResult EditComp(SalaryRequestDto changeRequest, int id)

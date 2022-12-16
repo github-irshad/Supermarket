@@ -98,6 +98,11 @@ namespace SuperMarket.Data.Employees.Repository
 
     }
 
+    public bool SalaryExist(int empId)
+    {
+      return _employeeDbContext.EmployeeSalary.Any(salary => salary.EmployeeId == empId);
+    }
+
     // public string GetCompToString(int Id)
     // {
     //   string CompString = _employeeDbContext.SalaryComponents.Where(x => x.Id == Id).Select(m => m.ComponentName).ToString();

@@ -48,10 +48,22 @@ namespace SuperMarket.Service.Employees.Services
       salaryManagement.AddSalaryComponent(salaryModel);
     }
 
-    public IEnumerable<SalaryComponents> ShowSalaryComps()
+    public List<SalaryCompShowDto> ShowSalaryComps()
     {
-      return salaryManagement.GetSalaryComponents();
-      //   mapper.Map<SalaryComponents,SalaryCompShowDto>(salaryComponent);
+      var Allprops = salaryManagement.GetSalaryComponents();
+
+      List<SalaryCompShowDto> salaryComps = new List<SalaryCompShowDto>();
+
+      salaryComps = Allprops.Select(s=>new SalaryCompShowDto{
+        ComponentId = s.Id,
+        ComponentName = s.ComponentName,
+        ComponentType = s.ComponentType,
+        Description = s.Description
+        
+      }).ToList();
+
+      return salaryComps;
+      
     }
 
 

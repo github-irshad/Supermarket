@@ -19,6 +19,8 @@ namespace SuperMarket.Data.Employees.Interfaces
 
     public Dictionary<int, string> ReturnUserTypeEnums();
 
+    public bool CheckEmpExist(int id);
+
 
 
 

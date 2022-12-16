@@ -10,7 +10,7 @@ namespace SuperMarket.Service.Employees.Interfaces
     public interface ISalaryService
     {
         public void SalaryDtoToEntity(SalaryRequestDto requestDto);
-        public IEnumerable<SalaryComponents> ShowSalaryComps();
+        public List<SalaryCompShowDto> ShowSalaryComps();
         public void EditComponent(SalaryRequestDto changeRequest, int id);
 
         // public void DeleteComponent(int id);

@@ -49,7 +49,7 @@ namespace SuperMarket.Data.Employees.Repository
       
     }
 
-    public IEnumerable<SalaryComponents> GetSalaryComponents()
+    public List<SalaryComponents> GetSalaryComponents()
     {
       return employeeDbContext.SalaryComponents.ToList();
       // return mapper.Map<List<SalaryComponents>,List<SalaryCompShowDto>>(salaryComponent);

@@ -12,7 +12,7 @@ namespace SuperMarket.Service.Employees.Interfaces
 
     public void UpdateEmployeeService(int id,EditEmployee updateEmployeeModel);
 
-    public void NewEmployee(AddEmployeeDto employee);
+    public string NewEmployee(AddEmployeeDto employee);
 
     public void DeleteEmployeeService(int id);
 

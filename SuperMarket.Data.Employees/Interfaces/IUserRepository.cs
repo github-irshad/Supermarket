@@ -14,6 +14,10 @@ namespace SuperMarket.Data.Employees.Interfaces
         public void DeleteUser(int id);
 
         public void UpdateUser(int id, EditEmployee updateEmployeeModel);
+
+        public bool CheckUserExist(int id);
+
+        public bool CheckEmailExist(string email);
        
     }
 }
