@@ -55,6 +55,7 @@ namespace SuperMarket.Api.Employees.Repository
       var target = _employeeDbContext.Employees.Where(x => x.Id == id).FirstOrDefault();
 
       mapper.Map<EditEmployee, Employee>(editEmployeeModel, target);
+      target.Updated_at = DateTime.UtcNow;
      
       _employeeDbContext.SaveChanges();
 
