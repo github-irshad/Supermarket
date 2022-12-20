@@ -17,7 +17,7 @@ namespace SuperMarket.Api.Employees.Validators
       RuleFor(x => x.PhoneNumber).NotEmpty();
       RuleFor(x => x.AadharNumber).NotEmpty();
       RuleFor(x => x.LastName).NotEmpty();
-      RuleFor(x => x.AadharDocument).NotEmpty();
+      // RuleFor(x => x.AadharDocument).NotEmpty();
       RuleFor(x => x.Designation).NotEmpty();
       RuleFor(x => x.Address).NotEmpty();
       RuleFor(x => x.Department).NotEmpty();
