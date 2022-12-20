@@ -15,7 +15,7 @@ namespace SuperMarket.Data.Employees.RequestModel
     public string LastName { get; set; }
     public string Address { get; set; }
     public string AadharNumber { get; set; }
-    public string AadharDocument { get; set; }
+    // public string AadharDocument { get; set; }
     // public bool isVerified { get; set; }
     public string Designation { get; set; }
     // public EmployeeSalary? employeeSalary { get; set; }
@@ -23,6 +23,6 @@ namespace SuperMarket.Data.Employees.RequestModel
     public string Department { get; set; }
     public string PhoneNumber { get; set; }
     public UserType UserType { get; set; }
-    public string ProfilePic { get; set; }
+    // public string ProfilePic { get; set; }
   }
 }
